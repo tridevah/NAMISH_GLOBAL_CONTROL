@@ -1,0 +1,17 @@
+[Unit]
+Description=NAMISH Global Control Platform
+After=network.target
+
+[Service]
+Type=simple
+User=tridevah
+WorkingDirectory=/srv/namish-global-control/app
+EnvironmentFile=/etc/namish-global-control/production.env
+Environment=PORT=3100
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
