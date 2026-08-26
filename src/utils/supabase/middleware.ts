@@ -15,7 +15,7 @@ export async function updateSession(request: NextRequest) {
           return request.cookies.getAll()
         },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
+          cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value))
           supabaseResponse = NextResponse.next({
             request,
           })
@@ -32,15 +32,15 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser()
 
   // Public routes: login page, all /api/auth/* endpoints, health check.
-  // The platform schema is NOT exposed to PostgREST so we MUST NOT query it here.
-  // Staff authority is enforced server-side in /api/auth/login and (protected)/layout.tsx
-  // via the service-role-only RPC resolve_platform_staff_authority.
   const isPublicRoute =
     request.nextUrl.pathname === '/login' ||
     request.nextUrl.pathname.startsWith('/api/auth/') ||
     request.nextUrl.pathname.startsWith('/api/health')
 
   if (!user && !isPublicRoute) {
+    if (request.nextUrl.pathname.startsWith('/api/')) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
     const url = request.nextUrl.clone()
     url.pathname = '/login'
     return NextResponse.redirect(url)
