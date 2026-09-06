@@ -10,7 +10,7 @@ export default async function DataHubDashboard({ searchParams }: { searchParams:
 
   let taxActive = false
   if (searchParams.country) {
-    const supabase = createClient()
+    const supabase = await createClient()
     const { data: country } = await supabase
       .from('countries')
       .select('tax_coverage')
