@@ -7,12 +7,12 @@ import { createAdminClient } from '@/utils/supabase/admin'
 export default async function DataHubDashboard({
   searchParams,
 }: {
-  searchParams: { country?: string }
+  searchParams: Promise<{ country?: string }>
 }) {
   const { staff } = await getAuthContext()
   if (!staff) redirect('/login')
 
-  const countryId = searchParams.country ?? null
+  const { country: countryId = null } = await searchParams
   const querySuffix = countryId ? '?country=' + countryId : ''
 
   // Determine tax card state from URL country only
