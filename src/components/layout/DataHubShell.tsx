@@ -24,6 +24,14 @@ import clsx from 'clsx'
 
 type StaffRole = 'PLATFORM_SUPERADMIN' | 'CATALOG_MANAGER' | 'BILLING_MANAGER' | 'SUPPORT_AUDITOR'
 
+interface Country {
+  id: string
+  iso2: string
+  display_name: string
+  official_name: string
+  tax_coverage_status: string
+}
+
 interface DataHubShellProps {
   children: React.ReactNode
   email: string
@@ -32,12 +40,13 @@ interface DataHubShellProps {
 
 export default function DataHubShell({ children, email, role }: DataHubShellProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [countries, setCountries] = useState<any[]>([])
+  const [countries, setCountries] = useState<Country[]>([])
   const pathname = usePathname()
   const router = useRouter()
   const searchParams = useSearchParams()
   const supabase = createClient()
   
+  // URL is the single authority for selected country
   const selectedCountry = searchParams.get('country') || ''
 
   useEffect(() => {
@@ -65,7 +74,8 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
     } else {
       params.delete('country')
     }
-    router.push(pathname + '?' + params.toString())
+    // Use replace to avoid polluting browser history on every dropdown change
+    router.replace(pathname + '?' + params.toString())
   }
 
   const querySuffix = selectedCountry ? '?country=' + selectedCountry : ''
@@ -85,7 +95,8 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
   ]
 
   const activeCountry = countries.find(c => c.id === selectedCountry)
-  const showTax = activeCountry && activeCountry.tax_coverage !== 'NOT_CONFIGURED'
+  // Show tax nav for any country that has been configured (even partially/UNRESOLVED)
+  const showTax = activeCountry && activeCountry.tax_coverage_status !== 'NOT_CONFIGURED'
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 flex">
@@ -119,7 +130,7 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
           </Link>
 
           <Link
-            href="/data-hub"
+            href={`/data-hub${querySuffix}`}
             className={clsx(
               "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors mb-6",
               pathname === '/data-hub'
@@ -140,7 +151,7 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
             >
               <option value="">-- Select Country --</option>
               {countries.map(c => (
-                <option key={c.id} value={c.id}>{c.display_name || c.name} ({c.iso2})</option>
+                <option key={c.id} value={c.id}>{c.display_name || c.official_name} ({c.iso2})</option>
               ))}
             </select>
           </div>
