@@ -77,7 +77,15 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
     { name: 'Postal Codes', href: '/data-hub/geography/postal-codes', icon: Mail },
   ]
 
-  
+  const taxNavItems = [
+    { name: 'Tax Overview', href: '/data-hub/tax', icon: Percent },
+    { name: 'Tax Authorities', href: '/data-hub/tax/authorities', icon: Database },
+    { name: 'GST Rates (India)', href: '/data-hub/tax/gst-rates', icon: Tag },
+    { name: 'HSN & SAC Codes', href: '/data-hub/tax/hsn-sac', icon: PackageCheck },
+  ]
+
+  const activeCountry = countries.find(c => c.id === selectedCountry)
+  const showTax = activeCountry && activeCountry.tax_coverage !== 'NOT_CONFIGURED'
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 flex">
@@ -154,15 +162,40 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
                 >
                   <item.icon className="w-5 h-5" />
                   {item.name}
-                </Link>
-              )
-            })}
-          </nav>
+                  </Link>
+                )
+              })}
+            </nav>
+            
+            {showTax && (
+              <>
+                <div className="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2 px-2 mt-8">Tax & Compliance</div>
+                <nav className="space-y-1 mb-6">
+                  {taxNavItems.map((item) => {
+                    const isActive = pathname === item.href
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href + querySuffix}
+                        className={clsx(
+                          "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                          isActive 
+                            ? "bg-teal-500/10 text-teal-400" 
+                            : "text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-100"
+                        )}
+                      >
+                        <item.icon className="w-5 h-5" />
+                        {item.name}
+                      </Link>
+                    )
+                  })}
+                </nav>
+              </>
+            )}
 
-          
-        </div>
+          </div>
 
-        <div className="p-4 border-t border-zinc-800 shrink-0">
+          <div className="p-4 border-t border-zinc-800 shrink-0">
           <div className="flex items-center gap-3 mb-4 px-2">
             <div className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center border border-zinc-700 shrink-0">
               <User className="w-5 h-5 text-zinc-400" />
