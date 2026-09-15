@@ -11,7 +11,8 @@ import {
   LogOut,
   Menu,
   Database,
-  User
+  User,
+  Users
 } from 'lucide-react'
 import { createClient } from '@/utils/supabase/client'
 import clsx from 'clsx'
@@ -39,6 +40,7 @@ export default function AppShell({ children, email, role }: AppShellProps) {
   const navItems = [
     { name: 'Dashboard', href: '/', icon: LayoutDashboard, roles: ['PLATFORM_SUPERADMIN', 'CATALOG_MANAGER', 'BILLING_MANAGER', 'SUPPORT_AUDITOR'] },
     { name: 'Billing', href: '/billing', icon: CreditCard, roles: ['PLATFORM_SUPERADMIN', 'BILLING_MANAGER'] },
+    { name: 'Enterprise Accounts', href: '/accounts', icon: Users, roles: ['PLATFORM_SUPERADMIN', 'SUPPORT_AUDITOR'] },
     { name: 'Tenant Registry', href: '/tenant-registry', icon: Building2, roles: ['PLATFORM_SUPERADMIN', 'SUPPORT_AUDITOR'] },
     { name: 'Audit', href: '/audit', icon: ShieldCheck, roles: ['PLATFORM_SUPERADMIN', 'SUPPORT_AUDITOR'] },
   ]
@@ -162,3 +164,4 @@ export default function AppShell({ children, email, role }: AppShellProps) {
     </div>
   )
 }
+

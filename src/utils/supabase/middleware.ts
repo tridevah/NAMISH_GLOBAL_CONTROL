@@ -2,6 +2,14 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
 export async function updateSession(request: NextRequest) {
+  // This exact S2S POST is authenticated by its route handler.
+  if (
+    request.method === 'POST' &&
+    request.nextUrl.pathname === '/api/s2s/provision-enterprise'
+  ) {
+    return NextResponse.next()
+  }
+
   let supabaseResponse = NextResponse.next({
     request,
   })
