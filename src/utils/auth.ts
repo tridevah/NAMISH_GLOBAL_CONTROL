@@ -1,9 +1,24 @@
-import { User } from '@supabase/supabase-js'
+import { cache } from 'react'
+import { createClient } from '@/utils/supabase/server'
+import { createAdminClient } from '@/utils/supabase/admin'
+import { redirect } from 'next/navigation'
 
-export async function getAuthContext() {
-  return {
-    user: { id: 'test', email: 'test@tridevah.com' } as User,
-    staff: { role: 'PLATFORM_SUPERADMIN', status: 'ACTIVE', id: 'test' } as any,
-    error: null,
+export const getAuthContext = cache(async () => {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  if (!user) {
+    return { user: null, staff: null, error: 'NO_USER' }
   }
-}
+
+  const adminSupabase = createAdminClient()
+  const { data: staff, error: rpcError } = await adminSupabase.rpc('resolve_platform_staff_authority', {
+    p_auth_user_id: user.id
+  })
+
+  if (rpcError || !staff || staff.status !== 'ACTIVE') {
+    return { user, staff: null, error: 'UNAUTHORIZED' }
+  }
+
+  return { user, staff, error: null }
+})
