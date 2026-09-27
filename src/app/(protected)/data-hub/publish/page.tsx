@@ -4,29 +4,52 @@ import { useState } from 'react'
 
 export default function PublishPage() {
   const [draftId, setDraftId] = useState<string | null>(null)
+  const [version, setVersion] = useState<string>('')
   const [counts, setCounts] = useState<any>(null)
+  const [diffs, setDiffs] = useState<any>(null)
+  const [deliveryStatus, setDeliveryStatus] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
-  const [published, setPublished] = useState(false)
+
+  const fetchDraft = async (id: string) => {
+    setLoading(true)
+    setMessage('Fetching draft details...')
+    try {
+      const res = await fetch(`/api/data-hub/publish/draft?id=${id}`)
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error)
+      setDraftId(id)
+      setCounts(data.counts)
+      setDiffs(data.diffs)
+      setDeliveryStatus(data.deliveryStatus)
+      setVersion(data.release.version)
+      setMessage('Draft loaded successfully.')
+    } catch (e: any) {
+      setMessage(`Error: ${e.message}`)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const handleCreateDraft = async (cleanup: boolean) => {
+    if (!version.trim()) {
+      setMessage('Error: Version is required.')
+      return
+    }
     setLoading(true)
     setMessage('Creating draft...')
     try {
       const res = await fetch('/api/data-hub/publish/draft', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ version: `v8.2.0-${cleanup ? 'cleanup' : 'business'}`, include_cleanup: cleanup })
+        body: JSON.stringify({ version: version.trim(), include_cleanup: cleanup })
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error)
-      setDraftId(data.releaseId)
-      setCounts(data.counts)
-      setMessage('Draft created successfully.')
-      setPublished(false)
+      
+      await fetchDraft(data.releaseId)
     } catch (e: any) {
       setMessage(`Error: ${e.message}`)
-    } finally {
       setLoading(false)
     }
   }
@@ -43,11 +66,10 @@ export default function PublishPage() {
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error)
-      setMessage(`Successfully published release ${draftId}`)
-      setPublished(true)
+      setMessage(`Successfully published release.`)
+      await fetchDraft(draftId) // Refresh status
     } catch (e: any) {
       setMessage(`Error: ${e.message}`)
-    } finally {
       setLoading(false)
     }
   }
@@ -56,48 +78,101 @@ export default function PublishPage() {
     <div className="p-8 max-w-4xl mx-auto space-y-6">
       <h1 className="text-2xl font-bold">Review & Publish to ERP</h1>
       
-      <div className="flex gap-4">
-        <button 
-          onClick={() => handleCreateDraft(false)}
-          disabled={loading}
-          className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
-        >
-          Generate Business Snapshot (Standard)
-        </button>
-        <button 
-          onClick={() => handleCreateDraft(true)}
-          disabled={loading}
-          className="bg-purple-600 text-white px-4 py-2 rounded disabled:opacity-50"
-        >
-          Generate Cleanup Snapshot (Includes Inactive)
-        </button>
+      <div className="space-y-4 p-4 border rounded bg-gray-50">
+        <div>
+          <label className="block text-sm font-medium mb-1">Release Version</label>
+          <input 
+            type="text" 
+            value={version}
+            onChange={e => setVersion(e.target.value)}
+            placeholder="e.g. v8.3.0"
+            className="border p-2 rounded w-full max-w-md"
+            disabled={loading || !!draftId} // Disabled if viewing a draft
+          />
+        </div>
+        
+        {!draftId && (
+          <div className="flex gap-4">
+            <button 
+              onClick={() => handleCreateDraft(false)}
+              disabled={loading || !version}
+              className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
+            >
+              Generate Business Snapshot
+            </button>
+            <button 
+              onClick={() => handleCreateDraft(true)}
+              disabled={loading || !version}
+              className="bg-purple-600 text-white px-4 py-2 rounded disabled:opacity-50"
+            >
+              Generate Cleanup Snapshot (Includes Inactive)
+            </button>
+            <button
+              onClick={() => fetchDraft('ca7c5ea6-2f52-44de-bd42-f46b253a4d63')}
+              disabled={loading}
+              className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
+            >
+              Open Cleanup Draft (ca7c5ea6)
+            </button>
+          </div>
+        )}
+        
+        {draftId && (
+          <button
+            onClick={() => { setDraftId(null); setCounts(null); setVersion(''); setDeliveryStatus(null); setMessage(''); }}
+            className="text-sm text-blue-600 underline"
+          >
+            Clear / Start Over
+          </button>
+        )}
       </div>
 
-      {message && <div className="p-4 bg-gray-100 rounded text-gray-800">{message}</div>}
+      {message && <div className="p-4 bg-white border border-gray-200 shadow-sm rounded text-gray-800">{message}</div>}
 
-      {draftId && counts && !published && (
+      {draftId && counts && (
         <div className="border p-6 rounded-lg bg-white shadow space-y-4">
-          <h2 className="text-xl font-semibold">Draft Review</h2>
-          <p className="text-sm text-gray-500">ID: {draftId}</p>
+          <div className="flex justify-between items-center border-b pb-4">
+            <h2 className="text-xl font-semibold">Draft Review ({version})</h2>
+            <div className={`px-3 py-1 rounded text-sm font-bold ${
+                deliveryStatus === 'DRAFT' ? 'bg-yellow-100 text-yellow-800' :
+                deliveryStatus === 'DELIVERED' ? 'bg-green-100 text-green-800' :
+                deliveryStatus === 'FAILED' ? 'bg-red-100 text-red-800' :
+                'bg-blue-100 text-blue-800'
+            }`}>
+              Status: {deliveryStatus}
+            </div>
+          </div>
+          <p className="text-sm text-gray-500 font-mono">ID: {draftId}</p>
           
           <div className="grid grid-cols-3 gap-4 py-4">
             {Object.entries(counts).map(([type, count]) => (
               <div key={type} className="bg-gray-50 p-4 rounded text-center border">
                 <div className="text-2xl font-bold">{String(count)}</div>
                 <div className="text-sm text-gray-600 font-medium">{type}</div>
+                {diffs && diffs[type] && (
+                  <div className="mt-2 pt-2 border-t text-xs text-left grid grid-cols-2 gap-1 text-gray-500">
+                    <div className={diffs[type].added > 0 ? "text-green-600 font-bold" : ""}>+ {diffs[type].added}</div>
+                    <div className={diffs[type].removed > 0 ? "text-red-600 font-bold" : ""}>- {diffs[type].removed}</div>
+                    <div className={diffs[type].modified > 0 ? "text-blue-600 font-bold" : ""}>~ {diffs[type].modified}</div>
+                    <div>= {diffs[type].unchanged}</div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
 
-          <button 
-            onClick={handlePublish}
-            disabled={loading}
-            className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded font-bold disabled:opacity-50"
-          >
-            {loading ? 'Processing...' : 'Confirm & Publish to Outbox'}
-          </button>
+          {deliveryStatus === 'DRAFT' && (
+            <button 
+              onClick={handlePublish}
+              disabled={loading}
+              className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded font-bold disabled:opacity-50 transition-colors"
+            >
+              {loading ? 'Processing...' : 'Confirm & Publish to Outbox'}
+            </button>
+          )}
         </div>
       )}
     </div>
   )
 }
+
