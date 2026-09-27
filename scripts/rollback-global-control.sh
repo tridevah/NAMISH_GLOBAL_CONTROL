@@ -8,26 +8,45 @@ APP_ROOT="/srv/namish-global-control"
 SYMLINK_PATH="$APP_ROOT/app"
 SERVICE_NAME="namish-global-control.service"
 
-echo "Finding previous release..."
-PREV_RELEASE=$(ssh -i "$SSH_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=no "$VPS_USER@$VPS_HOST" "ls -1dt $APP_ROOT/releases/* | head -n 2 | tail -n 1")
-
-if [ -z "$PREV_RELEASE" ]; then
-  echo "ERROR: Could not determine previous release."
+TARGET_RELEASE="${1:-}"
+if [[ -z "$TARGET_RELEASE" ]]; then
+  echo "ERROR: No target release provided for rollback."
   exit 1
 fi
 
-echo "Rolling back to: $PREV_RELEASE"
+echo "Rolling back to: $TARGET_RELEASE"
 ssh -i "$SSH_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=no "$VPS_USER@$VPS_HOST" "
-  ln -sfn $PREV_RELEASE $SYMLINK_PATH &&
-  sudo systemctl restart $SERVICE_NAME
+  if [ ! -d \"$TARGET_RELEASE\" ]; then
+    echo \"ERROR: Target release directory does not exist.\"
+    exit 1
+  fi
+  ln -sfn \"$TARGET_RELEASE\" \"$SYMLINK_PATH\" &&
+  sudo systemctl restart \"$SERVICE_NAME\"
 "
 
 echo "Rollback health check..."
-sleep 5
-HEALTH_STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://$VPS_HOST:3100/api/health || echo "000")
+MAX_RETRIES=2
+RETRY_DELAY=1
+HEALTH_STATUS="000"
+for ((i=1; i<=MAX_RETRIES; i++)); do
+    if HEALTH_STATUS=$(ssh -i "$SSH_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=no "$VPS_USER@$VPS_HOST" "curl -s -o /dev/null -w '%{http_code}' --max-time 5 --connect-timeout 2 http://127.0.0.1:3100/api/health" 2>/dev/null); then
+        if [[ "$HEALTH_STATUS" == "200" ]]; then
+            break
+        fi
+    fi
+    sleep $RETRY_DELAY
+done
+
+if ! ssh -i "$SSH_KEY" -o IdentitiesOnly=yes -o StrictHostKeyChecking=no "$VPS_USER@$VPS_HOST" "
+  [ \"\$(readlink -f $SYMLINK_PATH)\" = \"$TARGET_RELEASE\" ] &&
+  sudo systemctl is-active --quiet $SERVICE_NAME
+"; then
+  echo "CRITICAL: Rollback validation failed (symlink or service state)."
+  exit 1
+fi
 
 if [[ "$HEALTH_STATUS" != "200" ]]; then
-  echo "CRITICAL: Rollback health check failed ($HEALTH_STATUS). Manual intervention required!"
+  echo "CRITICAL: Rollback health check failed ($HEALTH_STATUS)."
   exit 1
 fi
 
