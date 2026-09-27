@@ -1,0 +1,16 @@
+[Unit]
+Description=NAMISH GC Catalog Sync Dispatcher
+After=network.target
+
+[Service]
+Type=simple
+User=tridevah
+WorkingDirectory=/srv/namish-global-control/dispatcher
+# Must contain GC_DATABASE_URL
+EnvironmentFile=/etc/namish-global-control/production.env
+ExecStart=/usr/bin/node dist/index.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
