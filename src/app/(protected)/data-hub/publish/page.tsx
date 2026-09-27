@@ -8,6 +8,7 @@ export default function PublishPage() {
   const [counts, setCounts] = useState<any>(null)
   const [diffs, setDiffs] = useState<any>(null)
   const [deliveryStatus, setDeliveryStatus] = useState<string | null>(null)
+  const [reviewData, setReviewData] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
 
@@ -21,8 +22,9 @@ export default function PublishPage() {
       setDraftId(id)
       setCounts(data.counts)
       setDiffs(data.diffs)
-      setDeliveryStatus(data.deliveryStatus)
-      setVersion(data.release.version)
+      setDeliveryStatus(data.delivery?.event_status || data.draft_status)
+      setReviewData(data)
+      setVersion(data.draft_version)
       setMessage('Draft loaded successfully.')
     } catch (e: any) {
       setMessage(`Error: ${e.message}`)
@@ -132,14 +134,29 @@ export default function PublishPage() {
       {draftId && counts && (
         <div className="border p-6 rounded-lg bg-white shadow space-y-4">
           <div className="flex justify-between items-center border-b pb-4">
-            <h2 className="text-xl font-semibold">Draft Review ({version})</h2>
-            <div className={`px-3 py-1 rounded text-sm font-bold ${
-                deliveryStatus === 'DRAFT' ? 'bg-yellow-100 text-yellow-800' :
-                deliveryStatus === 'DELIVERED' ? 'bg-green-100 text-green-800' :
-                deliveryStatus === 'FAILED' ? 'bg-red-100 text-red-800' :
-                'bg-blue-100 text-blue-800'
-            }`}>
-              Status: {deliveryStatus}
+            <div>
+              <h2 className="text-xl font-semibold">Draft Review ({version})</h2>
+              {reviewData?.baseline_sequence && (
+                <p className="text-xs text-gray-500 mt-1">
+                  Baseline: Seq {reviewData.baseline_sequence} ({reviewData.baseline_version})
+                </p>
+              )}
+            </div>
+            <div className="flex items-center gap-3">
+              <div className={`px-3 py-1 rounded text-sm font-bold ${
+                  deliveryStatus === 'DRAFT' ? 'bg-yellow-100 text-yellow-800' :
+                  deliveryStatus === 'DELIVERED' ? 'bg-green-100 text-green-800' :
+                  deliveryStatus === 'FAILED' ? 'bg-red-100 text-red-800' :
+                  'bg-blue-100 text-blue-800'
+              }`}>
+                Status: {deliveryStatus}
+              </div>
+              <button 
+                onClick={() => fetchDraft(draftId)}
+                className="text-gray-500 hover:text-gray-800 bg-gray-100 hover:bg-gray-200 px-3 py-1 rounded text-sm"
+              >
+                Refresh
+              </button>
             </div>
           </div>
           <p className="text-sm text-gray-500 font-mono">ID: {draftId}</p>

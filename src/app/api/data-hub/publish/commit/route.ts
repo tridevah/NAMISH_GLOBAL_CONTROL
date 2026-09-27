@@ -22,12 +22,10 @@ export async function POST(req: NextRequest) {
             p_release_id: releaseId
         })
 
-        if (error) {
-            console.error(error)
-            return NextResponse.json({ error: error.message }, { status: 500 })
-        }
+        if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+        if (data && data.error) return NextResponse.json({ error: data.error }, { status: 400 })
 
-        return NextResponse.json({ success: data })
+        return NextResponse.json(data)
     } catch (err: any) {
         return NextResponse.json({ error: err.message }, { status: 500 })
     }
