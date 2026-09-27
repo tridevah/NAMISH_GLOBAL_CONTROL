@@ -1,0 +1,98 @@
+[
+  {
+    "claim_id": "CGST_ACT",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+  },
+  {
+    "claim_id": "IGST_ACT",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+  },
+  {
+    "claim_id": "UTGST_ACT",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+  },
+  {
+    "claim_id": "COMPENSATION_CESS_ACT",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+  },
+  {
+    "claim_id": "HSNS_CESS_ACT",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+  },
+  {
+    "claim_id": "RATES_2025_2026",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "GOODS_RCM_04_2017",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "GOODS_RCM_06_2024",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "SERVICES_RCM_13_2017",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "SERVICES_RCM_07_2025",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "INTER_STATE_RCM_10_2017",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "INTER_STATE_RCM_07_2025",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "SECTION_9_4_07_2019",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "SECTION_9_4_24_2019",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "COMPOSITION_14_2019",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  },
+  {
+    "claim_id": "COMPOSITION_02_2019",
+    "status": "RETRIEVAL_BLOCKED",
+    "sha256": null,
+    "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+  }
+]

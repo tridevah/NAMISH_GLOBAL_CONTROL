@@ -1,0 +1,1 @@
+npx supabase db query "SELECT jsonb_array_length(payload->'hsn_sac') as hsn, jsonb_array_length(payload->'units') as units, jsonb_array_length(payload->'tax_profiles') as taxes, encode(digest(convert_to(raw_body, 'utf8'), 'sha256'), 'hex') as hash FROM integration.outbox_events WHERE id = '1b82a53c-53b1-4182-a795-a122f46385b4';" --linked

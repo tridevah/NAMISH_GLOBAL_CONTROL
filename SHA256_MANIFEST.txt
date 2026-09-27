@@ -1,0 +1,9 @@
+UNIT MASTER REVIEW PACKAGE MANIFEST
+===================================
+8cead79b5d04c5316d697b3f3b138bc483f093e93b8fcdef02dd46d3b91890a1  supabase/migrations/20260918000001_unit_master_schema.sql
+7b1545972b11973b75a56700505c4cf9913c8ffe36ed1313b27aa31cce59068d  unit_master_rehearsal.sql
+1615ab9f61bad16016f7e555c12553795530b95231b5152289ea5b631b44157f  scripts/import_units.ts
+bc9a0da5356a16bb93e545abcaf80d151510e32408b0f74c83bb3848df40fe7d  parse.py
+e2d06370cdadf5da1bce705783ff5d0d94d11d70eacba6d592adf401c32fb76e  seed/unece_raw.csv
+62e1f03e27e178dc3640385290d9c7b8512d4fd6e0874785fb51f0d408b9da21  seed/unece_parsed.json
+d58d62380450324374eaafd4f3dda1ebaaa377dfae84ce1e293e5b8c6fbdfff7  tests/importer.test.ts

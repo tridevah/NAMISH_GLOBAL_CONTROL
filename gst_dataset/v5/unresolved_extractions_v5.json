@@ -1,0 +1,38 @@
+[
+  {
+    "target": "CGST_RATE_SCHEDULE_GOODS",
+    "estimated_entries": 4500,
+    "reason": "Primary consolidated goods rate schedule PDF not acquired in V4.3. Raw tabular extraction and cross-validation against 2026 amendments impossible without source.",
+    "status": "UNRESOLVED_SOURCE_AND_EXTRACTION"
+  },
+  {
+    "target": "IGST_RATE_SCHEDULE_GOODS",
+    "estimated_entries": 4500,
+    "reason": "Primary consolidated goods rate schedule PDF not acquired in V4.3. Raw tabular extraction and cross-validation against 2026 amendments impossible without source.",
+    "status": "UNRESOLVED_SOURCE_AND_EXTRACTION"
+  },
+  {
+    "target": "SGST_UTGST_RATE_SCHEDULE_GOODS",
+    "estimated_entries": 4500,
+    "reason": "Primary consolidated goods rate schedule PDF not acquired in V4.3. Raw tabular extraction and cross-validation against 2026 amendments impossible without source.",
+    "status": "UNRESOLVED_SOURCE_AND_EXTRACTION"
+  },
+  {
+    "target": "CGST_RATE_SCHEDULE_SERVICES",
+    "estimated_entries": 500,
+    "reason": "Primary consolidated services rate schedule PDF not acquired in V4.3.",
+    "status": "UNRESOLVED_SOURCE_AND_EXTRACTION"
+  },
+  {
+    "target": "EXEMPTIONS_GOODS_SERVICES",
+    "estimated_entries": 800,
+    "reason": "Primary exemptions schedule PDF not acquired in V4.3.",
+    "status": "UNRESOLVED_SOURCE_AND_EXTRACTION"
+  },
+  {
+    "target": "COMPENSATION_CESS_RATES",
+    "estimated_entries": 200,
+    "reason": "Compensation cess rate schedules and 2026 HSNS rules not acquired.",
+    "status": "UNRESOLVED_SOURCE_AND_EXTRACTION"
+  }
+]

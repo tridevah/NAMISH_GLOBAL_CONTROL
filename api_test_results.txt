@@ -1,0 +1,48 @@
+--- DEFAULT API RESPONSE ---
+Total Count: 2136
+Sample Data: [
+  {
+    "id": "5a94c88f-cf9e-4499-88b0-54f87bd52675",
+    "canonical_code": "UNECE_REC20_A1",
+    "standard_code": "A1",
+    "name": "15 °C calorie",
+    "symbol": "cal₁₅",
+    "category": "2",
+    "aliases": [],
+    "status": "INACTIVE",
+    "source": "UNECE_REC20",
+    "source_version": "GitHub datasets/unece-units-of-measure (Redistributed)"
+  },
+  {
+    "id": "0d10cd73-ce23-4206-b96b-a7e2f498d2bc",
+    "canonical_code": "UNECE_REC20_M36",
+    "standard_code": "M36",
+    "name": "30-day month",
+    "symbol": "mo (30 days)",
+    "category": "3.7",
+    "aliases": [],
+    "status": "ACTIVE",
+    "source": "UNECE_REC20",
+    "source_version": "GitHub datasets/unece-units-of-measure (Redistributed)"
+  }
+]
+
+--- SEARCH KGM ---
+Count: 1
+Results: [
+  {
+    "id": "fdd019a1-caf2-4887-bd56-d82043ae4940",
+    "canonical_code": "UNECE_REC20_KGM",
+    "standard_code": "KGM",
+    "name": "kilogram",
+    "symbol": "kg",
+    "category": "1",
+    "aliases": [],
+    "status": "ACTIVE",
+    "source": "UNECE_REC20",
+    "source_version": "GitHub datasets/unece-units-of-measure (Redistributed)"
+  }
+]
+
+--- STATUS INACTIVE ---
+Count: 380

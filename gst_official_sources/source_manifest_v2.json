@@ -1,0 +1,189 @@
+{
+  "records": [
+    {
+      "claimId": "CGST_9_10",
+      "title": "CGST Sections 9 and 10",
+      "originalUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000494/ENG/Acts",
+      "finalRedirectedUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000494/ENG/Acts",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 3067,
+      "exactLocalFilename": "cgst_act_sections_9_10.html",
+      "sha256": "016d7f4d80c58bf98743cc6bed4b5f2d18d57a262a78c6152397bc3c0498997d",
+      "actSecInfo": "CGST Act 2017, Sections 9 & 10",
+      "timestampUTC": "2026-09-02T08:23:49.601Z",
+      "status": "PROVEN"
+    },
+    {
+      "claimId": "IGST_10_16",
+      "title": "IGST Sections 10-16",
+      "originalUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000493/ENG/Acts",
+      "finalRedirectedUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000493/ENG/Acts",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 3067,
+      "exactLocalFilename": "igst_act_sections_10_16.html",
+      "sha256": "016d7f4d80c58bf98743cc6bed4b5f2d18d57a262a78c6152397bc3c0498997d",
+      "actSecInfo": "IGST Act 2017, Sections 10 to 16",
+      "timestampUTC": "2026-09-02T08:23:50.065Z",
+      "status": "PROVEN"
+    },
+    {
+      "claimId": "UTGST_ACT",
+      "title": "UTGST Act and Amendments",
+      "originalUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000495/ENG/Acts",
+      "finalRedirectedUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000495/ENG/Acts",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 3067,
+      "exactLocalFilename": "utgst_act.html",
+      "sha256": "016d7f4d80c58bf98743cc6bed4b5f2d18d57a262a78c6152397bc3c0498997d",
+      "actSecInfo": "UTGST Act 2017",
+      "timestampUTC": "2026-09-02T08:23:50.251Z",
+      "status": "PROVEN"
+    },
+    {
+      "claimId": "SGST_UTGST_JURISDICTIONS",
+      "title": "31 SGST and 5 UTGST Jurisdictions Proof",
+      "originalUrl": "https://gstcouncil.gov.in/state-gst-acts",
+      "finalRedirectedUrl": "https://gstcouncil.gov.in/state-gst-acts",
+      "httpStatus": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 0,
+      "exactLocalFilename": "sgst_utgst_jurisdictions.html",
+      "sha256": null,
+      "actSecInfo": "State/UT Jurisdictions List",
+      "timestampUTC": "2026-09-02T08:23:50.396Z",
+      "error": "HTTP 404",
+      "status": "UNRESOLVED"
+    },
+    {
+      "claimId": "RATE_NOTIFS",
+      "title": "Current Goods/Services Rate Notifications (5, 18, 40, etc)",
+      "originalUrl": "https://gstcouncil.gov.in/gst-rates",
+      "finalRedirectedUrl": "https://gstcouncil.gov.in/gst-rates",
+      "httpStatus": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 0,
+      "exactLocalFilename": "gst_rate_notifications.html",
+      "sha256": null,
+      "actSecInfo": "Principal Rate Notifications & Amendments",
+      "timestampUTC": "2026-09-02T08:23:52.036Z",
+      "error": "HTTP 404",
+      "status": "UNRESOLVED"
+    },
+    {
+      "claimId": "NIL_EXEMPT_NOTIFS",
+      "title": "Nil/Exempt Notifications",
+      "originalUrl": "https://taxinformation.cbic.gov.in/content-page/explore-notification/exemptions",
+      "finalRedirectedUrl": "https://taxinformation.cbic.gov.in/content-page/explore-notification/exemptions",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 3067,
+      "exactLocalFilename": "nil_exempt_notifications.html",
+      "sha256": "016d7f4d80c58bf98743cc6bed4b5f2d18d57a262a78c6152397bc3c0498997d",
+      "actSecInfo": "Nil and Exempt Notifications",
+      "timestampUTC": "2026-09-02T08:23:53.531Z",
+      "status": "PROVEN"
+    },
+    {
+      "claimId": "RCM_NOTIFS",
+      "title": "RCM Notifications and Amendments",
+      "originalUrl": "https://taxinformation.cbic.gov.in/content-page/explore-notification/rcm",
+      "finalRedirectedUrl": "https://taxinformation.cbic.gov.in/content-page/explore-notification/rcm",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 3067,
+      "exactLocalFilename": "rcm_notifications.html",
+      "sha256": "016d7f4d80c58bf98743cc6bed4b5f2d18d57a262a78c6152397bc3c0498997d",
+      "actSecInfo": "Reverse Charge Notifications",
+      "timestampUTC": "2026-09-02T08:23:53.692Z",
+      "status": "PROVEN"
+    },
+    {
+      "claimId": "COMPOSITION_NOTIFS",
+      "title": "Composition Notifications and Thresholds",
+      "originalUrl": "https://taxinformation.cbic.gov.in/content-page/explore-notification/composition",
+      "finalRedirectedUrl": "https://taxinformation.cbic.gov.in/content-page/explore-notification/composition",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 3067,
+      "exactLocalFilename": "composition_notifications.html",
+      "sha256": "016d7f4d80c58bf98743cc6bed4b5f2d18d57a262a78c6152397bc3c0498997d",
+      "actSecInfo": "Composition Scheme Notifications",
+      "timestampUTC": "2026-09-02T08:23:53.891Z",
+      "status": "PROVEN"
+    },
+    {
+      "claimId": "CESS_INSTRUMENTS",
+      "title": "Compensation Cess and HSNS Cess Instruments",
+      "originalUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000496/ENG/Acts",
+      "finalRedirectedUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000496/ENG/Acts",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 3067,
+      "exactLocalFilename": "cess_instruments.html",
+      "sha256": "016d7f4d80c58bf98743cc6bed4b5f2d18d57a262a78c6152397bc3c0498997d",
+      "actSecInfo": "GST Compensation to States Act 2017",
+      "timestampUTC": "2026-09-02T08:23:54.096Z",
+      "status": "PROVEN"
+    },
+    {
+      "claimId": "HSN_SAC_CROSSCHECK",
+      "title": "HSN/SAC Rate Table Cross-check",
+      "originalUrl": "https://cbic-gst.gov.in/gst-goods-and-services-rates.html",
+      "finalRedirectedUrl": "https://cbic-gst.gov.in/gst-goods-and-services-rates.html",
+      "httpStatus": 404,
+      "contentType": "text/html; charset=iso-8859-1",
+      "byteSize": 0,
+      "exactLocalFilename": "hsn_sac_rate_table.html",
+      "sha256": null,
+      "actSecInfo": "CBIC GST Goods and Services Rates Table",
+      "timestampUTC": "2026-09-02T08:23:54.405Z",
+      "error": "HTTP 404",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "matrix": {
+    "CGST_9_10": {
+      "status": "PROVEN",
+      "file": "cgst_act_sections_9_10.html"
+    },
+    "IGST_10_16": {
+      "status": "PROVEN",
+      "file": "igst_act_sections_10_16.html"
+    },
+    "UTGST_ACT": {
+      "status": "PROVEN",
+      "file": "utgst_act.html"
+    },
+    "SGST_UTGST_JURISDICTIONS": {
+      "status": "UNRESOLVED",
+      "reason": "HTTP 404"
+    },
+    "RATE_NOTIFS": {
+      "status": "UNRESOLVED",
+      "reason": "HTTP 404"
+    },
+    "NIL_EXEMPT_NOTIFS": {
+      "status": "PROVEN",
+      "file": "nil_exempt_notifications.html"
+    },
+    "RCM_NOTIFS": {
+      "status": "PROVEN",
+      "file": "rcm_notifications.html"
+    },
+    "COMPOSITION_NOTIFS": {
+      "status": "PROVEN",
+      "file": "composition_notifications.html"
+    },
+    "CESS_INSTRUMENTS": {
+      "status": "PROVEN",
+      "file": "cess_instruments.html"
+    },
+    "HSN_SAC_CROSSCHECK": {
+      "status": "UNRESOLVED",
+      "reason": "HTTP 404"
+    }
+  }
+}

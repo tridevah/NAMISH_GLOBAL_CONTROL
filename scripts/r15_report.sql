@@ -1,0 +1,1 @@
+SELECT entity_type, count(*) FROM staging.geography_imports WHERE release_id = (SELECT id FROM data_imports.releases WHERE release_name = 'LGD_20260826_CORE_R15') GROUP BY entity_type ORDER BY entity_type;

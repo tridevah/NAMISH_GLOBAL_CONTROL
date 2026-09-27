@@ -1,0 +1,1 @@
+docker exec -i disposable_test_123 psql -U postgres -t -c "SELECT id, length(convert_to(raw_body, 'utf8')), encode(digest(convert_to(raw_body, 'utf8'), 'sha256'), 'hex') FROM integration.outbox_events ORDER BY created_at DESC LIMIT 1;"

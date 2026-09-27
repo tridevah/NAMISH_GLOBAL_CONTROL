@@ -1,0 +1,679 @@
+{"code_type":"SAC","code":"99","description":"All Services","parent_code":null,"classification_level":"CHAPTER"}
+{"code_type":"SAC","code":"9954","description":"Construction services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"995411","description":"Construction services of single dwelling or multi dwelling or multi-storied residential buildings","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995412","description":"Construction services of other residential buildings such as old age homes, homeless shelters, hostels and the like","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995413","description":"Construction services of industrial buildings such as buildings used for production activities (used for assembly line activities), workshops, storage buildings and other similar industrial buildings","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995414","description":"Construction services of commercial buildings such as office buildings, exhibition and marriage halls, malls, hotels, restaurants, airports, rail or road terminals, parking garages, petrol and service stations, theatres and other similar buildings","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995415","description":"Construction services of other non-residential buildings such as educational institutions, hospitals, clinics including veterinary clinics, religious establishments, courts, prisons, museums and other similar buildings","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995416","description":"Construction services of other buildings nowhere else classified","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995417","description":"(i) Construction services of commercial buildings such as office buildings, exhibition and marriage halls, malls, hotels, restaurants, airports, rail or road terminals, parking garages, petrol and service stations, theatres and other similar buildings (i...","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995418","description":"Services by way of house-keeping, such as plumbing, carpentering, etc. where the person supplying such service through electronic commerce operator is not liable for registration under sub-section (1) of section 22 of the Central Goods and Services Tax A...","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995419","description":"Services involving repair, alterations, additions, replacements, renovation, maintenance or remodeling of the buildings covered above","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995421","description":"General construction services of highways, streets, roads, railways and airfield runways, bridges and tunnels","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995422","description":"General construction services of harbours, waterways, dams, water mains and lines, irrigation and other waterworks","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995423","description":"General construction services of long-distance underground/ overland/ submarine pipelines, communication and electric power lines (cables); pumping stations and related works; transformer stations and related works","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995424","description":"General construction services of local water and sewage pipelines, electricity and communication cables and related works","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995425","description":"General construction services of mines and industrial plants","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995426","description":"General Construction services of Power Plants and its related infrastructure","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995427","description":"General construction services of outdoor sport and recreation facilities","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995428","description":"General construction services of other civil engineering works nowhere else classified","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995429","description":"Services involving repair, alterations, additions, replacements, renovation, maintenance or remodeling of the constructions covered above","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995431","description":"Demolition services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995432","description":"Site formation and clearance services including preparation services to make sites ready for subsequent construction work, test drilling and boring and core extraction, digging of trenches","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995433","description":"Excavating and earthmoving services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995434","description":"Water well drilling services and septic system installation services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995435","description":"Other site preparation services nowhere else classified","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995439","description":"Services involving repair, alterations, additions, replacements, maintenance of the constructions covered above","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995441","description":"Installation, assembly and erection services of prefabricated buildings","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995442","description":"Installation, assembly and erection services of other prefabricated structures and constructions","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995443","description":"Installation services of all types of street furniture (such as bus shelters, benches, telephone booths, public toilets, and the like)","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995444","description":"Other assembly and erection services nowhere else classified","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995449","description":"Services involving repair, alterations, additions, replacements, maintenance of the constructions covered above","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995451","description":"Pile driving and foundation services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995452","description":"Building framing and roof framing services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995453","description":"Roofing and waterproofing services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995454","description":"Concrete services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995455","description":"Structural steel erection services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995456","description":"Masonry services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995457","description":"Scaffolding services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995458","description":"Other special trade construction services nowhere else classified","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995459","description":"Services involving repair, alterations, additions, replacements, maintenance of the constructions covered above","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995461","description":"Electrical installation services including Electrical wiring and fitting services, fire alarm installation services, burglar alarm system installation services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995462","description":"Water plumbing and drain laying services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995463","description":"Heating, ventilation and air conditioning equipment installation services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995464","description":"Gas fitting installation services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995465","description":"Insulation services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995466","description":"Lift and escalator installation services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995468","description":"Other installation services nowhere else classified","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995469","description":"Services involving repair, alterations, additions, replacements, maintenance of the installations covered above","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995471","description":"Glazing services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995472","description":"Plastering services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995473","description":"Painting services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995474","description":"Floor and wall tiling services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995475","description":"Other floor laying, wall covering and wall papering services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995476","description":"Joinery and carpentry services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995477","description":"Fencing and railing services","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995478","description":"Other building completion and finishing services nowhere else classified","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"995479","description":"Services involving repair, alterations, additions, replacements, maintenance of the completion/finishing works covered above","parent_code":"9954","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9961","description":"Services in wholesale trade","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996111","description":"Services provided for a fee or commission or on contract basis on wholesale trade","parent_code":"9961","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9962","description":"Services in retail trade","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996211","description":"Services provided for a fee or commission or on contract basis on retail trade","parent_code":"9962","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9963","description":"Accommodation, food and beverage services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996311","description":"Room or unit accommodation services provided by Hotels, Inn, Guest House, Club and the like","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996312","description":"Camp site services","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996313","description":"Recreational and vacation camp services","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996321","description":"Room or unit accommodation services for students in student residences","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996322","description":"Room or unit accommodation services provided by Hostels, Camps, Paying Guest and the like","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996329","description":"Other room or unit accommodation services nowhere else classified","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996331","description":"Services provided by restaurants, cafes and similar eating facilities including takeaway services, room services and door delivery of food","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996332","description":"Services provided by Hotels, Inn, Guest House, Club and the like including room services, takeaway services and door delivery of food","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996333","description":"Services provided in canteen and other similar establishments","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996334","description":"Catering Services in exhibition halls, events, marriage halls and other outdoor/indoor functions","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996335","description":"Catering services in trains, flights and the like","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996336","description":"Preparation or supply services of food, edible preparations, alcoholic and non-alcoholic beverages to airlines and other transportation operators","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996337","description":"Other contract food services","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996339","description":"Other food, edible preparations, alcoholic and non-alcoholic beverages serving services nowhere else classified","parent_code":"9963","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9964","description":"Passenger transport services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996411","description":"Local land transport services of passengers by railways, metro, monorail, bus, tramway, autos, three wheelers, scooters and other motor vehicles","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996412","description":"Taxi services including radio taxi and other similar services","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996413","description":"Non-scheduled local bus and coach charter services","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996414","description":"Other land transportation services of passengers","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996415","description":"Local water transport services of passengers by ferries, cruises and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996416","description":"Sightseeing transportation services by rail, land, water and air","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996417","description":"Transport services of passengers by ropeways","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996418","description":"Sightseeing transportation services by rail or road","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996419","description":"Other local transportation services of passengers nowhere else classified","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996421","description":"Long-distance transport services of passengers through rail network by railways, metro and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996422","description":"Long-distance transport services of passengers through road by bus, car, non-scheduled long distance bus and coach services, stage carriage and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996423","description":"Taxi services including radio taxi and other similar services","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996424","description":"Coastal and transoceanic (overseas) water transport services of passengers by Ferries, Cruise Ships and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996425","description":"Domestic/ international scheduled air transport services of passengers","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996426","description":"Domestic/ international non-scheduled air transport services of passengers","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996427","description":"Space transport services of passengers","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996429","description":"Other long-distance transportation services of passengers nowhere else classified","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996431","description":"Long-distance transport service of passengers through rail network by railways","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996432","description":"Scheduled long-distance transport services of passengers through road by bus and coach services including stage carriage, contract carriage and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996433","description":"Non-scheduled long-distance transport services of passengers through road by bus and coach services including stage carriage, contract carriage and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996434","description":"Long-distance transport service of passengers by any motor vehicle other than bus including motorcab, maxicab  and radio taxi","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996439","description":"Other long distance transport service of passengers by land nowhere else specified","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996441","description":"Coastal water transport service of passengers by ferries and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996442","description":"Coastal  water transport service of passengers by cruise ships and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996443","description":"Inland water transport service of passengers by ferries and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996444","description":"Inland water transport service of passengers by cruise ships and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996445","description":"International water transport services of passengers by ferries, cruise ships and the like","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996449","description":"Other long distance transport service of passengers by water nowhere else specified","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996451","description":"Domestic scheduled air transport service of passengers in economy class","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996452","description":"Domestic scheduled air transport service of passengers in other than economy class","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996453","description":"Domestic non-scheduled air transport service of passengers","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996454","description":"International scheduled air transport service of passengers in economy class","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996455","description":"International scheduled air transport service of passengers in other than economy class","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996456","description":"International non-scheduled air transport service of passengers","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996459","description":"Other long-distance transportation service of passengers by air nowhere else specified including space transport service of passengers","parent_code":"9964","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9965","description":"Goods Transport Services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996511","description":"Road transport services of Goods including letters, parcels, live animals, household and office furniture, containers and the like by refrigerator vehicles, trucks, trailers, man or animal drawn vehicles or any other vehicles","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996512","description":"Railway transport services of Goods including letters, parcels, live animals, household and office furniture, intermodal containers, bulk cargo and the like","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996513","description":"Transport services of petroleum and natural gas, water, sewerage and other goods via pipeline","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996514","description":"Transport services via pipeline of other chemicals, coal slurry and of other goods","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996515","description":"Moving services of household goods, office equipment and furniture","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996516","description":"Road transport services of goods including letters, parcels, live animals, containers and the like in referigerated vehicles, trucks, trailers or any other motor vehicle or in man or animal driven vehicles by any person other than a goods transport agency","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996517","description":"Railway transport services of goods including letters, parcels, live animals, household and office furniture, intermodal containers, bulk cargo and the like by  Container Transport Operators (CTOs) other than Railways","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996518","description":"Transport of goods by ropeways","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996519","description":"Other land transport services of goods nowhere else classified","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996521","description":"Coastal and transoceanic (overseas) water transport services of goods by refrigerator vessels, tankers, bulk cargo vessels, container ships and the like","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996522","description":"Inland water transport services of goods by refrigerator vessels, tankers and other vessels","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996523","description":"International water transport services of goods by refrigerated vessels,  tankers, bulk cargo vessels, container ships and the like","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996531","description":"Air transport services of letters and parcels and other goods","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996532","description":"Space transport services of freight","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996540","description":"Multimodal Transport of goods from a place in India to another place in India","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996541","description":"Multimodal Transport of goods from a place in India to another place in India","parent_code":"9965","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9966","description":"Rental services of transport vehicles with operators","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996601","description":"Rental services of road vehicles including buses, coaches, cars, trucks and other motor vehicles, operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996602","description":"Rental services of water vessels including passenger vessels, freight vessels and the like operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996603","description":"Rental services of aircraft including passenger aircrafts, freight aircrafts and the like operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996604","description":"Rental services of passenger vessels  with operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996605","description":"Rental services of goods vessels with operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996606","description":"Rental service of passenger aircraft with operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996607","description":"Rental service of goods aircraft with operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996609","description":"Rental services of other transport vehicles nowhere else classified operator","parent_code":"9966","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9967","description":"Supporting services in transport","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996711","description":"Container handling services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996712","description":"Customs House Agent services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996713","description":"Clearing and forwarding services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996719","description":"Other cargo and baggage handling services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996721","description":"Refrigerated storage services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996722","description":"Bulk liquid or gas storage services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996729","description":"Other storage and warehousing services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996731","description":"Railway pushing or towing services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996739","description":"Other supporting services for railway transport nowhere else classified","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996741","description":"Bus station services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996742","description":"Operation services of national highways, state highways, expressways, roads and streets; bridges and tunnel operation services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996743","description":"Parking lot services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996744","description":"Towing services for commercial and private vehicles","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996749","description":"Other supporting services for road transport nowhere else classified","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996751","description":"Port and waterway operation services (excluding cargo handling) such as operation services of ports, docks, light houses, light ships and the like","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996752","description":"Pilotage and berthing services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996753","description":"Vessel salvage and refloating services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996754","description":"Maintenance, repair or overhaul services in respect of ships and other vessels, their engines and other components or parts","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996759","description":"Other supporting services for water transport nowhere else classified","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996761","description":"Airport operation services (excluding cargo handling)","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996762","description":"Air traffic control services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996763","description":"Other supporting services for air transport","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996764","description":"Supporting services for space transport","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996768","description":"Other supporting services for air transport","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996769","description":"Supporting services for space transport","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996791","description":"Goods transport agency services for road transport","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996792","description":"Goods transport agency services for other modes of transport","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996793","description":"Other goods transport services","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996799","description":"Other supporting transport services nowhere else classified","parent_code":"9967","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9968","description":"Postal and courier services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996811","description":"Postal services including post office counter services, mail box rental services","parent_code":"9968","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996812","description":"Courier services","parent_code":"9968","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996813","description":"Local delivery services","parent_code":"9968","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996819","description":"Other Delivery Services nowhere else classified","parent_code":"9968","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9969","description":"Electricity, gas, water and other distribution services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"996911","description":"Electricity transmission services","parent_code":"9969","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996912","description":"Electricity distribution services","parent_code":"9969","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996913","description":"Gas distribution services","parent_code":"9969","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996921","description":"Water distribution services","parent_code":"9969","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996922","description":"Services involving distribution of steam, hot water and air conditioning supply and the like","parent_code":"9969","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"996929","description":"Other similar services","parent_code":"9969","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9971","description":"Financial and related services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"997111","description":"Central banking services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997112","description":"Deposit services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997113","description":"Credit-granting services including stand-by commitment, guarantees and securities","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997114","description":"Financial leasing services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997115","description":"Transfer of the right to use any goods for any purpose (whether or not for a specified period) for cash, deferred payment or other valuable consideration.","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997116","description":"Any transfer of right in goods or of undivided share in goods without the transfer of title thereof.","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997119","description":"Other financial services (except investment banking, insurance services and pension services)","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997120","description":"Investment banking services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997131","description":"pension services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997132","description":"Life insurance services  (excluding reinsurance services)","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997133","description":"Accident and health insurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997134","description":"Motor vehicle insurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997135","description":"Marine, aviation, and other transport insurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997136","description":"Freight insurance services and travel insurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997137","description":"Other property insurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997138","description":"Freight insurance services and travel insurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997139","description":"Other non-life insurance services (excluding reinsurance services)","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997141","description":"Life reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997142","description":"Accident and health reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997143","description":"Motor vehicle reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997144","description":"Marine, aviation and other transport reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997145","description":"Freight reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997146","description":"Other property reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997147","description":"Other property reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997149","description":"Other non-life reinsurance services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997151","description":"Services related to investment banking such as mergers and acquisition services, corporate finance and venture capital services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997152","description":"Brokerage and related securities and commodities services including commodity exchange services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997153","description":"Portfolio management services except pension funds","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997154","description":"Trust and custody services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997155","description":"Services related to the administration of financial markets","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997156","description":"Financial consultancy services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997157","description":"Foreign exchange services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997158","description":"Financial transactions processing and clearing house services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997159","description":"Other services auxiliary to financial services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997161","description":"Services auxiliary to insurance and pensions","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997162","description":"Insurance claims adjustment services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997163","description":"Actuarial services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997164","description":"Pension fund management services","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997169","description":"Other services auxiliary to insurance and pensions","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997171","description":"Services of holding equity of subsidiary companies","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997172","description":"Services of holding securities and other assets of trusts and funds and similar financial entities","parent_code":"9971","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9972","description":"Real estate services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"997211","description":"Rental or leasing services involving own or leased residential property","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997212","description":"Rental or leasing services involving own or leased non-residential property","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997213","description":"Trade services of buildings","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997214","description":"Trade services of time-share properties","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997215","description":"Trade services of vacant and subdivided land","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997219","description":"Other real estate services involving owned or leased property","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997221","description":"Property management services on a fee or commission basis or on contract basis","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997222","description":"Building sales on a fee or commission basis or on contract basis","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997223","description":"Land sales on a fee or commission basis or on contract basis","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997224","description":"Real estate appraisal services on a fee or commission basis or on contract basis","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997229","description":"Other real estate services on a fee or commission basis or on contract basis","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997231","description":"Services by way of grant of development rights, FSI or additional FSI","parent_code":"9972","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9973","description":"Leasing or rental services without operator","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"997311","description":"Leasing or rental services concerning transport equipments including containers, without operator","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997312","description":"Leasing or rental services concerning agricultural machinery and equipment without operator","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997313","description":"Leasing or rental services concerning construction machinery and equipment without operator","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997314","description":"Leasing or rental services concerning office machinery and equipment (except computers) without operator","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997315","description":"Leasing or rental services concerning computers without operators","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997316","description":"Leasing or rental services concerning telecommunications equipment without operator","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997317","description":"Leasing or rental services concerning other machinery and equipment without operator","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997318","description":"Transfer of the right to use any goods for any purpose (whether or not for a specified period) for cash, deferred payment or other valuable consideration.","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997319","description":"Leasing or rental services concerning other machinery and equipments without operator","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997321","description":"Leasing or rental services concerning televisions, radios, video cassette recorders, projectors, audio systems and related equipment and accessories (home entertainment equipment )","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997322","description":"Leasing or rental services concerning video tapes and disks (home entertainment equipment )","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997323","description":"Leasing or rental services concerning furniture and other household appliances","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997324","description":"Leasing or rental services concerning pleasure and leisure equipment","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997325","description":"Leasing or rental services concerning household linen","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997326","description":"Leasing or rental services concerning textiles, clothing and footwear","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997327","description":"Leasing or rental services concerning do-it-yourself machinery and equipment","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997328","description":"Transfer of the right to use any goods for any purpose (whether or not for a specified period) for cash, deferred payment or other valuable consideration.","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997329","description":"Leasing or rental services concerning other goods","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997331","description":"Licensing services for the right to use computer software and databases","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997332","description":"Licensing services for the right to broadcast and show original films, sound recordings, radio and television programme and the like","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997333","description":"Licensing services for the right to reproduce original art works","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997334","description":"Licensing services for the right to reprint and copy manuscripts, books, journals and periodicals","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997335","description":"Licensing services for the right to use research and development  products","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997336","description":"Licensing services for the right to use trademarks and franchises","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997337","description":"Licensing services for the right to use minerals including its exploration and evaluation","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997338","description":"Licensing services for right to use other natural resources including telecommunication spectrum","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"997339","description":"Licensing services for the right to use other intellectual property products and other resources nowhere else classified","parent_code":"9973","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9981","description":"Research and development services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998111","description":"Research and experimental development services in natural sciences","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998112","description":"Research and experimental development services in engineering and technology","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998113","description":"Research and experimental development services in medical sciences and pharmacy","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998114","description":"Research and experimental development services in agricultural sciences","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998121","description":"Research and experimental development services in social sciences","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998122","description":"Research and experimental development services in humanities","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998130","description":"Interdisciplinary research and experimental development services","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998141","description":"Research and development originals in pharmaceuticals","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998142","description":"Research and development originals in agriculture","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998143","description":"Research and development originals in biotechnology","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998144","description":"Research and development originals in computer related sciences","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998145","description":"Research and development originals in other fields nowhere else classified","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998149","description":"Research and development originals in other fields nowhere else classified","parent_code":"9981","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9982","description":"Legal and accounting services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998211","description":"Legal advisory and representation services concerning criminal law","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998212","description":"Legal advisory and representation services concerning other fields of law","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998213","description":"Legal documentation and certification services concerning patents, copyrights and other intellectual property rights","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998214","description":"Legal documentation and certification services concerning other documents","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998215","description":"Arbitration and conciliation services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998216","description":"Other legal services nowhere else classified","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998219","description":"Other legal services nowhere else classified","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998221","description":"Financial auditing services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998222","description":"Accounting and bookkeeping services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998223","description":"Payroll services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998224","description":"Other similar services nowhere else classified","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998229","description":"Other similar services nowhere else classified","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998231","description":"Corporate tax consulting and preparation services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998232","description":"Individual tax preparation and planning services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998239","description":"Other tax consultancy and preparation services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998240","description":"Insolvency and receivership services","parent_code":"9982","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9983","description":"Other professional, technical and business services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998311","description":"Management consulting and management services including financial, strategic, human resources, marketing, operations and supply chain management","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998312","description":"Business consulting services including public relations services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998313","description":"Information technology consulting and support services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998314","description":"Information technology design and development services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998315","description":"Hosting and information technology infrastructure provisioning services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998316","description":"Information technology infrastructure and network management services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998319","description":"Other information technology services nowhere else classified","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998321","description":"Architectural advisory services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998322","description":"Architectural services for residential building projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998323","description":"Architectural services for non-residential building projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998324","description":"Historical restoration architectural services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998325","description":"Urban planning services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998326","description":"Rural land planning services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998327","description":"Project site master planning services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998328","description":"Landscape architectural services and advisory services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998329","description":"Other architectural services, urban and land planning and landscape architectural services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998331","description":"Engineering advisory services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998332","description":"Engineering services for building projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998333","description":"Engineering services for industrial and manufacturing projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998334","description":"Engineering services for transportation projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998335","description":"Engineering services for power projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998336","description":"Engineering services for telecommunications and broadcasting projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998337","description":"Engineering services for waste management projects (hazardous and non-hazardous), for water, sewerage and drainage projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998338","description":"Engineering services for other projects nowhere else classified","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998339","description":"Project management services for construction projects","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998341","description":"Geological and geophysical consulting services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998342","description":"Subsurface surveying services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998343","description":"Mineral exploration and evaluation","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998344","description":"Surface surveying and map-making services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998345","description":"Weather forecasting and meteorological services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998346","description":"Technical testing and analysis services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998347","description":"Certification of ships, aircraft, dams, and the like","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998348","description":"Certification and authentication of works of art","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998349","description":"Other technical and scientific services nowhere else classified","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998351","description":"Veterinary services for pet animals","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998352","description":"Veterinary services for livestock","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998359","description":"Other veterinary services nowhere else classified","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998361","description":"Advertising Services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998362","description":"Purchase or sale of advertising space or time, on commission","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998363","description":"Sale of advertising space in print media (except on commission)","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998364","description":"Sale of television and radio advertising time","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998365","description":"Sale of Internet advertising space","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998366","description":"Sale of other advertising space or time (except on commission)","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998371","description":"Market research services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998372","description":"Public opinion polling services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998381","description":"Portrait photography services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998382","description":"Advertising and related photography services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998383","description":"Event photography and event videography services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998384","description":"Specialty photography services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998385","description":"Restoration and retouching services of photography","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998386","description":"Photographic and videographic processing services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998387","description":"Other photography and videography and their processing services nowhere else classified","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998389","description":"Other photography and videography and their processing services nowhere else classified","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998391","description":"Specialty design services including interior design, fashion design, industrial design and other specialty design services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998392","description":"Design originals","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998393","description":"Scientific and technical consulting services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998394","description":"Original compilations of facts or information","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998395","description":"Translation and interpretation services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998396","description":"Trademarks and franchises","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998397","description":"Sponsorship services and brand promotion services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998398","description":"Sponsorship services and brand promotion services","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998399","description":"Other professional, technical and business services nowhere else classified","parent_code":"9983","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9984","description":"Telecommunications, broadcasting and information supply services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998411","description":"Carrier services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998412","description":"Fixed telephony services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998413","description":"Mobile telecommunications services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998414","description":"Private network services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998415","description":"Data transmission services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998419","description":"Other telecommunications services including fax services, telex services nowhere else classified","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998421","description":"Internet backbone services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998422","description":"Internet access services in wired and wireless mode","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998423","description":"Fax, telephony over the Internet","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998424","description":"Audio conferencing and video conferencing over the Internet","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998429","description":"Other internet telecommunications services nowhere else classified","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998431","description":"On-line text based information such as online books, newspapers, periodicals, directories and the like","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998432","description":"On-line audio content","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998433","description":"On-line video content","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998434","description":"Software downloads","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998435","description":"Supply consisting only of e-book.","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998439","description":"Other on-line contents nowhere else classified","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998441","description":"News agency services to newspapers and periodicals","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998442","description":"Services of independent journalists and press photographers","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998443","description":"News agency services to audiovisual media","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998451","description":"Library services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998452","description":"Operation services of public archives including digital archives","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998453","description":"Operation services of historical archives including digital archives","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998461","description":"Radio broadcast originals","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998462","description":"Television broadcast originals","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998463","description":"Radio channel programmes","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998464","description":"Television channel programmes","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998465","description":"Broadcasting services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998466","description":"Home programme distribution services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998469","description":"Other broadcasting, programming and programme distribution services","parent_code":"9984","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9985","description":"Support services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998511","description":"Executive or retained personnel search services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998512","description":"Permanent placement services, other than executive search services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998513","description":"Contract staffing services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998514","description":"Temporary staffing services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998515","description":"Long-term staffing (pay rolling) services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998516","description":"Temporary staffing-to-permanent placement services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998517","description":"Co-employment staffing services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998519","description":"Other employment and labour supply services nowhere else classified","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998521","description":"Investigation services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998522","description":"Security consulting services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998523","description":"Security systems services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998524","description":"Armoured car services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998525","description":"Guard services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998526","description":"Training of guard dogs","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998527","description":"Polygraph services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998528","description":"Fingerprinting services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998529","description":"Other security services nowhere else classified","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998531","description":"Disinfecting and exterminating services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998532","description":"Window cleaning services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998533","description":"General cleaning services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998534","description":"Specialised cleaning services for reservoirs and tanks","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998535","description":"Sterilisation of objects or premises (operating rooms)","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998536","description":"Furnace and chimney cleaning services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998537","description":"Exterior cleaning of buildings of all types","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998538","description":"Cleaning of transportation equipment","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998539","description":"Other cleaning services nowhere else classified","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998540","description":"Packaging services of goods for others","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998541","description":"Parcel packing and gift wrapping","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998542","description":"Coin and currency packing services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998543","description":"Coin and currency packing services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998549","description":"Other packaging services nowhere else classified","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998551","description":"Reservation services for transportation","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998552","description":"Reservation services for accommodation, cruises and package tours","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998553","description":"Reservation services for convention centres, congress centres and exhibition halls","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998554","description":"Reservation services for event tickets, cinema halls, entertainment and recreational services and other reservation services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998555","description":"Tour operator services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998556","description":"Tourist guide services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998557","description":"Tourism promotion and visitor information services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998559","description":"Other travel arrangement and related services nowhere else classified","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998591","description":"Credit reporting and rating services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998592","description":"Collection agency services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998593","description":"Telephone-based support services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998594","description":"Combined office administrative services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998595","description":"Specialised office support services such as duplicating services, mailing services, document preparation and the like","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998596","description":"Events, Exhibitions, Conventions and trade shows organisation and assistance services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998597","description":"Landscape care and maintenance services","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998598","description":"Other information services nowhere else classified","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998599","description":"Other support services nowhere else classified","parent_code":"9985","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9986","description":"Support services to agriculture, hunting, forestry, fishing, mining and utilities","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998611","description":"Support services to crop production","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998612","description":"Animal husbandry services","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998613","description":"Support services to hunting","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998614","description":"Support services to forestry and logging","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998615","description":"Support services to fishing","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998619","description":"Other support services to agriculture, hunting, forestry and fishing","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998621","description":"Support services to oil and gas extraction","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998622","description":"Support services to other mining nowhere else classified","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998631","description":"Support services to electricity transmission and distribution","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998632","description":"Support services to gas distribution","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998633","description":"Support services to water distribution","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998634","description":"Support services to Distribution services of steam, hot water and air-conditioning supply","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998635","description":"Other support services to electricity , gas and water distribution","parent_code":"9986","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9987","description":"Maintenance, repair and installation (except construction) services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998711","description":"Maintenance and repair services of fabricated metal products, except machinery and equipment","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998712","description":"Maintenance and repair services of office and accounting machinery","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998713","description":"Maintenance and repair services of computers and peripheral equipment","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998714","description":"Maintenance and repair services of transport machinery and equipment","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998715","description":"Maintenance and repair services of electrical household appliances","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998716","description":"Maintenance and repair services of telecommunication equipments and apparatus","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998717","description":"Maintenance and repair services of commercial and industrial machinery","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998718","description":"Maintenance and repair services of elevators and escalators","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998719","description":"Maintenance and repair services of other machinery and equipments","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998721","description":"Repair services of footwear and leather goods","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998722","description":"Repair services of watches, clocks and jewellery","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998723","description":"Repair services of garments and household textiles","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998724","description":"Repair services of furniture","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998725","description":"Repair services of bicycles","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998726","description":"Maintenance and repair services of musical instruments","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998727","description":"Repair services for photographic equipment and cameras","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998729","description":"Maintenance and repair services of other goods nowhere else classified","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998731","description":"Installation services of fabricated metal products, except machinery and equipment","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998732","description":"Installation services of industrial, manufacturing and service industry machinery and equipment","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998733","description":"Installation services of office and accounting machinery and computers","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998734","description":"Installation services of radio, television and communications equipment and apparatus","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998735","description":"Installation services of professional medical machinery and equipment, and precision and optical instruments","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998736","description":"Installation services of electrical machinery and apparatus nowhere else classified","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998739","description":"Installation services of other goods nowhere else classified","parent_code":"9987","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9988","description":"Manufacturing services on physical inputs (goods) owned by others","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998811","description":"Meat processing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998812","description":"Fish processing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998813","description":"Fruit and vegetables processing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998814","description":"Vegetable and animal oil and fat manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998815","description":"Dairy product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998816","description":"Other food product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998817","description":"Prepared animal feeds manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998818","description":"Beverage manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998819","description":"Tobacco manufacturing services nowhere else classified","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998821","description":"Textile manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998822","description":"Wearing apparel manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998823","description":"Leather and leather product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998829","description":"Textile, wearing apparel and leather manufacturing services other than services by way of job work specified above.","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998831","description":"Wood and wood product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998832","description":"Paper and paper product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998839","description":"Wood and paper manufacturing services other than services by way of job work specified above","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998841","description":"Coke and refined petroleum product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998842","description":"Chemical product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998843","description":"Pharmaceutical product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998849","description":"Petroleum, chemical and pharmaceutical products manufacturing services other than services by way of job work specified above","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998851","description":"Rubber and plastic product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998852","description":"Plastic product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998853","description":"Other non-metallic mineral product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998859","description":"Rubber, plastic and other non-metallic mineral product manufacturing services, other than services by way of job work specified above.","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998860","description":"Basic metal manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998861","description":"Services by way of job work in relation to basic metals","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998869","description":"Basic metal manufacturing services, other than services by way of job work specified above","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998871","description":"Structural metal product, tank, reservoir and steam generator manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998872","description":"Weapon and ammunition manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998873","description":"Other fabricated metal product manufacturing and metal treatment services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998874","description":"Computer, electronic and optical product manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998875","description":"Electrical equipment manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998876","description":"General-purpose machinery manufacturing services nowhere else classified","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998877","description":"Special-purpose machinery manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998879","description":"Fabricated metal product, machinery and equipment manufacturing services, other than services by way of job work specified above","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998881","description":"Motor vehicle and trailer manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998882","description":"Other transport equipment manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998883","description":"Services  by way of job work in relation to bus body building","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998889","description":"Transport equipment manufacturing services, other than job work services specified above","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998891","description":"Furniture manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998892","description":"Jewellery manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998893","description":"Imitation jewellery manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998894","description":"Musical instrument manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998895","description":"Sports goods manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998896","description":"Game and toy manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998897","description":"Medical and dental instrument and supply manufacturing services","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998898","description":"Other manufacturing services nowhere else classified","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998899","description":"Other manufacturing services nowhere else classified","parent_code":"9988","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9989","description":"Other manufacturing services; publishing, printing and reproduction services; materials recovery services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"998911","description":"Publishing, on a fee or contract basis","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998912","description":"Printing and reproduction services of recorded media, on a fee or contract basis","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998920","description":"Moulding, pressing, stamping, extruding and similar plastic manufacturing services","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998931","description":"Iron and steel casting services","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998932","description":"Non-ferrous metal casting services","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998933","description":"Metal forging, pressing, stamping, roll forming and powder metallurgy services","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998941","description":"Metal waste and scrap recovery (recycling) services, on a fee or contract basis","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998942","description":"Non-metal waste and scrap recovery (recycling) services, on a fee or contract basis","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"998950","description":"Other manufacturing services, publishing, printing and reproduction services, materials recovery services nowhere else classified","parent_code":"9989","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9991","description":"Public administration and other services provided to the community as a whole; compulsory social security services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999111","description":"Overall Government public services","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999112","description":"Public administrative services related to the provision of educational, health care, cultural and other social services, excluding social security service","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999113","description":"Public administrative services related to the more efficient operation of business","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999119","description":"Other administrative services of the government nowhere else classified","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999121","description":"Public administrative services related to External Affairs, Diplomatic and Consular services abroad","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999122","description":"Services related to foreign economic aid","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999123","description":"Services related to foreign military aid","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999124","description":"Military defence services","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999125","description":"Civil defence services","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999126","description":"Police and fire protection services","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999127","description":"Public administrative services related to law courts","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999128","description":"Administrative services related to the detention or rehabilitation of criminals","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999129","description":"Public administrative services related to other public order and safety affairs nowhere else classified","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999131","description":"Administrative services related to sickness, maternity or temporary disablement benefit schemes","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999132","description":"Administrative services related to government employee pension schemes; old-age disability or survivors' benefit schemes, other than for government employees","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999133","description":"Administrative services related to unemployment compensation benefit schemes","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999134","description":"Administrative services related to family and child allowance programmes","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999139","description":"Other administrative services related to compulsory social security schemes","parent_code":"9991","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9992","description":"Education services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999210","description":"Pre-primary education services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999220","description":"Primary education services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999231","description":"Secondary education services, general","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999232","description":"Secondary education services, technical and vocational","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999241","description":"Higher education services, general","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999242","description":"Higher education services, technical","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999243","description":"Higher education services, vocational","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999249","description":"Other higher education services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999250","description":"Specialised education services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999259","description":"Specialised education services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999291","description":"Cultural education services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999292","description":"Sports and recreation education services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999293","description":"Commercial training and coaching services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999294","description":"Other education and training services nowhere else classified","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999295","description":"services involving conduct of examination for admission to educational institutions","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999299","description":"Other Educational support services","parent_code":"9992","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9993","description":"Human health and social care services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999311","description":"Inpatient services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999312","description":"Medical and dental services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999313","description":"Childbirth and related services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999314","description":"Nursing and physiotherapeutic services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999315","description":"Ambulance services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999316","description":"Medical laboratory and diagnostic-imaging services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999317","description":"Blood, sperm and organ bank services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999318","description":"Blood, sperm and organ bank services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999319","description":"Other human health services including homeopathy, unani, ayurveda, naturopathy, acupuncture and the like","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999321","description":"Residential health-care services other than by hospitals","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999322","description":"Residential care services for the elderly and persons with disabilities","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999331","description":"Residential care services for children suffering from mental retardation, mental health illnesses or substance abuse","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999332","description":"Other social services with accommodation for children","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999333","description":"Residential care services for adults suffering from mental retardation, mental health illnesses or substance abuse","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999334","description":"Other social services with accommodation for adults","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999341","description":"Vocational rehabilitation services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999349","description":"Other social services without accommodation for the elderly and disabled nowhere else classified","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999351","description":"Child day-care services","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999352","description":"Guidance and counseling services nowhere else classified related to children","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999353","description":"Welfare services without accommodation","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999359","description":"Other social services without accommodation nowhere else classified","parent_code":"9993","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9994","description":"Sewage and waste collection, treatment and disposal and other environmental protection services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999411","description":"Sewerage and sewage treatment services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999412","description":"Septic tank emptying and cleaning services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999413","description":"Septic tank emptying and cleaning services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999419","description":"Other sewerage, sewage treatment and septic tank cleaning services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999421","description":"Collection services of hazardous waste","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999422","description":"Collection services of non-hazardous recyclable materials","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999423","description":"General waste collection services, residential","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999424","description":"General waste collection services, other nowhere else classified","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999429","description":"Other sewage and waste collection services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999431","description":"Waste preparation, consolidation and storage services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999432","description":"Hazardous waste treatment and disposal services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999433","description":"Non-hazardous waste treatment and disposal services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999439","description":"Other waste treatment and disposal services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999441","description":"Site remediation and clean-up services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999442","description":"Containment, control and monitoring services and other site remediation services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999443","description":"Building remediation services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999449","description":"Other remediation services nowhere else classified","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999451","description":"Sweeping and snow removal services","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999459","description":"Other sanitation services nowhere else classified","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999490","description":"Other environmental protection services nowhere else classified","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999491","description":"Services by way of treatment or disposal of biomedical waste or the processes incidental thereto by a common biomedical waste treatment facility to a clinical establishment.","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999499","description":"Other environmental protection services nowhere else classified","parent_code":"9994","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9995","description":"Services of membership organisations","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999511","description":"Services furnished by business and employers organisations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999512","description":"Services furnished by professional organisations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999520","description":"Services furnished by trade unions","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999591","description":"Religious services","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999592","description":"Services furnished by political organisations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999593","description":"Services furnished by human rights organisations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999594","description":"Cultural and recreational associations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999595","description":"Services furnished by environmental advocacy groups","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999596","description":"Services provided by youth associations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999597","description":"Other civic and social organisations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999598","description":"Home owners associations","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999599","description":"Services provided by other membership organisations nowhere else classified","parent_code":"9995","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9996","description":"Recreational, cultural and sporting services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999611","description":"Sound recording services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999612","description":"Motion picture, videotape, television and radio programme production services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999613","description":"Audiovisual post-production services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999614","description":"Motion picture, videotape and television programme distribution services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999615","description":"Motion picture projection services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999616","description":"Services by way of admission to exhibition of cinematograph films where price of admission ticket is one hundred rupees or less","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999617","description":"Services by way of admission to exhibition of cinematograph films where price of admission ticket is above one hundred rupees.","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999621","description":"Performing arts event promotion and organisation services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999622","description":"Performing arts event production and presentation services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999623","description":"Performing arts facility operation services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999624","description":"Services by way of admission or access to circus, Indian classical dance including folk dance, theatrical performance, drama [or planetarium], ballet etc.","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999629","description":"Other performing arts and live entertainment services nowhere else classified","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999631","description":"Services of performing artists including actors, readers, musicians, singers, dancers, television personalities, independent models and the like","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999632","description":"Services of authors, composers, sculptors and other artists, except performing artists","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999633","description":"Original works of authors, composers and other artists except performing artists, painters and sculptors","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999641","description":"Museum and preservation services of historical sites and buildings","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999642","description":"Botanical, zoological and nature reserve services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999651","description":"Sports and recreational sports event promotion and organisation services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999652","description":"Sports and recreational sports facility operation services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999653","description":"Services by way of admission to sporting events like Indian Premier League.","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999659","description":"Other sports and recreational sports services nowhere else classified","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999661","description":"Services of athletes","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999662","description":"Support services related to sports and recreation","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999691","description":"Amusement park and similar attraction services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999693","description":"Coin-operated amusement machine services","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999699","description":"Other recreation and amusement services nowhere else classified","parent_code":"9996","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9997","description":"Other services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999711","description":"Coin-operated laundry services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999712","description":"Dry-cleaning services (including fur product cleaning services)","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999713","description":"Other textile cleaning services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999714","description":"Pressing services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999715","description":"Dyeing and colouring services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999719","description":"Other washing, cleaning and dyeing services nowhere else classified","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999721","description":"Hairdressing and barbers services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999722","description":"Cosmetic treatment (including cosmetic or plastic surgery), manicuring and pedicuring services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999723","description":"Physical well-being services including health club and fitness centre","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999729","description":"Other beauty treatment services nowhere else classified","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999731","description":"Cemeteries and cremation services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999732","description":"Undertaking services","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999791","description":"Services involving commercial use or exploitation of any event","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999792","description":"Agreeing to do an act","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999793","description":"Agreeing to refrain from doing an act","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999794","description":"Agreeing to tolerate an act","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999795","description":"Conduct of religious ceremonies or rituals by persons","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"999799","description":"Other services nowhere else classified","parent_code":"9997","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9998","description":"Domestic services","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999800","description":"Domestic services both part time and full time","parent_code":"9998","classification_level":"SERVICE_CODE"}
+{"code_type":"SAC","code":"9999","description":"Services provided by extraterritorial organisations and bodies","parent_code":"99","classification_level":"HEADING"}
+{"code_type":"SAC","code":"999900","description":"Services provided by extraterritorial organisations and bodies","parent_code":"9999","classification_level":"SERVICE_CODE"}

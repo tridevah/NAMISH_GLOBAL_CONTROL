@@ -1,0 +1,29 @@
+[
+  {
+    "rule_type": "RCM_GOODS",
+    "condition": "Cashew nuts, not shelled or peeled",
+    "supplier": "Agriculturist",
+    "recipient": "Registered Person",
+    "effective_from": "2017-07-01",
+    "status": "ACTIVE",
+    "provenance": "04/2017-Central Tax (Rate)"
+  },
+  {
+    "rule_type": "RCM_SERVICES",
+    "condition": "GTA Services",
+    "supplier": "Goods Transport Agency",
+    "recipient": "Registered Person",
+    "effective_from": "2025-07-01",
+    "status": "ACTIVE",
+    "provenance": "13/2017-Central Tax (Rate) as amended by 07/2025"
+  },
+  {
+    "rule_type": "SEC_9_4_RCM",
+    "condition": "Promoter purchasing from unregistered",
+    "supplier": "Unregistered",
+    "recipient": "Promoter",
+    "effective_from": "2019-04-01",
+    "status": "ACTIVE",
+    "provenance": "07/2019-Central Tax (Rate)"
+  }
+]

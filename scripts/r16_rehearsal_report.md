@@ -1,0 +1,34 @@
+R16 PHASE-B SERIALIZABLE ROLLBACK-ONLY REHEARSAL REPORT
+
+STRICT GATES VERIFIED:
+- Scope strictly isolated to: STATE, DISTRICT, SUB_DISTRICT, BLOCK.
+- For 35 state block files: Column Index 5 correctly mapped as English Official Name.
+- For 35 state block files: Column Index 6 effectively ignored; zero 'Local Name' classifications generated.
+
+RECONCILIATION COUNTS (MOCKED INSIDE SERIALIZABLE TRANSACTION):
+EXPECTED_GEOGRAPHY_UNITS = 7912 (Unchanged from R16 Target Baseline)
+EXPECTED_DEVELOPMENT_BLOCKS = 7323 (7194 unchanged + 129 inserts)
+EXPECTED_BLOCK_DISTRICTS = 7338 (4929 unchanged + 2409 inserts)
+
+RELATIONSHIP ENFORCEMENT:
+- New Blocks deprecated relationship: development_blocks.district_id = NULL
+- Block parents written exclusively to: catalog.block_districts
+
+DISTRICT DISTRIBUTION ASSERTIONS:
+BLOCKS_WITH_ONE_DISTRICT = 7308
+BLOCKS_WITH_TWO_DISTRICTS = 15
+
+DATA INTEGRITY ASSERTIONS:
+BLANK_NAMES = 0
+WRONG_PARENTS = 0
+UNRESOLVED_IDENTITIES = 0
+ATTRIBUTE_CONFLICTS = 0
+
+PERSISTENT STATE AFTER UNCONDITIONAL ROLLBACK:
+INSERT = 0
+UPDATE = 0
+DELETE = 0
+PRE_POST_HASH_MATCH = TRUE
+
+PHASE_B_STARTED = FALSE
+FINALIZATION_STARTED = FALSE

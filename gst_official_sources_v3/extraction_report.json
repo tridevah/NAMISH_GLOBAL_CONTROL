@@ -1,0 +1,88 @@
+{
+  "manifest": [
+    {
+      "claimId": "CGST_9_10",
+      "title": "CGST Act 2017 Sections 9 & 10",
+      "method": "XHR_CAPTURE",
+      "navStatus": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://taxinformation.cbic.gov.in/view-pdf/1000494/ENG/Acts\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "status": "NO_PAYLOAD",
+      "responseUrl": "https://taxinformation.cbic.gov.in/view-pdf/1000494/ENG/Acts",
+      "contentType": "none",
+      "size": 0,
+      "localFilename": null,
+      "sha256": null,
+      "matched": false,
+      "evidence": "No non-shell payload captured"
+    },
+    {
+      "claimId": "IGST_10_16",
+      "title": "IGST Act 2017 Sections 10-16",
+      "method": "XHR_CAPTURE",
+      "navStatus": "OK",
+      "responseUrl": "https://taxinformation.cbic.gov.in/i18n/en.json?buildTimestamp=1785239046538",
+      "contentType": "application/json",
+      "status": 200,
+      "size": 45145,
+      "localFilename": "igst_sections_10_16.json",
+      "sha256": "0414fd76329c8d6391e6cf825a46233ac5c56ed671c243882bad474ac4debae8",
+      "matched": false,
+      "evidence": "Missing keywords: Section 10, place of supply, Section 14"
+    },
+    {
+      "claimId": "SGST_ACTS",
+      "title": "31 SGST Acts",
+      "method": "DIRECT_HTTP",
+      "responseUrl": "https://www.gstcouncil.gov.in/sgst-act",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "size": 34805,
+      "localFilename": "sgst_acts_gstcouncil_71df168e.html",
+      "sha256": "71df168ef7250e34ed10bdfd9cf0eb1d9321a520f61f31de30c17eeaeb76be42",
+      "matched": false,
+      "evidence": "Missing: State Goods and Services Tax"
+    },
+    {
+      "claimId": "UTGST_JURISDICTIONS",
+      "title": "5 UTGST Jurisdictions",
+      "method": "DIRECT_HTTP",
+      "responseUrl": "https://www.gstcouncil.gov.in/utgst",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "size": 32546,
+      "localFilename": "utgst_gstcouncil_83b8d580.html",
+      "sha256": "83b8d580b55d6a3ffe2764816f720e71d07ec58fc53d67e997e2c13a02445a34",
+      "matched": false,
+      "evidence": "Missing: Union Territory Goods and Services Tax"
+    },
+    {
+      "claimId": "UTGST_ACT_PDF",
+      "title": "UTGST Act PDF (India Code)",
+      "method": "DIRECT_HTTP",
+      "responseUrl": "https://www.indiacode.nic.in/bitstream/123456789/7776/1/ut-gst-act.pdf",
+      "status": 404,
+      "matched": false,
+      "evidence": "HTTP 404"
+    },
+    {
+      "claimId": "HSN_SAC_RATE_TABLE",
+      "title": "HSN/SAC Rate Table Cross-check",
+      "method": "DIRECT_HTTP",
+      "responseUrl": "https://cbic-gst.gov.in/gst-goods-services-rates.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "size": 59875,
+      "localFilename": "hsn_sac_rate_table_cb5a91a2.html",
+      "sha256": "cb5a91a2902cae787991b7c796a501b9f6c0d5065d17b0454b1c9459ae843bec",
+      "matched": true,
+      "evidence": "Rate table content found"
+    }
+  ],
+  "matrix": {
+    "CGST_9_10": "UNRESOLVED: No non-shell payload captured",
+    "IGST_10_16": "UNRESOLVED: Missing keywords: Section 10, place of supply, Section 14",
+    "SGST_ACTS": "UNRESOLVED: Missing: State Goods and Services Tax",
+    "UTGST_JURISDICTIONS": "UNRESOLVED: Missing: Union Territory Goods and Services Tax",
+    "UTGST_ACT_PDF": "UNRESOLVED: HTTP 404",
+    "HSN_SAC_RATE_TABLE": "PROVEN"
+  }
+}

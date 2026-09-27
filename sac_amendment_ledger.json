@@ -1,0 +1,13 @@
+[
+  {
+    "operation": "REMOVE",
+    "codes": [
+      "999692",
+      "999694"
+    ],
+    "effective_date": "2023-10-20",
+    "source_notification": "12/2023-Central Tax (Rate)",
+    "source_url": "https://gstcouncil.gov.in/node/4588",
+    "reason": "Explicit removal of Annexure S.No. 696 and 698 effective 20-10-2023"
+  }
+]

@@ -1,0 +1,1 @@
+npx supabase db query "SELECT payload->>'is_business' as is_business, payload->>'status' as status, count(*) FROM catalog.catalog_release_items WHERE release_id = 'ca7c5ea6-2f52-44de-bd42-f46b253a4d63' AND item_type = 'UNIT' GROUP BY payload->>'is_business', payload->>'status';" --linked

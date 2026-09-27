@@ -1,0 +1,53 @@
+{
+  "source": "UNECE_REC20",
+  "version": "Revision 17",
+  "source_url": "https://unece.org/trade/uncefact/cl-recommendations",
+  "record_count": 21,
+  "units": [
+    { "code": "KGM", "name": "Kilogram", "symbol": "kg", "category": "MASS" },
+    { "code": "GRM", "name": "Gram", "symbol": "g", "category": "MASS" },
+    { "code": "MTR", "name": "Metre", "symbol": "m", "category": "LENGTH" },
+    { "code": "MTK", "name": "Square Metre", "symbol": "m2", "category": "AREA" },
+    { "code": "MTQ", "name": "Cubic Metre", "symbol": "m3", "category": "VOLUME" },
+    { "code": "LTR", "name": "Litre", "symbol": "l", "category": "VOLUME" },
+    { "code": "DAY", "name": "Day", "symbol": "d", "category": "TIME" },
+    { "code": "HUR", "name": "Hour", "symbol": "h", "category": "TIME" },
+    { "code": "C62", "name": "One", "symbol": "1", "category": "COUNT", "aliases": ["Piece"] },
+    { "code": "PR",  "name": "Pair", "symbol": "pr", "category": "COUNT" },
+    { "code": "DZN", "name": "Dozen", "symbol": "dz", "category": "COUNT" },
+    { "code": "BG",  "name": "Bag", "symbol": "bag", "category": "PACKAGING" },
+    { "code": "BX",  "name": "Box", "symbol": "box", "category": "PACKAGING" },
+    { "code": "CT",  "name": "Carton", "symbol": "ctn", "category": "PACKAGING" },
+    { "code": "BO",  "name": "Bottle", "symbol": "btl", "category": "PACKAGING" },
+    { "code": "RO",  "name": "Roll", "symbol": "rl", "category": "PACKAGING" },
+    { "code": "LBR", "name": "Pound", "symbol": "lb", "category": "MASS" },
+    { "code": "ONZ", "name": "Ounce", "symbol": "oz", "category": "MASS" },
+    { "code": "FOT", "name": "Foot", "symbol": "ft", "category": "LENGTH" },
+    { "code": "INH", "name": "Inch", "symbol": "in", "category": "LENGTH" },
+    { "code": "MGM", "name": "Milligram", "symbol": "mg", "category": "MASS" }
+  ],
+  "conversions": [
+    { "from": "KGM", "to": "GRM", "multiplier": 1000 },
+    { "from": "MTR", "to": "INH", "multiplier": 39.3701 },
+    { "from": "FOT", "to": "INH", "multiplier": 12 },
+    { "from": "DAY", "to": "HUR", "multiplier": 24 },
+    { "from": "DZN", "to": "C62", "multiplier": 12 },
+    { "from": "LBR", "to": "KGM", "multiplier": 0.453592 }
+  ],
+  "india_uqc_mappings": [
+    { "uqc_code": "KGS", "unit_code": "KGM" },
+    { "uqc_code": "GMS", "unit_code": "GRM" },
+    { "uqc_code": "MTR", "unit_code": "MTR" },
+    { "uqc_code": "SQM", "unit_code": "MTK" },
+    { "uqc_code": "CBM", "unit_code": "MTQ" },
+    { "uqc_code": "LTR", "unit_code": "LTR" },
+    { "uqc_code": "PCS", "unit_code": "C62" },
+    { "uqc_code": "PRS", "unit_code": "PR" },
+    { "uqc_code": "DOZ", "unit_code": "DZN" },
+    { "uqc_code": "BAG", "unit_code": "BG" },
+    { "uqc_code": "BOX", "unit_code": "BX" },
+    { "uqc_code": "CTN", "unit_code": "CT" },
+    { "uqc_code": "BTL", "unit_code": "BO" },
+    { "uqc_code": "ROL", "unit_code": "RO" }
+  ]
+}

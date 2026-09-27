@@ -1,0 +1,33 @@
+[
+  {
+    "type": "SCHEDULE_RULE",
+    "schedule": "Schedule I",
+    "cgst_rate": 2.5,
+    "total_rate": 5,
+    "entries_count": 830,
+    "effective_from": "2025-10-01T00:00:00Z",
+    "provenance": "09/2025-Central Tax (Rate)",
+    "source_hash": "fb8625fa5499004a5b3eafc84ccf68a8ff1b08c8ade351f6ac3e8d9d256c8f45"
+  },
+  {
+    "type": "SCHEDULE_RULE",
+    "schedule": "Schedule II",
+    "cgst_rate": 6,
+    "total_rate": 18,
+    "entries_count": 120,
+    "effective_from": "2025-10-01T00:00:00Z",
+    "provenance": "09/2025-Central Tax (Rate)",
+    "source_hash": "fb8625fa5499004a5b3eafc84ccf68a8ff1b08c8ade351f6ac3e8d9d256c8f45"
+  },
+  {
+    "type": "SCHEDULE_RULE",
+    "schedule": "Schedule VII",
+    "cgst_rate": 14,
+    "total_rate": 28,
+    "entries_count": 50,
+    "effective_from": "2025-10-01T00:00:00Z",
+    "effective_to": "2026-01-31T23:59:59Z",
+    "provenance": "09/2025-Central Tax (Rate)",
+    "source_hash": "fb8625fa5499004a5b3eafc84ccf68a8ff1b08c8ade351f6ac3e8d9d256c8f45"
+  }
+]

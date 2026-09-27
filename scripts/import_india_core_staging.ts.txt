@@ -1,0 +1,134 @@
+// @ts-nocheck
+import fs from 'fs';
+import path from 'path';
+import AdmZip from 'adm-zip';
+import * as XLSX from 'xlsx';
+import { Client } from 'pg';
+
+const ROOT = 'D:\\ANTIGRAVITY_WORKSPACE\\INDIA_GEOGRAPHY_MANUAL_DOWNLOAD_20260826';
+const DB_URL = 'postgresql://postgres:postgres@127.0.0.1:54522/postgres';
+const client = new Client({ connectionString: DB_URL });
+
+async function insertStagingBatch(batchId, entityType, rows) {
+    if (rows.length === 0) return 0;
+    const values = rows.map(r => `('${batchId}', '${entityType}', '${String(r.code).replace(/'/g, "''")}', '${String(r.parent).replace(/'/g, "''")}', '${String(r.name).replace(/'/g, "''")}', '${JSON.stringify(r.raw).replace(/'/g, "''")}')`);
+    
+    // Batch in chunks of 500 to prevent query string too large
+    let count = 0;
+    for(let i = 0; i < values.length; i += 500) {
+        const chunk = values.slice(i, i + 500);
+        const query = `INSERT INTO staging.geography_imports (batch_id, entity_type, entity_code, parent_code, entity_name, raw_data) VALUES ${chunk.join(',')};`;
+        try {
+            await client.query(query);
+            count += chunk.length;
+        } catch(e) {
+            console.error(`Error in staging ${entityType}:`, e.message);
+        }
+    }
+    return count;
+}
+
+async function run() {
+    await client.connect();
+    const releaseRes = await client.query(`INSERT INTO data_imports.releases (release_name, source_uri, sha256_hash) VALUES ('LGD_20260826', 'local_dir', 'sha256_mock') RETURNING id`);
+    const releaseId = releaseRes.rows[0].id;
+    const batchRes = await client.query(`INSERT INTO data_imports.batches (release_id, entity_type) VALUES ('${releaseId}', 'ALL_ENTITIES') RETURNING id`);
+    const batchId = batchRes.rows[0].id;
+
+    let stats = { dist: 0, subdist: 0, vill: 0, block: 0, ulb: 0, wards: 0 };
+    const files = fs.readdirSync(ROOT);
+
+    for (const item of files) {
+        const fullPath = path.join(ROOT, item);
+        if (fs.statSync(fullPath).isDirectory()) {
+            const zips = fs.readdirSync(fullPath).filter(f => f.endsWith('.zip'));
+            if (zips.length === 0) continue;
+            console.log(`Processing ${item}...`);
+            const zip = new AdmZip(path.join(fullPath, zips[0]));
+            const entries = zip.getEntries();
+            const getSheet = (prefix) => {
+                const entry = entries.find(e => e.entryName.startsWith(prefix));
+                if (!entry) return null;
+                const wb = XLSX.read(entry.getData(), {type: 'buffer'});
+                return XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], {header: 1});
+            };
+
+            let dData = getSheet('districtofSpecificState');
+            if (dData) {
+                let batch = [];
+                let hIdx = dData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < dData.length; i++) {
+                        if (dData[i] && dData[i].length >= 4 && dData[i][1]) {
+                            batch.push({ code: dData[i][1], parent: item, name: dData[i][3]||dData[i][4], raw: dData[i] });
+                        }
+                    }
+                }
+                stats.dist += await insertStagingBatch(batchId, 'DISTRICT', batch);
+            }
+
+            let sData = getSheet('subDistrictofSpecificState');
+            if (sData) {
+                let batch = [];
+                let hIdx = sData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < sData.length; i++) {
+                        if (sData[i] && sData[i].length >= 5 && sData[i][3]) {
+                            batch.push({ code: sData[i][3], parent: sData[i][1], name: sData[i][5]||sData[i][6], raw: sData[i] });
+                        }
+                    }
+                }
+                stats.subdist += await insertStagingBatch(batchId, 'SUBDISTRICT', batch);
+            }
+            
+            let bData = getSheet('blockofspecificState');
+            if (bData) {
+                let batch = [];
+                let hIdx = bData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < bData.length; i++) {
+                        if (bData[i] && bData[i].length >= 5 && bData[i][3]) {
+                            batch.push({ code: bData[i][3], parent: bData[i][1], name: bData[i][5]||bData[i][6], raw: bData[i] });
+                        }
+                    }
+                }
+                stats.block += await insertStagingBatch(batchId, 'BLOCK', batch);
+            }
+            
+            let ulbData = getSheet('ulbSpecificState');
+            if (ulbData) {
+                let batch = [];
+                let hIdx = ulbData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < ulbData.length; i++) {
+                        if (ulbData[i] && ulbData[i].length >= 5 && ulbData[i][3]) {
+                            batch.push({ code: ulbData[i][3], parent: item, name: ulbData[i][5]||'Unknown', raw: ulbData[i] });
+                        }
+                    }
+                }
+                stats.ulb += await insertStagingBatch(batchId, 'URBAN_LOCAL_BODY', batch);
+            }
+            
+            let wData = getSheet('uLBWardforState');
+            if (wData) {
+                let batch = [];
+                let hIdx = wData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < wData.length; i++) {
+                        if (wData[i] && wData[i].length >= 5 && wData[i][3]) {
+                            batch.push({ code: wData[i][3], parent: wData[i][1], name: wData[i][5]||'Unknown', raw: wData[i] });
+                        }
+                    }
+                }
+                stats.wards += await insertStagingBatch(batchId, 'WARD', batch);
+            }
+        }
+    }
+    
+    console.log(`\nCore Geography Staged:`);
+    console.log(stats);
+    
+    await client.query(`UPDATE data_imports.batches SET total_records = ${stats.dist + stats.subdist + stats.block + stats.ulb + stats.wards}, status='STAGED' WHERE id = '${batchId}'`);
+    await client.end();
+}
+run().catch(console.error);

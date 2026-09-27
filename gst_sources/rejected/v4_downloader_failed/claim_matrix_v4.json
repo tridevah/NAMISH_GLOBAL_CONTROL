@@ -1,0 +1,98 @@
+[
+  {
+    "claim_id": "CGST_ACT",
+    "group": "1",
+    "status": "UNRESOLVED",
+    "sha256": null
+  },
+  {
+    "claim_id": "IGST_ACT",
+    "group": "1",
+    "status": "UNRESOLVED",
+    "sha256": null
+  },
+  {
+    "claim_id": "UTGST_ACT",
+    "group": "1",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "RATES_2025_2026",
+    "group": "2",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "GOODS_RCM_04_2017",
+    "group": "3",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "GOODS_RCM_06_2024",
+    "group": "3",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "SERVICES_RCM_13_2017",
+    "group": "4",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "SERVICES_RCM_07_2025",
+    "group": "4",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "INTER_STATE_RCM_10_2017",
+    "group": "5",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "INTER_STATE_RCM_07_2025",
+    "group": "5",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "SECTION_9_4_07_2019",
+    "group": "6",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "SECTION_9_4_24_2019",
+    "group": "6",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "COMPOSITION_14_2019",
+    "group": "7",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "COMPOSITION_02_2019",
+    "group": "7",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "COMPENSATION_CESS_CLOSURE",
+    "group": "8",
+    "status": "RETRIEVAL_FAILED",
+    "sha256": null
+  },
+  {
+    "claim_id": "HSNS_CESS_ACT",
+    "group": "8",
+    "status": "UNRESOLVED",
+    "sha256": null
+  }
+]

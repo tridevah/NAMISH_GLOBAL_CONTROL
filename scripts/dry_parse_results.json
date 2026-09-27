@@ -1,0 +1,30 @@
+{
+  "results": {
+    "VILLAGE": {
+      "physical": 1309740,
+      "emitted": 1309740,
+      "invalid": 0
+    },
+    "URBAN_LOCAL_BODY": {
+      "physical": 5203,
+      "emitted": 5203,
+      "invalid": 0
+    },
+    "TRADITIONAL_LOCAL_BODY": {
+      "physical": 14221,
+      "emitted": 14221,
+      "invalid": 0
+    },
+    "PRI_WARD": {
+      "physical": 1215829,
+      "emitted": 1215829,
+      "invalid": 0
+    },
+    "BLOCK": {
+      "physical": 7913,
+      "emitted": 7913,
+      "invalid": 0
+    }
+  },
+  "priMatrix": []
+}

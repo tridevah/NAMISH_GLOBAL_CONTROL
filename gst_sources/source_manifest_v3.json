@@ -1,0 +1,224 @@
+{
+  "generatedAt": "2026-09-02T12:15:33.529Z",
+  "manifest": [
+    {
+      "claimId": "CGST_ACT_S9_S10",
+      "documentTitle": "Central Goods and Services Tax Act 2017 (Consolidated to 30-Sep-2020)",
+      "authority": "CBIC",
+      "notificationRef": "CGST Act 2017 as amended",
+      "originalUrl": "https://cbic-gst.gov.in/pdf/CGST-Act-Updated-30092020.pdf",
+      "finalUrl": "https://cbic-gst.gov.in/pdf/CGST-Act-Updated-30092020.pdf",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "byteSize": 1846889,
+      "localFile": "cgst_act_updated_30092020_4db47a4e.pdf",
+      "sha256": "4db47a4ed2af6e61864049facb85b2dad940590df5239967062efd19d2d40fb4",
+      "retrievedAt": "2026-09-02T12:15:33.529Z",
+      "legalTextTermsFound": [],
+      "legalTextTermsMissing": [
+        "Section 9",
+        "Section 10",
+        "levy",
+        "taxable supply",
+        "reverse charge",
+        "composition"
+      ],
+      "verdict": "UNRESOLVED"
+    },
+    {
+      "claimId": "UTGST_ACT_JURISDICTIONS",
+      "documentTitle": "The Union Territory Goods and Services Tax Act, 2017",
+      "authority": "India Code / Ministry of Law",
+      "notificationRef": "UTGST Act 2017",
+      "originalUrl": "https://www.indiacode.nic.in/bitstream/123456789/7776/1/ut-gst-act.pdf",
+      "finalUrl": "https://www.indiacode.nic.in/bitstream/123456789/7776/1/ut-gst-act.pdf",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "byteSize": 529649,
+      "localFile": "utgst_act_indiacode_27aa5324.pdf",
+      "sha256": "27aa532416d1fbaca3f7a59eca5a003f1f4442031a0cb01160dfbb29b57041f5",
+      "retrievedAt": "2026-09-02T12:15:33.529Z",
+      "legalTextTermsFound": [],
+      "legalTextTermsMissing": [
+        "UTGST",
+        "Union Territory",
+        "Andaman",
+        "Chandigarh",
+        "Dadra",
+        "Lakshadweep",
+        "Ladakh"
+      ],
+      "verdict": "UNRESOLVED"
+    },
+    {
+      "claimId": "IGST_ACT_S10_16",
+      "needed": "IGST Act 2017 Sections 10-16 (POS, OIDAR, Zero-rated)",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/IGST-Act-Updated-30092020.pdf (404)",
+        "https://www.indiacode.nic.in/bitstream/123456789/15690/1/igst_act_2017.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2017/175852.pdf (ERR - connection refused)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "CESS_ACT",
+      "needed": "GST (Compensation to States) Act 2017",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/Cess-Act-Updated-30092020.pdf (404)",
+        "https://www.indiacode.nic.in/bitstream/123456789/15692/1/gst_compensation_to_states_act_2017.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2017/175854.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RATE_1_2017_CTR",
+      "needed": "Notification 1/2017-Central Tax (Rate) - principal slabs 5/12/18/28%",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfcn-1-CTR-english.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2017/176335.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RATE_09_2025_CTR",
+      "needed": "Notification 9/2025-Central Tax (Rate)",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfctn-09-2025-CTR-English.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2025/244901.pdf (ERR)",
+        "https://taxinformation.cbic.gov.in/api/v1/document?type=notifications&id=09-2025-CTR (401 Unauthorized)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RATE_10_2025_CTR",
+      "needed": "Notification 10/2025-Central Tax (Rate)",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfctn-10-2025-CTR-English.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2025/244902.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RATE_15_2025_CTR",
+      "needed": "Notification 15/2025-Central Tax (Rate)",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfctn-15-2025-CTR-English.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2025/244903.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RATE_16_2025_CTR",
+      "needed": "Notification 16/2025-Central Tax (Rate)",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfctn-16-2025-CTR-English.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2025/244904.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RATE_1_2017_ITR",
+      "needed": "Notification 1/2017-Integrated Tax (Rate) - IGST counterpart",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/integrated-tax-rate/Notfcn-1-ITR-english.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2017/176344.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RATE_09_2025_ITR",
+      "needed": "Notification 9/2025-Integrated Tax (Rate) IGST counterpart",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/integrated-tax-rate/Notfctn-09-2025-ITR-English.pdf (404)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RCM_13_2017_CTR",
+      "needed": "Notification 13/2017-Central Tax (Rate) - Goods RCM S.9(3)",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfcn-13-CTR-english.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2017/176347.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RCM_13_2017_ITR",
+      "needed": "Notification 13/2017-Integrated Tax (Rate) - Services RCM IGST",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/integrated-tax-rate/Notfcn-13-ITR-english.pdf (404)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "RCM_S9_4_7_2019",
+      "needed": "Notification 7/2019-Central Tax (Rate) - S.9(4) real-estate RCM",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfctn-07-2019-CTR-English.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2019/205638.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "COMP_14_2019_CT",
+      "needed": "Notification 14/2019-Central Tax - Composition S.10(2A) services",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax/Notfctn-14-2019-CT-English.pdf (ERR)",
+        "https://egazette.nic.in/WriteReadData/2019/205580.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "COMP_2_2019_CTR",
+      "needed": "Notification 2/2019-Central Tax (Rate) - Composition rates S.10(2A)",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/central-tax-rate/Notfctn-02-2019-CTR-English.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2019/205628.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "HSNS_CESS",
+      "needed": "Notification 1/2017-Compensation Cess (Rate) - HSNS/standalone Cess",
+      "probedUrls": [
+        "https://cbic-gst.gov.in/pdf/compensation-cess-rate/Notfcn-1-Cess-english.pdf (404)",
+        "https://cbic-gst.gov.in/pdf/compensation-cess/Notfcn-1-Cess-english.pdf (404)",
+        "https://egazette.nic.in/WriteReadData/2017/176366.pdf (ERR)"
+      ],
+      "verdict": "UNRESOLVED",
+      "retrievedAt": "2026-09-02T12:15:33.529Z"
+    },
+    {
+      "claimId": "31_SGST_JURISDICTIONS",
+      "documentTitle": "SGST-Act | Goods and Services Tax Council",
+      "authority": "GST Council of India",
+      "originalUrl": "https://www.gstcouncil.gov.in/sgst-act",
+      "finalUrl": "https://www.gstcouncil.gov.in/sgst-act",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 34740,
+      "localFile": "gst_official_sources_v3/sgst_acts_gstcouncil_71df168e.html",
+      "sha256": "71df168ef7250e34ed10bdfd9cf0eb1d9321a520f61f31de30c17eeaeb76be42",
+      "retrievedAt": "2026-09-02T08:32:00Z",
+      "legalTextTermsFound": [
+        "all 31 state names explicitly listed"
+      ],
+      "verdict": "PROVEN",
+      "note": "Jurisdiction listing only — individual SGST Act PDFs require separate download per state"
+    }
+  ]
+}

@@ -1,0 +1,1231 @@
+{
+  "release_id": "R15",
+  "version": "1.0",
+  "description": "Core Geography Master",
+  "entries": [
+    {
+      "path": "ANDAMAN AND NICOBAR ISLANDS/downloadDir2026_08_26_23_55_42_288.zip!districtofSpecificState2026:08:26:23:55:42:321.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "ANDAMAN AND NICOBAR ISLANDS/downloadDir2026_08_26_23_55_42_288.zip!subDistrictofSpecificState2026:08:26:23:55:42:342.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ANDAMAN AND NICOBAR ISLANDS/downloadDir2026_08_26_23_55_42_288.zip!blockofspecificState2026:08:26:23:55:43:019.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ANDHRA PRADESH/downloadDir2026_08_26_23_57_49_471.zip!districtofSpecificState2026:08:26:23:57:49:496.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "ANDHRA PRADESH/downloadDir2026_08_26_23_57_49_471.zip!subDistrictofSpecificState2026:08:26:23:57:49:567.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ANDHRA PRADESH/downloadDir2026_08_26_23_57_49_471.zip!blockofspecificState2026:08:26:23:58:21:454.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ARUNACHAL PRADESH/ARUNACHAL_PRADESH_CORE_FIXED.zip!districtofSpecificState.xlsx",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "ARUNACHAL PRADESH/ARUNACHAL_PRADESH_CORE_FIXED.zip!subDistrictofSpecificState.xlsx",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ARUNACHAL PRADESH/ARUNACHAL_PRADESH_CORE_FIXED.zip!blockofspecificState.xlsx",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ASSAM/downloadDir2026_08_27_00_00_18_348.zip!districtofSpecificState2026:08:27:00:00:18:383.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "ASSAM/downloadDir2026_08_27_00_00_18_348.zip!subDistrictofSpecificState2026:08:27:00:00:18:417.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ASSAM/downloadDir2026_08_27_00_00_18_348.zip!blockofspecificState2026:08:27:00:00:29:240.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "BIHAR/downloadDir2026_08_27_00_00_37_836.zip!districtofSpecificState2026:08:27:00:00:37:870.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "BIHAR/downloadDir2026_08_27_00_00_37_836.zip!subDistrictofSpecificState2026:08:27:00:00:37:931.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "BIHAR/downloadDir2026_08_27_00_00_37_836.zip!blockofspecificState2026:08:27:00:01:11:253.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "CHANDIGARH/downloadDir2026_08_27_00_01_48_547.zip!districtofSpecificState2026:08:27:00:01:48:579.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "CHANDIGARH/downloadDir2026_08_27_00_01_48_547.zip!subDistrictofSpecificState2026:08:27:00:01:48:598.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "CHANDIGARH/downloadDir2026_08_27_00_01_48_547.zip!blockofspecificState2026:08:27:00:01:48:998.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "CHHATTISGARH/downloadDir2026_08_27_00_02_18_955.zip!districtofSpecificState2026:08:27:00:02:18:991.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "CHHATTISGARH/downloadDir2026_08_27_00_02_18_955.zip!subDistrictofSpecificState2026:08:27:00:02:19:032.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "CHHATTISGARH/downloadDir2026_08_27_00_02_18_955.zip!blockofspecificState2026:08:27:00:02:42:991.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "DELHI/downloadDir2026_08_27_00_03_00_196.zip!districtofSpecificState2026:08:27:00:03:00:230.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "DELHI/downloadDir2026_08_27_00_03_00_196.zip!subDistrictofSpecificState2026:08:27:00:03:00:255.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "DELHI/downloadDir2026_08_27_00_03_00_196.zip!blockofspecificState2026:08:27:00:03:00:881.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "GOA/downloadDir2026_08_27_00_03_28_787.zip!districtofSpecificState2026:08:27:00:03:28:820.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "GOA/downloadDir2026_08_27_00_03_28_787.zip!subDistrictofSpecificState2026:08:27:00:03:28:842.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "GOA/downloadDir2026_08_27_00_03_28_787.zip!blockofspecificState2026:08:27:00:03:29:603.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "GUJARAT/downloadDir2026_08_27_00_03_54_369.zip!districtofSpecificState2026:08:27:00:03:54:405.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "GUJARAT/downloadDir2026_08_27_00_03_54_369.zip!subDistrictofSpecificState2026:08:27:00:03:54:448.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "GUJARAT/downloadDir2026_08_27_00_03_54_369.zip!blockofspecificState2026:08:27:00:04:13:546.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "HARYANA/downloadDir2026_08_27_00_04_15_610.zip!districtofSpecificState2026:08:27:00:04:15:636.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "HARYANA/downloadDir2026_08_27_00_04_15_610.zip!subDistrictofSpecificState2026:08:27:00:04:15:668.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "HARYANA/downloadDir2026_08_27_00_04_15_610.zip!blockofspecificState2026:08:27:00:04:26:173.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "HIMACHAL PRADESH/downloadDir2026_08_27_00_05_06_457.zip!districtofSpecificState2026:08:27:00:05:06:492.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "HIMACHAL PRADESH/downloadDir2026_08_27_00_05_06_457.zip!subDistrictofSpecificState2026:08:27:00:05:06:528.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "HIMACHAL PRADESH/downloadDir2026_08_27_00_05_06_457.zip!blockofspecificState2026:08:27:00:05:16:379.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "JAMMU AND KASHMIR/downloadDir2026_08_27_00_05_21_407.zip!districtofSpecificState2026:08:27:00:05:21:440.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "JAMMU AND KASHMIR/downloadDir2026_08_27_00_05_21_407.zip!subDistrictofSpecificState2026:08:27:00:05:21:479.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "JAMMU AND KASHMIR/downloadDir2026_08_27_00_05_21_407.zip!blockofspecificState2026:08:27:00:05:29:103.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "JHARKHAND/downloadDir2026_08_27_00_06_02_287.zip!districtofSpecificState2026:08:27:00:06:02:323.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "JHARKHAND/downloadDir2026_08_27_00_06_02_287.zip!subDistrictofSpecificState2026:08:27:00:06:02:368.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "JHARKHAND/downloadDir2026_08_27_00_06_02_287.zip!blockofspecificState2026:08:27:00:06:17:511.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "KARNATAKA/downloadDir2026_08_27_00_06_22_867.zip!districtofSpecificState2026:08:27:00:06:22:904.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "KARNATAKA/downloadDir2026_08_27_00_06_22_867.zip!subDistrictofSpecificState2026:08:27:00:06:22:946.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "KARNATAKA/downloadDir2026_08_27_00_06_22_867.zip!blockofspecificState2026:08:27:00:06:48:541.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "KERALA/downloadDir2026_08_27_00_07_03_987.zip!districtofSpecificState2026:08:27:00:07:04:022.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "KERALA/downloadDir2026_08_27_00_07_03_987.zip!subDistrictofSpecificState2026:08:27:00:07:04:048.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "KERALA/downloadDir2026_08_27_00_07_03_987.zip!blockofspecificState2026:08:27:00:07:09:577.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "LADAKH/downloadDir2026_08_27_00_07_45_287.zip!districtofSpecificState2026:08:27:00:07:45:320.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "LADAKH/downloadDir2026_08_27_00_07_45_287.zip!subDistrictofSpecificState2026:08:27:00:07:45:342.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "LADAKH/downloadDir2026_08_27_00_07_45_287.zip!blockofspecificState2026:08:27:00:07:45:963.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "LAKSHADWEEP/downloadDir2026_08_27_00_08_08_490.zip!districtofSpecificState2026:08:27:00:08:08:523.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "LAKSHADWEEP/downloadDir2026_08_27_00_08_08_490.zip!subDistrictofSpecificState2026:08:27:00:08:08:543.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "LAKSHADWEEP/downloadDir2026_08_27_00_08_08_490.zip!blockofspecificState2026:08:27:00:08:08:944.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MADHYA PRADESH/downloadDir2026_08_27_00_08_35_495.zip!districtofSpecificState2026:08:27:00:08:35:530.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "MADHYA PRADESH/downloadDir2026_08_27_00_08_35_495.zip!subDistrictofSpecificState2026:08:27:00:08:35:588.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MADHYA PRADESH/downloadDir2026_08_27_00_08_35_495.zip!blockofspecificState2026:08:27:00:09:36:579.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MAHARASHTRA/downloadDir2026_08_27_00_10_15_682.zip!districtofSpecificState2026:08:27:00:10:15:714.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "MAHARASHTRA/downloadDir2026_08_27_00_10_15_682.zip!subDistrictofSpecificState2026:08:27:00:10:15:763.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MAHARASHTRA/downloadDir2026_08_27_00_10_15_682.zip!blockofspecificState2026:08:27:00:10:47:963.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MANIPUR/downloadDir2026_08_27_00_11_03_367.zip!districtofSpecificState2026:08:27:00:11:03:400.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "MANIPUR/downloadDir2026_08_27_00_11_03_367.zip!subDistrictofSpecificState2026:08:27:00:11:03:425.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MANIPUR/downloadDir2026_08_27_00_11_03_367.zip!blockofspecificState2026:08:27:00:11:05:530.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MEGHALAYA/downloadDir2026_08_27_00_11_37_763.zip!districtofSpecificState2026:08:27:00:11:37:797.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "MEGHALAYA/downloadDir2026_08_27_00_11_37_763.zip!subDistrictofSpecificState2026:08:27:00:11:37:822.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MEGHALAYA/downloadDir2026_08_27_00_11_37_763.zip!blockofspecificState2026:08:27:00:11:40:617.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MIZORAM/downloadDir2026_08_27_00_12_23_306.zip!districtofSpecificState2026:08:27:00:12:23:340.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "MIZORAM/downloadDir2026_08_27_00_12_23_306.zip!subDistrictofSpecificState2026:08:27:00:12:23:364.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "MIZORAM/downloadDir2026_08_27_00_12_23_306.zip!blockofspecificState2026:08:27:00:12:24:118.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "NAGALAND/downloadDir2026_08_27_00_12_50_418.zip!districtofSpecificState2026:08:27:00:12:50:450.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "NAGALAND/downloadDir2026_08_27_00_12_50_418.zip!subDistrictofSpecificState2026:08:27:00:12:50:478.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "NAGALAND/downloadDir2026_08_27_00_12_50_418.zip!blockofspecificState2026:08:27:00:12:51:477.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ODISHA/downloadDir2026_08_27_00_13_10_344.zip!districtofSpecificState2026:08:27:00:13:10:381.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "ODISHA/downloadDir2026_08_27_00_13_10_344.zip!subDistrictofSpecificState2026:08:27:00:13:10:485.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "ODISHA/downloadDir2026_08_27_00_13_10_344.zip!blockofspecificState2026:08:27:00:13:36:983.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "PUDUCHERRY/downloadDir2026_08_27_00_13_37_244.zip!districtofSpecificState2026:08:27:00:13:37:263.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "PUDUCHERRY/downloadDir2026_08_27_00_13_37_244.zip!subDistrictofSpecificState2026:08:27:00:13:37:282.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "PUDUCHERRY/downloadDir2026_08_27_00_13_37_244.zip!blockofspecificState2026:08:27:00:13:37:836.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "PUNJAB/downloadDir2026_08_27_00_14_25_122.zip!districtofSpecificState2026:08:27:00:14:25:157.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "PUNJAB/downloadDir2026_08_27_00_14_25_122.zip!subDistrictofSpecificState2026:08:27:00:14:25:185.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "PUNJAB/downloadDir2026_08_27_00_14_25_122.zip!blockofspecificState2026:08:27:00:14:40:657.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "RAJASTHAN/downloadDir2026_08_27_00_14_44_363.zip!districtofSpecificState2026:08:27:00:14:44:397.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "RAJASTHAN/downloadDir2026_08_27_00_14_44_363.zip!subDistrictofSpecificState2026:08:27:00:14:44:450.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "RAJASTHAN/downloadDir2026_08_27_00_14_44_363.zip!blockofspecificState2026:08:27:00:15:23:691.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "SIKKIM/downloadDir2026_08_27_00_15_07_984.zip!districtofSpecificState2026:08:27:00:15:08:005.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "SIKKIM/downloadDir2026_08_27_00_15_07_984.zip!subDistrictofSpecificState2026:08:27:00:15:08:026.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "SIKKIM/downloadDir2026_08_27_00_15_07_984.zip!blockofspecificState2026:08:27:00:15:08:771.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "TAMIL NADU/downloadDir2026_08_27_00_15_35_340.zip!districtofSpecificState2026:08:27:00:15:35:375.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "TAMIL NADU/downloadDir2026_08_27_00_15_35_340.zip!subDistrictofSpecificState2026:08:27:00:15:35:419.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "TAMIL NADU/downloadDir2026_08_27_00_15_35_340.zip!blockofspecificState2026:08:27:00:16:03:098.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "TELANGANA/downloadDir2026_08_27_00_16_06_623.zip!districtofSpecificState2026:08:27:00:16:06:648.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "TELANGANA/downloadDir2026_08_27_00_16_06_623.zip!subDistrictofSpecificState2026:08:27:00:16:06:719.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "TELANGANA/downloadDir2026_08_27_00_16_06_623.zip!blockofspecificState2026:08:27:00:16:28:635.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU/downloadDir2026_08_27_00_16_50_423.zip!districtofSpecificState2026:08:27:00:16:50:455.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU/downloadDir2026_08_27_00_16_50_423.zip!subDistrictofSpecificState2026:08:27:00:16:50:476.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU/downloadDir2026_08_27_00_16_50_423.zip!blockofspecificState2026:08:27:00:16:50:984.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "TRIPURA/downloadDir2026_08_27_00_17_12_831.zip!districtofSpecificState2026:08:27:00:17:12:865.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "TRIPURA/downloadDir2026_08_27_00_17_12_831.zip!subDistrictofSpecificState2026:08:27:00:17:12:887.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "TRIPURA/downloadDir2026_08_27_00_17_12_831.zip!blockofspecificState2026:08:27:00:17:14:367.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "UTTAR PRADESH/downloadDir2026_08_27_00_18_41_967.zip!districtofSpecificState2026:08:27:00:18:42:011.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "UTTAR PRADESH/downloadDir2026_08_27_00_18_41_967.zip!subDistrictofSpecificState2026:08:27:00:18:42:060.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "UTTAR PRADESH/downloadDir2026_08_27_00_18_41_967.zip!blockofspecificState2026:08:27:00:20:46:042.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "UTTARAKHAND/downloadDir2026_08_27_00_17_45_704.zip!districtofSpecificState2026:08:27:00:17:45:738.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "UTTARAKHAND/downloadDir2026_08_27_00_17_45_704.zip!subDistrictofSpecificState2026:08:27:00:17:45:770.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "UTTARAKHAND/downloadDir2026_08_27_00_17_45_704.zip!blockofspecificState2026:08:27:00:17:58:695.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "WEST BENGAL/downloadDir2026_08_27_00_19_40_809.zip!districtofSpecificState2026:08:27:00:19:40:845.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "STATE",
+          "ordinal": 0
+        },
+        {
+          "logical_entity": "DISTRICT",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "path": "WEST BENGAL/downloadDir2026_08_27_00_19_40_809.zip!subDistrictofSpecificState2026:08:27:00:19:40:894.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "SUB_DISTRICT",
+          "ordinal": 0
+        }
+      ]
+    },
+    {
+      "path": "WEST BENGAL/downloadDir2026_08_27_00_19_40_809.zip!blockofspecificState2026:08:27:00:19:59:600.xls",
+      "type": "LGD_EXCEL_XML",
+      "logical_outputs": [
+        {
+          "logical_entity": "BLOCK",
+          "ordinal": 0
+        }
+      ]
+    }
+  ]
+}

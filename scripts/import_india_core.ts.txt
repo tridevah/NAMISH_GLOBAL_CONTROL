@@ -1,0 +1,187 @@
+// @ts-nocheck
+import fs from 'fs';
+import path from 'path';
+import AdmZip from 'adm-zip';
+import * as XLSX from 'xlsx';
+import { Client } from 'pg';
+import crypto from 'crypto';
+
+const ROOT = 'D:\\ANTIGRAVITY_WORKSPACE\\INDIA_GEOGRAPHY_MANUAL_DOWNLOAD_20260826';
+const DB_URL = 'postgresql://postgres:postgres@127.0.0.1:54522/postgres';
+
+function md5(str) { return crypto.createHash('md5').update(String(str)).digest('hex'); }
+function formatUUID(hex) { return `${hex.slice(0,8)}-${hex.slice(8,12)}-${hex.slice(12,16)}-${hex.slice(16,20)}-${hex.slice(20)}`; }
+
+const levelIds = { 1: formatUUID(md5('geo_level_IND_1')), 2: formatUUID(md5('geo_level_IND_2')), 3: formatUUID(md5('geo_level_IND_3')), 4: formatUUID(md5('geo_level_IND_4')) };
+const indiaId = formatUUID(md5('country_IND'));
+const client = new Client({ connectionString: DB_URL });
+
+async function insertBatch(table, columns, rows) {
+    if (rows.length === 0) return 0;
+    const uniqueRows = [];
+    const seen = new Set();
+    for (const r of rows) {
+        if (!seen.has(r[0])) { seen.add(r[0]); uniqueRows.push(r); }
+    }
+    const values = uniqueRows.map(r => `(${r.map(v => v === null ? 'NULL' : `'${String(v).replace(/'/g, "''")}'`).join(',')})`);
+    
+    let conflictClause = "ON CONFLICT (id) DO UPDATE SET updated_at = NOW()";
+    if (table.includes('_villages') || table.includes('postal_code')) {
+        conflictClause = "ON CONFLICT DO NOTHING";
+    }
+
+    const query = `INSERT INTO ${table} (${columns.join(', ')}) VALUES ${values.join(',')} ${conflictClause};`;
+    try {
+        await client.query(query);
+        return uniqueRows.length;
+    } catch(e) {
+        console.error(`Error in ${table}:`, e.message);
+        return 0;
+    }
+}
+
+async function run() {
+    await client.connect();
+    const statesRes = await client.query(`SELECT id, official_code, official_name FROM catalog.geography_units WHERE geography_level_id = '${levelIds[1]}'`);
+    const stateMap = {};
+    statesRes.rows.forEach(r => stateMap[r.official_name.toUpperCase()] = r);
+    const distMap = {}; 
+    const sdMap = {}; 
+
+    let stats = { dist: 0, subdist: 0, vill: 0, block: 0, pridl: 0, priil: 0, gp: 0, ulb: 0, tlb: 0, wards: 0 };
+    const files = fs.readdirSync(ROOT);
+
+    for (const item of files) {
+        const fullPath = path.join(ROOT, item);
+        if (fs.statSync(fullPath).isDirectory()) {
+            const zips = fs.readdirSync(fullPath).filter(f => f.endsWith('.zip'));
+            if (zips.length === 0) continue;
+            const state = stateMap[item.toUpperCase()];
+            if (!state) continue;
+            console.log(`Processing ${item}...`);
+            const zip = new AdmZip(path.join(fullPath, zips[0]));
+            const entries = zip.getEntries();
+            const getSheet = (prefix) => {
+                const entry = entries.find(e => e.entryName.startsWith(prefix));
+                if (!entry) return null;
+                const wb = XLSX.read(entry.getData(), {type: 'buffer'});
+                return XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], {header: 1});
+            };
+
+            let dData = getSheet('districtofSpecificState');
+            if (dData) {
+                let batch = [];
+                let hIdx = dData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < dData.length; i++) {
+                        if (dData[i] && dData[i].length >= 4 && dData[i][1]) {
+                            const code = dData[i][1];
+                            const name = dData[i][3] || dData[i][4] || 'Unknown';
+                            const distId = formatUUID(md5('geo_unit_IND_LGD_' + code));
+                            distMap[code] = distId;
+                            batch.push([distId, indiaId, levelIds[2], state.id, code, name, name]);
+                        }
+                    }
+                }
+                stats.dist += await insertBatch('catalog.geography_units', ['id','country_id','geography_level_id','parent_geography_unit_id','official_code','official_name','display_name'], batch);
+            }
+
+            let sData = getSheet('subDistrictofSpecificState');
+            if (sData) {
+                let batch = [];
+                let hIdx = sData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < sData.length; i++) {
+                        if (sData[i] && sData[i].length >= 5 && sData[i][3]) {
+                            const dCode = sData[i][1];
+                            const code = sData[i][3];
+                            const name = sData[i][5] || sData[i][6] || 'Unknown';
+                            const sdId = formatUUID(md5('geo_unit_IND_LGD_' + code));
+                            sdMap[code] = sdId;
+                            if (distMap[dCode]) batch.push([sdId, indiaId, levelIds[3], distMap[dCode], code, name, name]);
+                        }
+                    }
+                }
+                stats.subdist += await insertBatch('catalog.geography_units', ['id','country_id','geography_level_id','parent_geography_unit_id','official_code','official_name','display_name'], batch);
+            }
+            
+            let vData = getSheet('villageofSpecificState');
+            if (vData) {
+                let batch = [];
+                let hIdx = vData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < vData.length; i++) {
+                        if (vData[i] && vData[i].length >= 7 && vData[i][5]) {
+                            const sdCode = vData[i][3];
+                            const code = vData[i][5];
+                            const name = vData[i][7] || vData[i][8] || 'Unknown';
+                            const vId = formatUUID(md5('geo_unit_IND_LGD_' + code));
+                            if (sdMap[sdCode]) batch.push([vId, indiaId, levelIds[4], sdMap[sdCode], code, name, name]);
+                        }
+                    }
+                }
+                stats.vill += await insertBatch('catalog.geography_units', ['id','country_id','geography_level_id','parent_geography_unit_id','official_code','official_name','display_name'], batch);
+            }
+
+            let bData = getSheet('blockofspecificState');
+            if (bData) {
+                let batch = [];
+                let hIdx = bData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < bData.length; i++) {
+                        if (bData[i] && bData[i].length >= 5 && bData[i][3]) {
+                            const dCode = bData[i][1];
+                            const code = bData[i][3];
+                            const name = bData[i][5] || bData[i][6] || 'Unknown';
+                            const bId = formatUUID(md5('block_IND_LGD_' + code));
+                            if (distMap[dCode]) batch.push([bId, distMap[dCode], code, name]);
+                        }
+                    }
+                }
+                stats.block += await insertBatch('catalog.development_blocks', ['id','district_id','official_code','official_name'], batch);
+            }
+            
+            let ulbData = getSheet('ulbSpecificState');
+            if (ulbData) {
+                let batch = [];
+                let hIdx = ulbData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < ulbData.length; i++) {
+                        if (ulbData[i] && ulbData[i].length >= 5 && ulbData[i][3]) {
+                            const code = ulbData[i][3];
+                            const name = ulbData[i][5] || 'Unknown';
+                            const ulbId = formatUUID(md5('lb_IND_LGD_' + code));
+                            batch.push([ulbId, state.id, null, 'URBAN', code, name]);
+                        }
+                    }
+                }
+                stats.ulb += await insertBatch('catalog.local_bodies', ['id','state_id','parent_local_body_id','body_type','official_code','official_name'], batch);
+            }
+            
+            let wardData = getSheet('uLBWardforState');
+            if (wardData) {
+                let batch = [];
+                let hIdx = wardData.findIndex(r => r && r[0] && r[0].toString().includes('S.'));
+                if (hIdx > -1) {
+                    for (let i = hIdx + 1; i < wardData.length; i++) {
+                        if (wardData[i] && wardData[i].length >= 5 && wardData[i][3]) {
+                            const lbCode = wardData[i][1];
+                            const code = wardData[i][3];
+                            const num = wardData[i][4] || '0';
+                            const name = wardData[i][5] || 'Unknown';
+                            const lbId = formatUUID(md5('lb_IND_LGD_' + lbCode));
+                            const wId = formatUUID(md5('ward_IND_LGD_' + code));
+                            batch.push([wId, lbId, code, num, name]);
+                        }
+                    }
+                }
+                stats.wards += await insertBatch('catalog.wards', ['id','local_body_id','official_code','ward_number','official_name'], batch);
+            }
+        }
+    }
+    
+    console.log(`\nCore Geography Staged & Migrated:`);
+    console.log(stats);
+    await client.end();
+}
+run().catch(console.error);

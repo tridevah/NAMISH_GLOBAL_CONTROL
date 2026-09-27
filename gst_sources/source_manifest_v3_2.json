@@ -1,0 +1,92 @@
+{
+  "manifest": [
+    {
+      "claimId": "UTGST_ACT_CURRENT",
+      "status": "CLAIM_UNRESOLVED",
+      "document_last_updated": "27-Mar-2020",
+      "originalUrl": "https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_ut_gst_act/documents/Union_Territory_Goods_And_Services_Tax_Act%2C_2017_27-March-2020.html",
+      "raw_html_sha256": "443bbfb56a9dd1ef3db53365ca46f2e4097bd24232c866bf819e61be75d95d5d",
+      "normalized_visible_text_sha256": "4f42d4bf195e9fb8cf75affd114c73c6a384842f72196a2d05f6142fccb10305",
+      "exactMatchedText": "other territory",
+      "note": "Missing: ANDAMAN AND NICOBAR ISLANDS, CHANDIGARH, DADRA AND NAGAR HAVELI AND DAMAN AND DIU, LADAKH, LAKSHADWEEP"
+    },
+    {
+      "claimId": "31_SGST_JURISDICTIONS",
+      "status": "PRIMARY_LEGAL_PROVEN",
+      "originalUrl": "https://www.gstcouncil.gov.in/sgst-act",
+      "normalized_visible_text_sha256": "71df168ef7250e34ed10bdfd9cf0eb1d9321a520f61f31de30c17eeaeb76be42",
+      "note": "Carried forward from previous manifest"
+    },
+    {
+      "claimId": "HSN_SAC_RATE_TABLE",
+      "status": "CROSS_CHECK_ONLY",
+      "originalUrl": "https://cbic-gst.gov.in/gst-goods-services-rates.html",
+      "note": "Carried forward"
+    },
+    {
+      "claimId": "CGST_ACT_CURRENT",
+      "status": "RETRIEVAL_FAILED",
+      "note": "Failed to download PDF from India Code"
+    },
+    {
+      "claimId": "IGST_ACT_CURRENT",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "GST_COMPENSATION_CESS_ACT",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "HSNS_CESS_ACT",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RATE_09_2025_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RATE_10_2025_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RATE_15_2025_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RATE_16_2025_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RCM_04_2017_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RCM_13_2017_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RCM_07_2019_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "COMP_02_2019_CTR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RCM_04_2017_ITR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RCM_10_2017_ITR",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "COMP_14_2019_CT",
+      "status": "RETRIEVAL_FAILED"
+    },
+    {
+      "claimId": "RATE_01_2017_CESS",
+      "status": "RETRIEVAL_FAILED"
+    }
+  ]
+}

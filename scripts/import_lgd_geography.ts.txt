@@ -1,0 +1,130 @@
+﻿// @ts-nocheck
+import fs from 'fs';
+import path from 'path';
+import AdmZip from 'adm-zip';
+import { Client } from 'pg';
+import crypto from 'crypto';
+
+const ROOT = 'D:\\ANTIGRAVITY_WORKSPACE\\INDIA_GEOGRAPHY_MANUAL_DOWNLOAD_20260826';
+const DB_URL = 'postgresql://postgres:postgres@127.0.0.1:54522/postgres';
+
+function md5(str) {
+    return crypto.createHash('md5').update(str).digest('hex');
+}
+function formatUUID(hex) {
+    return `${hex.slice(0,8)}-${hex.slice(8,12)}-${hex.slice(12,16)}-${hex.slice(16,20)}-${hex.slice(20)}`;
+}
+
+const levelIds = {
+    1: formatUUID(md5('geo_level_IND_1')),
+    2: formatUUID(md5('geo_level_IND_2')),
+    3: formatUUID(md5('geo_level_IND_3')),
+    4: formatUUID(md5('geo_level_IND_4')),
+};
+const indiaId = formatUUID(md5('country_IND'));
+
+const client = new Client({ connectionString: DB_URL });
+
+async function processStateZip(stateZip, stateName) {
+    const zip = new AdmZip(stateZip);
+    const entries = zip.getEntries();
+    
+    const entryMap = {};
+    entries.forEach(e => {
+        if (!e.isDirectory) entryMap[e.entryName.split('2026')[0]] = e;
+    });
+
+    const getRows = (entry) => {
+        if (!entry) return [];
+        const content = entry.getData().toString('utf8');
+        const rows = content.match(/<Row[^>]*>([\s\S]*?)<\/Row>/gi) || [];
+        let dataRows = [];
+        let startIdx = 3;
+        for (let i=0; i<Math.min(10, rows.length); i++) {
+            if (rows[i].includes('S.No.') || rows[i].includes('S. No.') || rows[i].includes('State Code')) {
+                startIdx = i + 1;
+                break;
+            }
+        }
+        for (let i=startIdx; i<rows.length; i++) {
+            const cells = rows[i].match(/<Data[^>]*>([\s\S]*?)<\/Data>/gi);
+            if (cells && cells.length > 2) {
+                dataRows.push(cells.map(c => c.replace(/<[^>]+>/g, '').trim().replace(/&#13;/g, '')));
+            }
+        }
+        return dataRows;
+    };
+
+    // Districts
+    const districts = getRows(entryMap['districtofSpecificState']);
+    if (districts.length > 0) {
+        let vals = [];
+        for (const d of districts) {
+            const distCode = d[1];
+            const distName = d[3] || d[4];
+            if (!distCode || !distName) continue;
+            
+            // Wait, we need State Code to find parent! State Code is not in the district file.
+            // But we know stateName. Let's lookup state code from DB!
+        }
+    }
+}
+
+async function run() {
+    await client.connect();
+    
+    // We fetch all states to map Names to Codes
+    const states = await client.query(`SELECT id, official_code, official_name FROM catalog.geography_units WHERE geography_level_id = '${levelIds[1]}'`);
+    const stateMap = {};
+    states.rows.forEach(r => stateMap[r.official_name.toUpperCase()] = r);
+
+    const files = fs.readdirSync(ROOT);
+    let totalDistricts = 0;
+    for (const item of files) {
+        const fullPath = path.join(ROOT, item);
+        if (fs.statSync(fullPath).isDirectory()) {
+            const zips = fs.readdirSync(fullPath).filter(f => f.endsWith('.zip'));
+            if (zips.length > 0) {
+                const state = stateMap[item.toUpperCase()];
+                if (!state) { console.log(`No state match for ${item}`); continue; }
+                
+                const zip = new AdmZip(path.join(fullPath, zips[0]));
+                const entries = zip.getEntries();
+                const distEntry = entries.find(e => e.entryName.startsWith('districtofSpecificState'));
+                if (distEntry) {
+                    const content = distEntry.getData().toString('utf8');
+                    const rows = content.match(/<Row[^>]*>([\s\S]*?)<\/Row>/gi) || [];
+                    let startIdx = 3;
+                    for (let i=0; i<Math.min(10, rows.length); i++) {
+                        if (rows[i].includes('S. No.') || rows[i].includes('S.No.')) { startIdx = i+1; break; }
+                    }
+                    let vals = [];
+                    for (let i=startIdx; i<rows.length; i++) {
+                        const cells = rows[i].match(/<Data[^>]*>([\s\S]*?)<\/Data>/gi);
+                        if (cells && cells.length > 3) {
+                            const code = cells[1].replace(/<[^>]+>/g, '').trim();
+                            const name = cells[3].replace(/<[^>]+>/g, '').trim().replace(/'/g, "''");
+                            if (code && name) {
+                                const distId = formatUUID(md5('geo_unit_IND_LGD_' + code));
+                                vals.push(`('${distId}', '${indiaId}', '${levelIds[2]}', '${state.id}', '${code}', '${name}', '${name}')`);
+                            }
+                        }
+                    }
+                    if (vals.length > 0) {
+                        try {
+                            const q = `INSERT INTO catalog.geography_units (id, country_id, geography_level_id, parent_geography_unit_id, official_code, official_name, display_name) VALUES ${vals.join(',')} ON CONFLICT (country_id, geography_level_id, official_code) DO NOTHING;`;
+                            await client.query(q);
+                            totalDistricts += vals.length;
+                        } catch(e) { console.error("Err", item, e.message); }
+                    }
+                }
+            }
+        }
+    }
+    
+    console.log(`Total Districts Imported: ${totalDistricts}`);
+    await client.end();
+}
+
+run().catch(console.error);
+

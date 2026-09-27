@@ -1,0 +1,1 @@
+UPDATE data_imports.release_execution_artifacts SET artifact_payload = jsonb_set(artifact_payload, '{corrective_importer_hash}', '"4f177ff1263bb1908408b576f2781fcee4dead86f58e9b0faa7a1c45d44d0e5d"') WHERE release_id = 'b3573f9b-1eff-47d5-8cdf-fba3eba74b19';

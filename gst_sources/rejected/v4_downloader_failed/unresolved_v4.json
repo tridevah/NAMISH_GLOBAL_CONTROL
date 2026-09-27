@@ -1,0 +1,117 @@
+[
+  {
+    "id": "CGST_ACT",
+    "group": "1",
+    "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/15689",
+    "status": "UNRESOLVED",
+    "reason": "Automated retrieval failed or PDF validation (magic, page count, SHA256) could not be verified via raw fetch due to India Code/CBIC CAPTCHA and anti-scraping policies.",
+    "http_status": 302
+  },
+  {
+    "id": "IGST_ACT",
+    "group": "1",
+    "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/2251",
+    "status": "UNRESOLVED",
+    "reason": "Automated retrieval failed or PDF validation (magic, page count, SHA256) could not be verified via raw fetch due to India Code/CBIC CAPTCHA and anti-scraping policies.",
+    "http_status": 302
+  },
+  {
+    "id": "UTGST_ACT",
+    "group": "1",
+    "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/2252",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "The operation was aborted due to timeout"
+  },
+  {
+    "id": "RATES_2025_2026",
+    "group": "2",
+    "url": "https://gstcouncil.gov.in/rate-notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "The operation was aborted due to timeout"
+  },
+  {
+    "id": "GOODS_RCM_04_2017",
+    "group": "3",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000494/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "GOODS_RCM_06_2024",
+    "group": "3",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000495/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "SERVICES_RCM_13_2017",
+    "group": "4",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000503/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "SERVICES_RCM_07_2025",
+    "group": "4",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000504/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "INTER_STATE_RCM_10_2017",
+    "group": "5",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000600/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "INTER_STATE_RCM_07_2025",
+    "group": "5",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000601/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "SECTION_9_4_07_2019",
+    "group": "6",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000700/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "SECTION_9_4_24_2019",
+    "group": "6",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000701/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "COMPOSITION_14_2019",
+    "group": "7",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000800/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "COMPOSITION_02_2019",
+    "group": "7",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000801/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "COMPENSATION_CESS_CLOSURE",
+    "group": "8",
+    "url": "https://taxinformation.cbic.gov.in/view-pdf/1000900/ENG/Notifications",
+    "status": "RETRIEVAL_FAILED",
+    "reason": "fetch failed"
+  },
+  {
+    "id": "HSNS_CESS_ACT",
+    "group": "8",
+    "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/22084",
+    "status": "UNRESOLVED",
+    "reason": "Automated retrieval failed or PDF validation (magic, page count, SHA256) could not be verified via raw fetch due to India Code/CBIC CAPTCHA and anti-scraping policies.",
+    "http_status": 302
+  }
+]

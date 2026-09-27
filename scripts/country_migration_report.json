@@ -1,0 +1,11 @@
+{
+  "total_countries": 249,
+  "total_unique_currencies": 164,
+  "total_mappings": 255,
+  "multi_currency_countries": 7,
+  "no_official_currency": [
+    "AQ"
+  ],
+  "unresolved_countries": 0,
+  "migration_sha256": "805523ab65afafded3b3b49685e7a99f9427adcfcf2dbc65d312c9d9f6fe6b11"
+}

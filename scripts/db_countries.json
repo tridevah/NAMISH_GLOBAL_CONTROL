@@ -1,0 +1,18 @@
+[
+  {
+    "id": "cd8c3030-e91f-09e4-1bb1-14c3e6c8b43d",
+    "iso2": "IN",
+    "iso3": "IND",
+    "numeric_code": "356",
+    "official_name": "Republic of India",
+    "display_name": "India",
+    "default_currency_code": "INR",
+    "status": "ACTIVE",
+    "effective_from": "2026-08-26T14:40:07.377729+00:00",
+    "effective_to": null,
+    "created_at": "2026-08-26T14:40:07.377729+00:00",
+    "updated_at": "2026-08-26T14:40:07.377729+00:00",
+    "created_by": null,
+    "updated_by": null
+  }
+]

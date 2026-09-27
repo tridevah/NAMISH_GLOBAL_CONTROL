@@ -1,0 +1,1 @@
+npx supabase db query "SELECT id, event_type, (payload->>'release_sequence')::bigint as seq, jsonb_array_length(payload->'items') as total_items FROM integration.outbox_events ORDER BY created_at DESC LIMIT 1;" --linked

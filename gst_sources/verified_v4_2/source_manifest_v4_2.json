@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-04T10:49:38.768Z",
+  "counts": {
+    "downloaded": 1,
+    "proven": 1,
+    "blocked": 33,
+    "mismatch": 0
+  },
+  "proven_claims": [
+    {
+      "id": "RCM_GOODS_04_2017",
+      "sha256": "6904a4018fd41da694ea1f180edbdb5fc946a838711358e22699eb3b53da3d11"
+    }
+  ],
+  "failed_claims": []
+}

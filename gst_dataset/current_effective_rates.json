@@ -1,0 +1,56 @@
+[
+  {
+    "category": "STANDARD_GOODS_18",
+    "code": "IGST_18",
+    "rate": 18,
+    "hsn_prefix": "ANY",
+    "effective_from": "2025-10-01",
+    "status": "ACTIVE",
+    "provenance": "09/2025-Integrated Tax (Rate)"
+  },
+  {
+    "category": "STANDARD_SERVICES_18",
+    "code": "IGST_18_SVC",
+    "rate": 18,
+    "sac_prefix": "99",
+    "effective_from": "2025-10-01",
+    "status": "ACTIVE",
+    "provenance": "11/2017-Central Tax (Rate) as amended by 15/2025"
+  },
+  {
+    "category": "EXEMPT_GOODS",
+    "code": "IGST_0",
+    "rate": 0,
+    "hsn_prefix": "0101",
+    "effective_from": "2025-10-01",
+    "status": "ACTIVE",
+    "provenance": "10/2025-Integrated Tax (Rate)"
+  },
+  {
+    "category": "COMPOSITION_TRADERS",
+    "code": "COMP_1",
+    "rate": 1,
+    "hsn_prefix": "ANY",
+    "effective_from": "2019-04-01",
+    "status": "ACTIVE",
+    "provenance": "14/2019-Central Tax"
+  },
+  {
+    "category": "COMPOSITION_SERVICES",
+    "code": "COMP_6",
+    "rate": 6,
+    "sac_prefix": "ANY",
+    "effective_from": "2019-04-01",
+    "status": "ACTIVE",
+    "provenance": "02/2019-Central Tax (Rate)"
+  },
+  {
+    "category": "TOBACCO_CESS",
+    "code": "CESS_TOBACCO",
+    "rate": 290,
+    "hsn_prefix": "2402",
+    "effective_from": "2026-02-01",
+    "status": "ACTIVE",
+    "provenance": "01/2026-Central Tax (Rate)"
+  }
+]

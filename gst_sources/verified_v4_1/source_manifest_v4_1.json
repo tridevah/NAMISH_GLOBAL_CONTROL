@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-09-04T05:21:33.438Z",
+  "counts": {
+    "downloaded": 0,
+    "proven": 0,
+    "blocked": 16,
+    "unresolved": 0
+  },
+  "proven_claims": [],
+  "blocked_claims": [
+    {
+      "id": "CGST_ACT",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/15689/1/central_goods_and_services_tax_act_2017.pdf",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "IGST_ACT",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/2251/1/a2017-13.pdf",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "UTGST_ACT",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/2252/1/a2017-14.pdf",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "COMPENSATION_CESS_ACT",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/2253/1/a2017-15.pdf",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "HSNS_CESS_ACT",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/22084/1/health_and_education_cess.pdf",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "RATES_2025_2026",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/Notf_1-2017-CGST-Rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "GOODS_RCM_04_2017",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/Notf_4-CGST-Rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "GOODS_RCM_06_2024",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/notfctn-06-2024-cgst-rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SERVICES_RCM_13_2017",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/Notf_13-CGST-Rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SERVICES_RCM_07_2025",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/notfctn-07-2025-cgst-rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "INTER_STATE_RCM_10_2017",
+      "url": "https://gstcouncil.gov.in/sites/default/files/igst-rates/Notf_10-IGST-Rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "INTER_STATE_RCM_07_2025",
+      "url": "https://gstcouncil.gov.in/sites/default/files/igst-rates/notfctn-07-2025-igst-rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SECTION_9_4_07_2019",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/notfctn-07-2019-cgst-rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SECTION_9_4_24_2019",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/notfctn-24-2019-cgst-rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "COMPOSITION_14_2019",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/notfctn-14-2019-cgst.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "COMPOSITION_02_2019",
+      "url": "https://gstcouncil.gov.in/sites/default/files/cgst-rates/notfctn-02-2019-cgst-rate.pdf",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    }
+  ],
+  "errors": [
+    {
+      "id": "CGST_ACT",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "IGST_ACT",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "UTGST_ACT",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "COMPENSATION_CESS_ACT",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "HSNS_CESS_ACT",
+      "error": "HTTP 404, Content-Type: text/html, Buffer Length: 686"
+    },
+    {
+      "id": "RATES_2025_2026",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "GOODS_RCM_04_2017",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "GOODS_RCM_06_2024",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SERVICES_RCM_13_2017",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SERVICES_RCM_07_2025",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "INTER_STATE_RCM_10_2017",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "INTER_STATE_RCM_07_2025",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SECTION_9_4_07_2019",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "SECTION_9_4_24_2019",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "COMPOSITION_14_2019",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    },
+    {
+      "id": "COMPOSITION_02_2019",
+      "error": "HTTP 404, Content-Type: text/html; charset=iso-8859-1, Buffer Length: 279"
+    }
+  ]
+}

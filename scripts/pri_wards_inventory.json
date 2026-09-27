@@ -1,0 +1,1275 @@
+{
+  "results": [
+    {
+      "state_ut": "ANDAMAN AND NICOBAR ISLANDS",
+      "relative_zip_path": "downloadDir2026_08_26_23_55_42_288.zip",
+      "outer_zip_sha256": "a4cb7a1744ac13afb0953d67cac9b2ef4e0a5cfbd3d580d6660f01d0cce6d86e",
+      "internal_member": "priWards2026:08:26:23:55:42:885.xls",
+      "member_sha256": "d21ed4712a50b52b8e430812a498a892daad39204acf859e18e4ab9f0b60e71a",
+      "sheet_name": "priWards",
+      "first_nonempty_row": 1,
+      "detected_header_row": 4,
+      "first_data_row": 5,
+      "last_data_row": 764,
+      "last_worksheet_row_index": 764,
+      "non_data_row_count": 5,
+      "physical_data_row_count": 759,
+      "parsed_data_row_count": 759,
+      "distinct_numeric_ward_code_count": 758,
+      "blank_ward_code_count": 1,
+      "duplicate_ward_code_count": 0,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "ANDHRA PRADESH",
+      "relative_zip_path": "downloadDir2026_08_26_23_57_49_471.zip",
+      "outer_zip_sha256": "43e2ff8c7786eb4940750c61078b27b83eba5b0177cdd7e2d299709ceb8ea9a7",
+      "internal_member": "priWards2026:08:26:23:58:16:157.xls",
+      "member_sha256": "78f53c423d375e2188fb47e49fdceeeadcd61dd315b11e0b7efc395ec55ee72c",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 281292,
+      "physical_data_row_count": 281288,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "ARUNACHAL PRADESH",
+      "relative_zip_path": "downloadDir2026_08_26_23_56_32_567.zip",
+      "outer_zip_sha256": "85434a109ad1496fbcc3837a81124d5811486a71422587258b904be718ac8901",
+      "internal_member": "priWards2026:08:26:23:56:59:390.xls",
+      "member_sha256": "7cf12a2feb2a415da2aec786a0fc325ab4d77a48824045d8c08cd38e76b75bb2",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 281292,
+      "physical_data_row_count": 281288,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "ASSAM",
+      "relative_zip_path": "downloadDir2026_08_27_00_00_18_348.zip",
+      "outer_zip_sha256": "eec70f3171cd71f17df951037636e7b2ae778f647d1e2ef0b432249aa120c473",
+      "internal_member": "priWards2026:08:27:00:00:24:617.xls",
+      "member_sha256": "8322b4a3af72ce96ab24a58f4c76142682dd7142636b3f4411eccbbe0e63089c",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 25024,
+      "physical_data_row_count": 25020,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "BIHAR",
+      "relative_zip_path": "downloadDir2026_08_27_00_00_37_836.zip",
+      "outer_zip_sha256": "fb7304205ff196bdafcab930ea7a6a921c8dbf905fa5df9011aa4441aa955e10",
+      "internal_member": "priWards2026:08:27:00:01:03:112.xls",
+      "member_sha256": "6d9b721750ee742e88b54c6e7e7a873b1691a67c8c6b852bd7d0f353c8ffbb05",
+      "sheet_name": "priWards",
+      "first_nonempty_row": 1,
+      "detected_header_row": 4,
+      "first_data_row": 5,
+      "last_data_row": 122304,
+      "last_worksheet_row_index": 122304,
+      "non_data_row_count": 5,
+      "physical_data_row_count": 122299,
+      "parsed_data_row_count": 122299,
+      "distinct_numeric_ward_code_count": 122298,
+      "blank_ward_code_count": 1,
+      "duplicate_ward_code_count": 0,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "CHANDIGARH",
+      "relative_zip_path": "downloadDir2026_08_27_00_01_48_547.zip",
+      "outer_zip_sha256": "45598f15666a9e50bbd20bee03938c9c2e0341156918145a551095458db3619a",
+      "internal_member": "priWards2026:08:27:00:01:48:958.xls",
+      "member_sha256": "b0c00c57d4f782598f89b1b597a67205b986c093e98b44b58cba5574c8e73a8c",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 6,
+      "physical_data_row_count": 2,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "CHHATTISGARH",
+      "relative_zip_path": "downloadDir2026_08_27_00_02_18_955.zip",
+      "outer_zip_sha256": "3f26785eecd5a06bfed150f738fae2da21f3fe300057b8245f360fafad4cec6b",
+      "internal_member": "priWards2026:08:27:00:02:38:906.xls",
+      "member_sha256": "60bc621c4e80a6fbee956814e68118337ce4eefb0d7bb1a3f87f16b73de88ac8",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 165775,
+      "physical_data_row_count": 165771,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "DELHI",
+      "relative_zip_path": "downloadDir2026_08_27_00_03_00_196.zip",
+      "outer_zip_sha256": "5236419c53668dffefa6881ebf5a50e09143ff09d454d23f946027ec9a93df1a",
+      "internal_member": "priWards2026:08:27:00:03:00:787.xls",
+      "member_sha256": "5f9269c963bd1473758988b9faa1339adcab4c85120af31295265905784e4331",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 6,
+      "physical_data_row_count": 2,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "GOA",
+      "relative_zip_path": "downloadDir2026_08_27_00_03_28_787.zip",
+      "outer_zip_sha256": "06027c0da350e291de1ae65f958c6bdb4049288aa09560de2fbdc75241cbff32",
+      "internal_member": "priWards2026:08:27:00:03:29:482.xls",
+      "member_sha256": "7c495bdcebc877a2d78c1d1fbaafc60a9d5e74ba202c373c57c2a4b3a9a263f0",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 1564,
+      "physical_data_row_count": 1560,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "GUJARAT",
+      "relative_zip_path": "downloadDir2026_08_27_00_03_54_369.zip",
+      "outer_zip_sha256": "f8a4ffd2d8cea9f9fae8c51d39a814d406a95e6026d8143e426368521b4e5974",
+      "internal_member": "priWards2026:08:27:00:04:09:738.xls",
+      "member_sha256": "15a327b4bdcd406214fb5b8065306db33f386651ba9bf031efc3656809465486",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 127339,
+      "physical_data_row_count": 127335,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "HARYANA",
+      "relative_zip_path": "downloadDir2026_08_27_00_04_15_610.zip",
+      "outer_zip_sha256": "d667808d82c262cba0338b26ebad09968ff5bd92c6c1e7483f2fe7745de75d3a",
+      "internal_member": "priWards2026:08:27:00:04:24:586.xls",
+      "member_sha256": "e8e31e7715bb96b2b15626def4acdfd4cd93985189db9b80c7ffc510eeb83a6b",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 65608,
+      "physical_data_row_count": 65604,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "HIMACHAL PRADESH",
+      "relative_zip_path": "downloadDir2026_08_27_00_05_06_457.zip",
+      "outer_zip_sha256": "dcbb3bd2e0333913af2a7660e716c34189d132bea1376e2f51db317305c0402e",
+      "internal_member": "priWards2026:08:27:00:05:12:918.xls",
+      "member_sha256": "472e1f56dca317704b3dfab795753f38d3b9051a8cadc231a582a9a0b18f3c40",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 23883,
+      "physical_data_row_count": 23879,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "JAMMU AND KASHMIR",
+      "relative_zip_path": "downloadDir2026_08_27_00_05_21_407.zip",
+      "outer_zip_sha256": "f5e38daa43142063d4a3f965cab304b564421e35d8e13eb11e2359d864027e42",
+      "internal_member": "priWards2026:08:27:00:05:27:621.xls",
+      "member_sha256": "3870f96e8d218a82a3f24c8459810fd1050d5b21742ec561ab1bca4e4fed68df",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 33510,
+      "physical_data_row_count": 33506,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "JHARKHAND",
+      "relative_zip_path": "downloadDir2026_08_27_00_06_02_287.zip",
+      "outer_zip_sha256": "7edbe6beddd4c9348013ec63d8ef497b207f3b77f9ad8ee1c671ab9bee658139",
+      "internal_member": "priWards2026:08:27:00:06:12:209.xls",
+      "member_sha256": "f61243863fd556365aa23a2ebaa260fa5f8a25a178ad36cb25f3eb7a36ecdbf1",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 58930,
+      "physical_data_row_count": 58926,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "KARNATAKA",
+      "relative_zip_path": "downloadDir2026_08_27_00_06_22_867.zip",
+      "outer_zip_sha256": "8da67a5a9ba9083d4544ae9d9ed9780c6f19a8f352444bfbfa7ac228cde12a98",
+      "internal_member": "priWards2026:08:27:00:06:43:359.xls",
+      "member_sha256": "5f798ba91243a9b59725dba5b03f2a830f84b5bedf1bb33f2a08d62847db5860",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 93984,
+      "physical_data_row_count": 93980,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "KERALA",
+      "relative_zip_path": "downloadDir2026_08_27_00_07_03_987.zip",
+      "outer_zip_sha256": "c8c6913c45a6a4195624677d21e99095822469d0f92272634fb62b7e8b687a77",
+      "internal_member": "priWards2026:08:27:00:07:09:111.xls",
+      "member_sha256": "d50d9b448e673cfaa6d39f08af2c163f758c02ef486ea39502b8b36b07c42918",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 19934,
+      "physical_data_row_count": 19930,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "LADAKH",
+      "relative_zip_path": "downloadDir2026_08_27_00_07_45_287.zip",
+      "outer_zip_sha256": "f4b3d964d4ca4646ca0cc9f7ab8aaf7eca04b1cfd2ef72e195ad18f5693aa9ed",
+      "internal_member": "priWards2026:08:27:00:07:45:865.xls",
+      "member_sha256": "1ee58e89474985008325ff71f4f447537ce89affaa42a6136df6a451369bac1d",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 1464,
+      "physical_data_row_count": 1460,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "LAKSHADWEEP",
+      "relative_zip_path": "downloadDir2026_08_27_00_08_08_490.zip",
+      "outer_zip_sha256": "7c33a3eb2350e9ae68c8a07d6c6c94d0d28850636cea8560ae6c88ce6b7ad5c8",
+      "internal_member": "priWards2026:08:27:00:08:08:900.xls",
+      "member_sha256": "48cff9709045f3ddaf54eadb67d67500f0ef76edbf7a26b5d1234086fa9571b9",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 7,
+      "physical_data_row_count": 3,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "MADHYA PRADESH",
+      "relative_zip_path": "downloadDir2026_08_27_00_08_35_495.zip",
+      "outer_zip_sha256": "68e576f7080ed90b68a5340565c4e430f0662eb1436a6e940c230d8b598bf228",
+      "internal_member": "priWards2026:08:27:00:09:24:531.xls",
+      "member_sha256": "52b1a67d912da7882513ba28e570900a153f3866b5c15a5a04ca9e389567f750",
+      "sheet_name": "priWards",
+      "first_nonempty_row": 1,
+      "detected_header_row": 4,
+      "first_data_row": 5,
+      "last_data_row": 374616,
+      "last_worksheet_row_index": 374616,
+      "non_data_row_count": 5,
+      "physical_data_row_count": 374611,
+      "parsed_data_row_count": 374611,
+      "distinct_numeric_ward_code_count": 374610,
+      "blank_ward_code_count": 1,
+      "duplicate_ward_code_count": 0,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "MAHARASHTRA",
+      "relative_zip_path": "downloadDir2026_08_27_00_10_15_682.zip",
+      "outer_zip_sha256": "a0da3263863b4b5d3e19925640e93dc5e15ad6b8c46b854a68bf5c3a4df5d840",
+      "internal_member": "priWards2026:08:27:00:10:40:608.xls",
+      "member_sha256": "33deb25f89155c9f11d8689985426d87d9aed3083ad369ed9f573e1468e38b7b",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 99415,
+      "physical_data_row_count": 99411,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "MANIPUR",
+      "relative_zip_path": "downloadDir2026_08_27_00_11_03_367.zip",
+      "outer_zip_sha256": "4b3401a7bed0cbdbbc1eaf83483296fbed479d46659bc7e8a47903660c0f61ac",
+      "internal_member": "priWards2026:08:27:00:11:04:900.xls",
+      "member_sha256": "bfa9805b7213c6733b848821124a55f01aeae3bb821e497c5d81c5e45e7bfffb",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 1582,
+      "physical_data_row_count": 1578,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "MEGHALAYA",
+      "relative_zip_path": "downloadDir2026_08_27_00_11_37_763.zip",
+      "outer_zip_sha256": "d485883e287574d6b78d345be3343fe7ece65339668f8626ec0f196ac1b5dbbc",
+      "internal_member": "priWards2026:08:27:00:11:39:521.xls",
+      "member_sha256": "4b048b6613991f35b287d1f094ac353d541de11c3101f2931bae5b6dfb16e494",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 6,
+      "physical_data_row_count": 2,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "MIZORAM",
+      "relative_zip_path": "downloadDir2026_08_27_00_12_23_306.zip",
+      "outer_zip_sha256": "4295e5a64b55cc74c7211337b3fa714c43bc194b535ab2880fd3360060bf3026",
+      "internal_member": "priWards2026:08:27:00:12:23:932.xls",
+      "member_sha256": "686dc203d9423d334e41a8e935b8757a6f8edace3a905b7089638c90b79878fc",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 6,
+      "physical_data_row_count": 2,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "NAGALAND",
+      "relative_zip_path": "downloadDir2026_08_27_00_12_50_418.zip",
+      "outer_zip_sha256": "678fa38711fa1b28547bec75d3a625590dd31c7c96fbe3e811e3feb4377c992c",
+      "internal_member": "priWards2026:08:27:00:12:51:199.xls",
+      "member_sha256": "d0a32b01ad4d06ca672895bf2a7e8101e665479a305c3289d8237bdf53051ee5",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 6,
+      "physical_data_row_count": 2,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "ODISHA",
+      "relative_zip_path": "downloadDir2026_08_27_00_13_10_344.zip",
+      "outer_zip_sha256": "aebe3b9855859f5ec8af01b2d7b5d8855634f0988cba33265a7fddeb5755a03f",
+      "internal_member": "priWards2026:08:27:00:13:28:631.xls",
+      "member_sha256": "0678e95fd986e2a9811a1e4fd35f5ac2e2b049729df9bf2ead8e7184da9bcebe",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 98638,
+      "physical_data_row_count": 98634,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "PUDUCHERRY",
+      "relative_zip_path": "downloadDir2026_08_27_00_13_37_244.zip",
+      "outer_zip_sha256": "7005dc1e187bef4a88ce92c9343d66e166d53ff94ed23daa424812135da955f9",
+      "internal_member": "priWards2026:08:27:00:13:37:764.xls",
+      "member_sha256": "a204403114ccf99caf2e7c4ae4df324aa0479b26a6d9fd3ddf8a334f5f65439a",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 6,
+      "physical_data_row_count": 2,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "PUNJAB",
+      "relative_zip_path": "downloadDir2026_08_27_00_14_25_122.zip",
+      "outer_zip_sha256": "6fd550202c23a3eb0e3b158399240ed619450931486247881098e6a366b77191",
+      "internal_member": "priWards2026:08:27:00:14:37:868.xls",
+      "member_sha256": "25474d85f175c5ed4249985dfffcd61198a8ef60a2bf12d45bfd076263117916",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 87119,
+      "physical_data_row_count": 87115,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "RAJASTHAN",
+      "relative_zip_path": "downloadDir2026_08_27_00_14_44_363.zip",
+      "outer_zip_sha256": "8b5bddb68dab08b3381e9d368eac48632df1a8914ecc353f9b48b876fd80c0b2",
+      "internal_member": "priWards2026:08:27:00:15:14:631.xls",
+      "member_sha256": "566a1949e24f51581b1ead7d7da64b9a8382b7796e7b705c6b5ac00664c6291f",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 120004,
+      "physical_data_row_count": 120000,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "SIKKIM",
+      "relative_zip_path": "downloadDir2026_08_27_00_15_07_984.zip",
+      "outer_zip_sha256": "5097a6265f1ba6f28ed63a2863bac43624a1e8250ea2c5b7bda5405fdda05c55",
+      "internal_member": "priWards2026:08:27:00:15:08:642.xls",
+      "member_sha256": "833822c9459dca4a9f3890f74cb29e991b54693182a65111346ca70a86434ebf",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 1275,
+      "physical_data_row_count": 1271,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "TAMIL NADU",
+      "relative_zip_path": "downloadDir2026_08_27_00_15_35_340.zip",
+      "outer_zip_sha256": "31ff7083b1f291527bfdf6358aec8192296243593ae25c67712ffa53db3255c2",
+      "internal_member": "priWards2026:08:27:00:15:59:325.xls",
+      "member_sha256": "2e12272ca7a1e2b71898894df2ce5ec20e6cdf29cc2077fefa297144757254cc",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 105933,
+      "physical_data_row_count": 105929,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "TELANGANA",
+      "relative_zip_path": "downloadDir2026_08_27_00_16_06_623.zip",
+      "outer_zip_sha256": "fa21692b145b440d99531ae5e387456623d043d8c26f0fd37759e6bad0e83aca",
+      "internal_member": "priWards2026:08:27:00:16:25:300.xls",
+      "member_sha256": "c7b9becb7c3a1c35ec466527232447b8c6efb35dccf3d9eab698357b7d4a42a8",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 138349,
+      "physical_data_row_count": 138345,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+      "relative_zip_path": "downloadDir2026_08_27_00_16_50_423.zip",
+      "outer_zip_sha256": "d109416845ca55c81b5cdf76a87455404430d95a7c6086d9d3ee93da10d69392",
+      "internal_member": "priWards2026:08:27:00:16:50:927.xls",
+      "member_sha256": "9e84e750801734dea5ef174c0e73212df1c70ef280f20feb99d1bf6c5d9e2725",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 471,
+      "physical_data_row_count": 467,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "TRIPURA",
+      "relative_zip_path": "downloadDir2026_08_27_00_17_12_831.zip",
+      "outer_zip_sha256": "9b5b9705bd1860292d505978373ad61bd022d79a62af04c1dbd82816f71dc810",
+      "internal_member": "priWards2026:08:27:00:17:14:096.xls",
+      "member_sha256": "e3a617e4699e3e57d0e748b3c12da728e419085568abeffba6dbc8bd8e753979",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 4062,
+      "physical_data_row_count": 4058,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "UTTAR PRADESH",
+      "relative_zip_path": "downloadDir2026_08_27_00_18_41_967.zip",
+      "outer_zip_sha256": "d9a7ed7913074674c891c1652612d51e046f9e3af1f1e8af592ddecd689aec31",
+      "internal_member": "priWards2026:08:27:00:20:24:607.xls",
+      "member_sha256": "7cf0e61502a500057b9ef902efb7a40bd761e5b2cf221fe3b69a60f4667c5846",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 803790,
+      "physical_data_row_count": 803786,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    },
+    {
+      "state_ut": "UTTARAKHAND",
+      "relative_zip_path": "downloadDir2026_08_27_00_17_45_704.zip",
+      "outer_zip_sha256": "3a998c4e3730116a90039b4c85367ed42ff210114d078e90792368d4250381b7",
+      "internal_member": "priWards2026:08:27:00:17:55:753.xls",
+      "member_sha256": "caa114de155d71d160b53c5700bb3a88cf39293ad42db3e19cd963f3bb3076dc",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 60425,
+      "physical_data_row_count": 60421,
+      "worksheet_limit_reached": false,
+      "truncation_status": "OK"
+    },
+    {
+      "state_ut": "WEST BENGAL",
+      "relative_zip_path": "downloadDir2026_08_27_00_19_40_809.zip",
+      "outer_zip_sha256": "f6fb7d7293694b4a9d460766efb38df6f58dd46c6f30c86406df2ac41809fc32",
+      "internal_member": "priWards2026:08:27:00:19:52:548.xls",
+      "member_sha256": "715c6c589232ef8f2cd1206bbea9c7aa062291b81f2b657ce008f25e226412b9",
+      "sheet_name": "priWards",
+      "last_worksheet_row_index": 68891,
+      "physical_data_row_count": 68887,
+      "worksheet_limit_reached": true,
+      "truncation_status": "CAP_REACHED"
+    }
+  ],
+  "fixtures": {
+    "ANDAMAN AND NICOBAR ISLANDS": {
+      "first10": [
+        {
+          "row": 1,
+          "data": [
+            "Local Government Directory"
+          ]
+        },
+        {
+          "row": 2,
+          "data": [
+            "PRI Local Bodies and Wards of Andaman And Nicobar Islands(State code:35) State"
+          ]
+        },
+        {
+          "row": 3,
+          "data": [
+            ""
+          ]
+        },
+        {
+          "row": 4,
+          "data": [
+            "S.No.",
+            "Local Body Code",
+            "Local Body Name",
+            "Local Body Type",
+            "District Level Parent Name ",
+            "Intermediate Level Parent Name",
+            "Ward Code",
+            "Ward Number",
+            "Ward Name (In English) ",
+            "Ward Name (In Local) "
+          ]
+        },
+        {
+          "row": 5,
+          "data": [
+            "1",
+            "234465",
+            "Diglipur",
+            "Gram Panchayat",
+            "North And Middle Andaman",
+            "Diglipur",
+            "1452179",
+            "1",
+            "Diglipur-1",
+            ""
+          ]
+        },
+        {
+          "row": 6,
+          "data": [
+            "2",
+            "234465",
+            "Diglipur",
+            "Gram Panchayat",
+            "North And Middle Andaman",
+            "Diglipur",
+            "1452180",
+            "2",
+            "Diglipur-2",
+            ""
+          ]
+        },
+        {
+          "row": 7,
+          "data": [
+            "3",
+            "234465",
+            "Diglipur",
+            "Gram Panchayat",
+            "North And Middle Andaman",
+            "Diglipur",
+            "1452181",
+            "3",
+            "Diglipur-3",
+            ""
+          ]
+        },
+        {
+          "row": 8,
+          "data": [
+            "4",
+            "234465",
+            "Diglipur",
+            "Gram Panchayat",
+            "North And Middle Andaman",
+            "Diglipur",
+            "1452182",
+            "4",
+            "Diglipur-4",
+            ""
+          ]
+        },
+        {
+          "row": 9,
+          "data": [
+            "5",
+            "234465",
+            "Diglipur",
+            "Gram Panchayat",
+            "North And Middle Andaman",
+            "Diglipur",
+            "1452183",
+            "5",
+            "Diglipur-5",
+            ""
+          ]
+        },
+        {
+          "row": 10,
+          "data": [
+            "6",
+            "234465",
+            "Diglipur",
+            "Gram Panchayat",
+            "North And Middle Andaman",
+            "Diglipur",
+            "1452184",
+            "6",
+            "Diglipur-6",
+            ""
+          ]
+        }
+      ],
+      "last10": [
+        {
+          "rowIndex": 754,
+          "data": [
+            "750",
+            "6795",
+            "Little Andaman",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030837",
+            "4",
+            "Netaji Nagar",
+            "Netaji Nagar"
+          ]
+        },
+        {
+          "rowIndex": 755,
+          "data": [
+            "751",
+            "6795",
+            "Little Andaman",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030838",
+            "5",
+            "Rabindra Nagar",
+            "Rabindra Nagar"
+          ]
+        },
+        {
+          "rowIndex": 756,
+          "data": [
+            "752",
+            "6797",
+            "Prothrapur",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030839",
+            "1",
+            "Sippighat",
+            "Sippighat"
+          ]
+        },
+        {
+          "rowIndex": 757,
+          "data": [
+            "753",
+            "6797",
+            "Prothrapur",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030840",
+            "2",
+            "Calicut",
+            "Calicut"
+          ]
+        },
+        {
+          "rowIndex": 758,
+          "data": [
+            "754",
+            "6797",
+            "Prothrapur",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030841",
+            "3",
+            "Beodnabad",
+            "Beodnabad"
+          ]
+        },
+        {
+          "rowIndex": 759,
+          "data": [
+            "755",
+            "6797",
+            "Prothrapur",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030842",
+            "4",
+            "Govindnagar",
+            "Govindnagar"
+          ]
+        },
+        {
+          "rowIndex": 760,
+          "data": [
+            "756",
+            "6797",
+            "Prothrapur",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030843",
+            "5",
+            "Shyamnagar",
+            "Shyamnagar"
+          ]
+        },
+        {
+          "rowIndex": 761,
+          "data": [
+            "757",
+            "6797",
+            "Prothrapur",
+            "Panchayat Samiti",
+            "South Andamans",
+            "",
+            "3030844",
+            "6",
+            "Neil Kendra",
+            "Neil Kendra"
+          ]
+        },
+        {
+          "rowIndex": 762,
+          "data": [
+            "758",
+            "552",
+            "South Andamans",
+            "Zilla Parishad",
+            "",
+            "",
+            "111395",
+            "1",
+            "Ward No. 1",
+            "Ward No. 1"
+          ]
+        },
+        {
+          "rowIndex": 764,
+          "data": [
+            "Aug 26, 2026, 11:55 PM"
+          ]
+        }
+      ]
+    },
+    "BIHAR": {
+      "first10": [
+        {
+          "row": 1,
+          "data": [
+            "Local Government Directory"
+          ]
+        },
+        {
+          "row": 2,
+          "data": [
+            "PRI Local Bodies and Wards of Bihar(State code:10) State"
+          ]
+        },
+        {
+          "row": 3,
+          "data": [
+            ""
+          ]
+        },
+        {
+          "row": 4,
+          "data": [
+            "S.No.",
+            "Local Body Code",
+            "Local Body Name",
+            "Local Body Type",
+            "District Level Parent Name ",
+            "Intermediate Level Parent Name",
+            "Ward Code",
+            "Ward Number",
+            "Ward Name (In English) ",
+            "Ward Name (In Local) "
+          ]
+        },
+        {
+          "row": 5,
+          "data": [
+            "1",
+            "93638",
+            "Araria Basti",
+            "Gram Panchayat",
+            "Araria",
+            "Araria",
+            "1345998",
+            "1",
+            "Ward No.1",
+            ""
+          ]
+        },
+        {
+          "row": 6,
+          "data": [
+            "2",
+            "93638",
+            "Araria Basti",
+            "Gram Panchayat",
+            "Araria",
+            "Araria",
+            "1345999",
+            "2",
+            "Ward No 2",
+            ""
+          ]
+        },
+        {
+          "row": 7,
+          "data": [
+            "3",
+            "93638",
+            "Araria Basti",
+            "Gram Panchayat",
+            "Araria",
+            "Araria",
+            "1346000",
+            "3",
+            "Ward No 3",
+            ""
+          ]
+        },
+        {
+          "row": 8,
+          "data": [
+            "4",
+            "93638",
+            "Araria Basti",
+            "Gram Panchayat",
+            "Araria",
+            "Araria",
+            "1346001",
+            "4",
+            "Ward No 4",
+            ""
+          ]
+        },
+        {
+          "row": 9,
+          "data": [
+            "5",
+            "93638",
+            "Araria Basti",
+            "Gram Panchayat",
+            "Araria",
+            "Araria",
+            "1346002",
+            "5",
+            "Ward No 5",
+            ""
+          ]
+        },
+        {
+          "row": 10,
+          "data": [
+            "6",
+            "93638",
+            "Araria Basti",
+            "Gram Panchayat",
+            "Araria",
+            "Araria",
+            "1346003",
+            "6",
+            "Ward No 6",
+            ""
+          ]
+        }
+      ],
+      "last10": [
+        {
+          "rowIndex": 122294,
+          "data": [
+            "122,290",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023807",
+            "34",
+            "Ward No. 34",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 34"
+          ]
+        },
+        {
+          "rowIndex": 122295,
+          "data": [
+            "122,291",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023808",
+            "35",
+            "Ward No. 35",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 35"
+          ]
+        },
+        {
+          "rowIndex": 122296,
+          "data": [
+            "122,292",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023809",
+            "36",
+            "Ward No. 36",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 36"
+          ]
+        },
+        {
+          "rowIndex": 122297,
+          "data": [
+            "122,293",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023810",
+            "37",
+            "Ward No. 37",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 37"
+          ]
+        },
+        {
+          "rowIndex": 122298,
+          "data": [
+            "122,294",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023811",
+            "38",
+            "Ward No. 38",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 38"
+          ]
+        },
+        {
+          "rowIndex": 122299,
+          "data": [
+            "122,295",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023812",
+            "39",
+            "Ward No. 39",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 39"
+          ]
+        },
+        {
+          "rowIndex": 122300,
+          "data": [
+            "122,296",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023813",
+            "40",
+            "Ward No. 40",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 40"
+          ]
+        },
+        {
+          "rowIndex": 122301,
+          "data": [
+            "122,297",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023814",
+            "41",
+            "Ward No. 41",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 41"
+          ]
+        },
+        {
+          "rowIndex": 122302,
+          "data": [
+            "122,298",
+            "215",
+            "Vaishali",
+            "Zilla Parishad",
+            "",
+            "",
+            "3023815",
+            "42",
+            "Ward No. 42",
+            "प्रादेशिक निर्वाचन क्षेत्र संख्या - 42"
+          ]
+        },
+        {
+          "rowIndex": 122304,
+          "data": [
+            "Aug 27, 2026, 12:00 AM"
+          ]
+        }
+      ]
+    },
+    "MADHYA PRADESH": {
+      "first10": [
+        {
+          "row": 1,
+          "data": [
+            "Local Government Directory"
+          ]
+        },
+        {
+          "row": 2,
+          "data": [
+            "PRI Local Bodies and Wards of Madhya Pradesh(State code:23) State"
+          ]
+        },
+        {
+          "row": 3,
+          "data": [
+            ""
+          ]
+        },
+        {
+          "row": 4,
+          "data": [
+            "S.No.",
+            "Local Body Code",
+            "Local Body Name",
+            "Local Body Type",
+            "District Level Parent Name ",
+            "Intermediate Level Parent Name",
+            "Ward Code",
+            "Ward Number",
+            "Ward Name (In English) ",
+            "Ward Name (In Local) "
+          ]
+        },
+        {
+          "row": 5,
+          "data": [
+            "1",
+            "150499",
+            "Aawar",
+            "Gram Panchayat",
+            "Agar Malwa",
+            "Agar",
+            "81173",
+            "1",
+            "Ward No. 01",
+            "Ward No. 1"
+          ]
+        },
+        {
+          "row": 6,
+          "data": [
+            "2",
+            "150499",
+            "Aawar",
+            "Gram Panchayat",
+            "Agar Malwa",
+            "Agar",
+            "1765547",
+            "2",
+            "Ward Number 2",
+            ""
+          ]
+        },
+        {
+          "row": 7,
+          "data": [
+            "3",
+            "150499",
+            "Aawar",
+            "Gram Panchayat",
+            "Agar Malwa",
+            "Agar",
+            "1765548",
+            "3",
+            "Ward Number 3",
+            ""
+          ]
+        },
+        {
+          "row": 8,
+          "data": [
+            "4",
+            "150499",
+            "Aawar",
+            "Gram Panchayat",
+            "Agar Malwa",
+            "Agar",
+            "1765549",
+            "4",
+            "Ward Number 4",
+            ""
+          ]
+        },
+        {
+          "row": 9,
+          "data": [
+            "5",
+            "150499",
+            "Aawar",
+            "Gram Panchayat",
+            "Agar Malwa",
+            "Agar",
+            "1765550",
+            "5",
+            "Ward Number 5",
+            ""
+          ]
+        },
+        {
+          "row": 10,
+          "data": [
+            "6",
+            "150499",
+            "Aawar",
+            "Gram Panchayat",
+            "Agar Malwa",
+            "Agar",
+            "1765551",
+            "6",
+            "Ward Number 6",
+            ""
+          ]
+        }
+      ],
+      "last10": [
+        {
+          "rowIndex": 374606,
+          "data": [
+            "374,602",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284819",
+            "11",
+            "Ward No. 11",
+            "Ward No. 11"
+          ]
+        },
+        {
+          "rowIndex": 374607,
+          "data": [
+            "374,603",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284820",
+            "12",
+            "Ward No. 12",
+            "Ward No. 12"
+          ]
+        },
+        {
+          "rowIndex": 374608,
+          "data": [
+            "374,604",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284821",
+            "13",
+            "Ward No. 13",
+            "Ward No. 13"
+          ]
+        },
+        {
+          "rowIndex": 374609,
+          "data": [
+            "374,605",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284822",
+            "14",
+            "Ward No. 14",
+            "Ward No. 14"
+          ]
+        },
+        {
+          "rowIndex": 374610,
+          "data": [
+            "374,606",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284823",
+            "15",
+            "Ward No. 15",
+            "Ward No. 15"
+          ]
+        },
+        {
+          "rowIndex": 374611,
+          "data": [
+            "374,607",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284824",
+            "16",
+            "Ward No. 16",
+            "Ward No. 16"
+          ]
+        },
+        {
+          "rowIndex": 374612,
+          "data": [
+            "374,608",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284825",
+            "17",
+            "Ward No. 17",
+            "Ward No. 17"
+          ]
+        },
+        {
+          "rowIndex": 374613,
+          "data": [
+            "374,609",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284826",
+            "18",
+            "Ward No. 18",
+            "Ward No. 18"
+          ]
+        },
+        {
+          "rowIndex": 374614,
+          "data": [
+            "374,610",
+            "396",
+            "Vidisha",
+            "Zila Panchayat",
+            "",
+            "",
+            "3284827",
+            "19",
+            "Ward No. 19",
+            "Ward No. 19"
+          ]
+        },
+        {
+          "rowIndex": 374616,
+          "data": [
+            "Aug 27, 2026, 12:08 AM"
+          ]
+        }
+      ]
+    }
+  }
+}

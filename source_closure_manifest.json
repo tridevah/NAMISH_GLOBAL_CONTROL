@@ -1,0 +1,31 @@
+{
+  "hsn_source": {
+    "raw_url": "https://tutorial.gst.gov.in/downloads/HSN_SAC.xlsx",
+    "raw_sha256": "051108e31063f1ef0d6dfb005a622bcc848878fa2d94fae51a73e67f8916871e",
+    "download_timestamp": "2026-09-04T17:08:00Z",
+    "normalized_sha256": "27682a33e521ec32fefb7cf06e4ce6e689665f326c6c2e627dcf7bf338793b78",
+    "db_export_sha256": "5dc76adf9df7b121158fbb0a090a2c22b0ef78e117680df1b27eb9993cfee966",
+    "row_count": 21928
+  },
+  "sac_source": {
+    "raw_url": "https://tutorial.gst.gov.in/downloads/HSN_SAC.xlsx",
+    "raw_sha256": "051108e31063f1ef0d6dfb005a622bcc848878fa2d94fae51a73e67f8916871e",
+    "download_timestamp": "2026-09-04T17:08:00Z",
+    "normalized_sha256": "0ccd0d524ef30744b9ed286da8a450b4d4012092fc6c0fd8f71e0bbda7a7f16d",
+    "db_export_sha256": "14c7bd287b187b00d9a7aa88d856bd1ca3c96b2011e9aa472091ebc2966854b1",
+    "row_count": 679
+  },
+  "parser": "Node.js custom deterministic",
+  "version": "1.0",
+  "comparison_results": {
+    "HSN_CODE_DB_MINUS_SOURCE": 0,
+    "HSN_CODE_SOURCE_MINUS_DB": 0,
+    "HSN_DESCRIPTION_MISMATCHES": 0,
+    "HSN_FULL_TUPLE_DB_MINUS_SOURCE": 0,
+    "HSN_FULL_TUPLE_SOURCE_MINUS_DB": 0,
+    "SAC_DB_MINUS_LEGAL_SOURCE": 0,
+    "SAC_LEGAL_SOURCE_MINUS_DB": 0,
+    "SAC_DESCRIPTION_MISMATCHES": 0
+  },
+  "affectedRows": []
+}

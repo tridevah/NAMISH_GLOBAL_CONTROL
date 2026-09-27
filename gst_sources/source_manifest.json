@@ -1,0 +1,84 @@
+{
+  "coverageMatrix": {
+    "Jurisdictions": "31 SGST, 5 UTGST",
+    "Principal Rates": "5%, 18%, 40%",
+    "Special Entry Rates": "0.25%, 1.5%, 3%, 12%, 28%",
+    "Treatments": "NIL, EXEMPT, ZERO-RATED, NON-GST",
+    "Place Of Supply": "IGST Sections 10-13",
+    "OIDAR": "IGST Section 14",
+    "RCM": "CGST 9(3)/9(4)",
+    "Composition": "CGST 10/10(2A)",
+    "Cess": "Compensation Cess, HSNS Cess"
+  },
+  "unresolvedItems": [
+    {
+      "domain": "PROFESSION_TAX",
+      "reason": "Awaiting individual State Gazette notifications for all 31 SGST jurisdictions."
+    },
+    {
+      "domain": "STATE_VAT",
+      "reason": "Awaiting non-GST alcohol/petroleum State VAT schedules."
+    },
+    {
+      "domain": "STATE_EXCISE",
+      "reason": "Awaiting local body State Excise rates."
+    }
+  ],
+  "manifest": [
+    {
+      "name": "CBIC_GST_Acts_Index",
+      "authority": "CBIC / GST Council",
+      "notification": "Base Index",
+      "publicationDate": "2017-07-01",
+      "effectiveDate": "2017-07-01",
+      "sourceUrl": "https://cbic-gst.gov.in/gst-acts.html",
+      "localFile": "cbic_gst_acts_index.html",
+      "sha256": "d3857923552d4f19b16be890330a74e3dfadbee591a31cafab80cdae6738f660",
+      "description": "Index covering the 31 SGST and 5 UTGST Jurisdictions, IGST Sections 10-13 (Place of Supply) and 14 (OIDAR), and Compensation/HSNs Cess architecture."
+    },
+    {
+      "name": "CGST_Rules_2017",
+      "authority": "CBIC",
+      "notification": "Central Tax Rules 2017",
+      "publicationDate": "2017-07-01",
+      "effectiveDate": "2017-07-01",
+      "sourceUrl": "https://cbic-gst.gov.in/pdf/cgst-rules-01july2017.pdf",
+      "localFile": "cgst_rules_01july2017.pdf",
+      "sha256": "5516a0d93a6b767213bd4b14c297e180fde5db44a9b48db56587fe9c136a94bb",
+      "description": "Central Goods and Services Tax Rules covering RCM 9(3)/9(4) and Composition Scheme 10/10(2A)."
+    },
+    {
+      "name": "Central_Tax_Notification_3",
+      "authority": "CBIC",
+      "notification": "No. 3/2017-Central Tax",
+      "publicationDate": "2017-06-19",
+      "effectiveDate": "2017-07-01",
+      "sourceUrl": "https://cbic-gst.gov.in/pdf/notfctn-3-central-tax-english.pdf",
+      "localFile": "notfctn_3_central_tax.pdf",
+      "sha256": "907f37cdc63a574d1c97aa4c43d3dcd8f41bf120eceada953c92b0cafcbb8da2",
+      "description": "Rate Notification covering current 5%, 18%, 40% architecture and specific 0.25%, 1.5%, 3%, 12%, 28% entries."
+    },
+    {
+      "name": "GST_Valuation_Rules",
+      "authority": "CBIC",
+      "notification": "Valuation Rules",
+      "publicationDate": "2017-05-17",
+      "effectiveDate": "2017-07-01",
+      "sourceUrl": "https://cbic-gst.gov.in/pdf/valuation-gst-rules-17052017.pdf",
+      "localFile": "valuation_gst_rules.pdf",
+      "sha256": "f5d607b3e9f84cbefce269e5d696640fa99ae8d66406530132e57bc62f10ac96",
+      "description": "Rules governing Place of Supply valuation."
+    },
+    {
+      "name": "GST_ITC_Exemptions_Rules",
+      "authority": "CBIC",
+      "notification": "ITC Rules",
+      "publicationDate": "2017-05-17",
+      "effectiveDate": "2017-07-01",
+      "sourceUrl": "https://cbic-gst.gov.in/pdf/itc-rules-17052017.pdf",
+      "localFile": "itc_rules_exemptions.pdf",
+      "sha256": "aa043ebe31d0be9d2c65b7e0540fba16e998c192e6226bc69875e7d3b0664f16",
+      "description": "Rules governing Input Tax Credit exclusions and separate treatments for Nil, Exempt, Zero-Rated and Non-GST supplies."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "CGST_ACT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "IGST_ACT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "UTGST_ACT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "GST_COMPENSATION_ACT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "HSNS_CESS_ACT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_09_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_10_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_11_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_12_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_13_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_14_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_15_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_16_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RATE_17_2025_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "TOBACCO_2025",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "PAN_MASALA_2026",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RCM_GOODS_06_2024",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RCM_SERVICES_13_2017",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RCM_SERVICES_07_2025",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RCM_INTER_STATE_10_2017",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "RCM_INTER_STATE_07_2025",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "SECTION_9_4_07_2019",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "SECTION_9_4_24_2019",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_14_2019_CT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_43_2019_CT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_04_2022_CT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_16_2022_CT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_02_2019_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_09_2019_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_18_2019_CTR",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "COMP_50_2020_CT",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "CESS_RATE_CLOSURE",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  },
+  {
+    "id": "HSNS_CESS_RULES_2026",
+    "error": "Node URL resolution failed. Cannot curl exact PDF href without Playwright traversal which timed out or was blocked by captcha."
+  }
+]

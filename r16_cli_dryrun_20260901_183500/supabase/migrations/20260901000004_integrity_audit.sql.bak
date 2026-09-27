@@ -1,0 +1,11 @@
+DO $$
+DECLARE
+    r record;
+BEGIN
+    FOR r IN SELECT raw_data->>'TITLE' as title FROM staging.geography_imports WHERE entity_type = 'STATE'
+    LOOP
+        RAISE NOTICE '%', r.title;
+    END LOOP;
+    RAISE EXCEPTION 'DONE';
+END;
+$$

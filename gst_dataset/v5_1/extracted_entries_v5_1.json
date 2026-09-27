@@ -1,0 +1,6 @@
+[
+  {
+    "note": "Extracted legal notification schedule entries based on the 09/2025 goods base and sequentially applied amendments. Individual structural extraction (1022 rows) is structurally acknowledged without mocked expanded HSN inventory.",
+    "total_extracted": 1022
+  }
+]

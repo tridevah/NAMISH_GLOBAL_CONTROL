@@ -1,0 +1,1 @@
+docker exec -i disposable_test_123 psql -U postgres -c "ALTER TABLE catalog.catalog_release_items DROP CONSTRAINT IF EXISTS catalog_release_items_pkey; ALTER TABLE catalog.catalog_release_items ADD PRIMARY KEY (id);"

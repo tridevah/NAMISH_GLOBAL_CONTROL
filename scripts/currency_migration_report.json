@@ -1,0 +1,1511 @@
+{
+  "generatedAt": "2026-09-01T17:58:48.413Z",
+  "sources": {
+    "six": {
+      "file": "scripts/six_list_one.xml",
+      "publishedDate": "2026-01-01"
+    },
+    "cldr": {
+      "file": "scripts/cldr_currencies_en.json",
+      "version": "45.0.0"
+    }
+  },
+  "stats": {
+    "uniqueCurrencies": 164,
+    "dbCountries": 1,
+    "mappings": 1,
+    "unmapped": 0,
+    "blankRows": 0,
+    "duplicateCodes": 0
+  },
+  "migration": {
+    "filename": "20260901000004_currency_master_canonical.sql",
+    "sha256": "0f319cf4058ddc188d441a9b0eee2da017654229b4a42ae57119a3aae7dffb9a",
+    "sizeBytes": 20916
+  },
+  "currencies": [
+    {
+      "iso_alpha_code": "AFN",
+      "name": "Afghan Afghani",
+      "default_symbol": "؋",
+      "native_symbol": "؋",
+      "iso_numeric_code": "971",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "EUR",
+      "name": "Euro",
+      "default_symbol": "€",
+      "native_symbol": "€",
+      "iso_numeric_code": "978",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ALL",
+      "name": "Albanian Lek",
+      "default_symbol": "ALL",
+      "native_symbol": "ALL",
+      "iso_numeric_code": "008",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "DZD",
+      "name": "Algerian Dinar",
+      "default_symbol": "DZD",
+      "native_symbol": "DZD",
+      "iso_numeric_code": "012",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "USD",
+      "name": "US Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "840",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "AOA",
+      "name": "Angolan Kwanza",
+      "default_symbol": "Kz",
+      "native_symbol": "Kz",
+      "iso_numeric_code": "973",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "XCD",
+      "name": "East Caribbean Dollar",
+      "default_symbol": "EC$",
+      "native_symbol": "EC$",
+      "iso_numeric_code": "951",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ARS",
+      "name": "Argentine Peso",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "032",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "AMD",
+      "name": "Armenian Dram",
+      "default_symbol": "֏",
+      "native_symbol": "֏",
+      "iso_numeric_code": "051",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "AWG",
+      "name": "Aruban Florin",
+      "default_symbol": "AWG",
+      "native_symbol": "AWG",
+      "iso_numeric_code": "533",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "AUD",
+      "name": "Australian Dollar",
+      "default_symbol": "A$",
+      "native_symbol": "A$",
+      "iso_numeric_code": "036",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "AZN",
+      "name": "Azerbaijani Manat",
+      "default_symbol": "₼",
+      "native_symbol": "₼",
+      "iso_numeric_code": "944",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BSD",
+      "name": "Bahamian Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "044",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BHD",
+      "name": "Bahraini Dinar",
+      "default_symbol": "BHD",
+      "native_symbol": "BHD",
+      "iso_numeric_code": "048",
+      "minor_units": 3,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BDT",
+      "name": "Bangladeshi Taka",
+      "default_symbol": "৳",
+      "native_symbol": "৳",
+      "iso_numeric_code": "050",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BBD",
+      "name": "Barbadian Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "052",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BYN",
+      "name": "Belarusian Ruble",
+      "default_symbol": "BYN",
+      "native_symbol": "BYN",
+      "iso_numeric_code": "933",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BZD",
+      "name": "Belize Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "084",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "XOF",
+      "name": "West African CFA Franc",
+      "default_symbol": "F CFA",
+      "native_symbol": "F CFA",
+      "iso_numeric_code": "952",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BMD",
+      "name": "Bermudan Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "060",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "INR",
+      "name": "Indian Rupee",
+      "default_symbol": "₹",
+      "native_symbol": "₹",
+      "iso_numeric_code": "356",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BTN",
+      "name": "Bhutanese Ngultrum",
+      "default_symbol": "BTN",
+      "native_symbol": "BTN",
+      "iso_numeric_code": "064",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BOB",
+      "name": "Bolivian Boliviano",
+      "default_symbol": "Bs",
+      "native_symbol": "Bs",
+      "iso_numeric_code": "068",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BOV",
+      "name": "Bolivian Mvdol",
+      "default_symbol": "BOV",
+      "native_symbol": "BOV",
+      "iso_numeric_code": "984",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BAM",
+      "name": "Bosnia-Herzegovina Convertible Mark",
+      "default_symbol": "KM",
+      "native_symbol": "KM",
+      "iso_numeric_code": "977",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BWP",
+      "name": "Botswanan Pula",
+      "default_symbol": "P",
+      "native_symbol": "P",
+      "iso_numeric_code": "072",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "NOK",
+      "name": "Norwegian Krone",
+      "default_symbol": "kr",
+      "native_symbol": "kr",
+      "iso_numeric_code": "578",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BRL",
+      "name": "Brazilian Real",
+      "default_symbol": "R$",
+      "native_symbol": "R$",
+      "iso_numeric_code": "986",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BND",
+      "name": "Brunei Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "096",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "BIF",
+      "name": "Burundian Franc",
+      "default_symbol": "BIF",
+      "native_symbol": "BIF",
+      "iso_numeric_code": "108",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CVE",
+      "name": "Cape Verdean Escudo",
+      "default_symbol": "CVE",
+      "native_symbol": "CVE",
+      "iso_numeric_code": "132",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KHR",
+      "name": "Cambodian Riel",
+      "default_symbol": "៛",
+      "native_symbol": "៛",
+      "iso_numeric_code": "116",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "XAF",
+      "name": "Central African CFA Franc",
+      "default_symbol": "FCFA",
+      "native_symbol": "FCFA",
+      "iso_numeric_code": "950",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CAD",
+      "name": "Canadian Dollar",
+      "default_symbol": "CA$",
+      "native_symbol": "CA$",
+      "iso_numeric_code": "124",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KYD",
+      "name": "Cayman Islands Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "136",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CLP",
+      "name": "Chilean Peso",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "152",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CLF",
+      "name": "Chilean Unit of Account (UF)",
+      "default_symbol": "CLF",
+      "native_symbol": "CLF",
+      "iso_numeric_code": "990",
+      "minor_units": 4,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CNY",
+      "name": "Chinese Yuan",
+      "default_symbol": "CN¥",
+      "native_symbol": "CN¥",
+      "iso_numeric_code": "156",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "COP",
+      "name": "Colombian Peso",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "170",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "COU",
+      "name": "Colombian Real Value Unit",
+      "default_symbol": "COU",
+      "native_symbol": "COU",
+      "iso_numeric_code": "970",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KMF",
+      "name": "Comorian Franc",
+      "default_symbol": "CF",
+      "native_symbol": "CF",
+      "iso_numeric_code": "174",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CDF",
+      "name": "Congolese Franc",
+      "default_symbol": "CDF",
+      "native_symbol": "CDF",
+      "iso_numeric_code": "976",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "NZD",
+      "name": "New Zealand Dollar",
+      "default_symbol": "NZ$",
+      "native_symbol": "NZ$",
+      "iso_numeric_code": "554",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CRC",
+      "name": "Costa Rican Colón",
+      "default_symbol": "₡",
+      "native_symbol": "₡",
+      "iso_numeric_code": "188",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CUP",
+      "name": "Cuban Peso",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "192",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "XCG",
+      "name": "Caribbean guilder",
+      "default_symbol": "Cg.",
+      "native_symbol": "Cg.",
+      "iso_numeric_code": "532",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CZK",
+      "name": "Czech Koruna",
+      "default_symbol": "Kč",
+      "native_symbol": "Kč",
+      "iso_numeric_code": "203",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "DKK",
+      "name": "Danish Krone",
+      "default_symbol": "kr",
+      "native_symbol": "kr",
+      "iso_numeric_code": "208",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "DJF",
+      "name": "Djiboutian Franc",
+      "default_symbol": "DJF",
+      "native_symbol": "DJF",
+      "iso_numeric_code": "262",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "DOP",
+      "name": "Dominican Peso",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "214",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "EGP",
+      "name": "Egyptian Pound",
+      "default_symbol": "E£",
+      "native_symbol": "E£",
+      "iso_numeric_code": "818",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SVC",
+      "name": "Salvadoran Colón",
+      "default_symbol": "SVC",
+      "native_symbol": "SVC",
+      "iso_numeric_code": "222",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ERN",
+      "name": "Eritrean Nakfa",
+      "default_symbol": "ERN",
+      "native_symbol": "ERN",
+      "iso_numeric_code": "232",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SZL",
+      "name": "Swazi Lilangeni",
+      "default_symbol": "SZL",
+      "native_symbol": "SZL",
+      "iso_numeric_code": "748",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ETB",
+      "name": "Ethiopian Birr",
+      "default_symbol": "ETB",
+      "native_symbol": "ETB",
+      "iso_numeric_code": "230",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "FKP",
+      "name": "Falkland Islands Pound",
+      "default_symbol": "£",
+      "native_symbol": "£",
+      "iso_numeric_code": "238",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "FJD",
+      "name": "Fijian Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "242",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "XPF",
+      "name": "CFP Franc",
+      "default_symbol": "CFPF",
+      "native_symbol": "CFPF",
+      "iso_numeric_code": "953",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GMD",
+      "name": "Gambian Dalasi",
+      "default_symbol": "GMD",
+      "native_symbol": "GMD",
+      "iso_numeric_code": "270",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GEL",
+      "name": "Georgian Lari",
+      "default_symbol": "₾",
+      "native_symbol": "₾",
+      "iso_numeric_code": "981",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GHS",
+      "name": "Ghanaian Cedi",
+      "default_symbol": "GH₵",
+      "native_symbol": "GH₵",
+      "iso_numeric_code": "936",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GIP",
+      "name": "Gibraltar Pound",
+      "default_symbol": "£",
+      "native_symbol": "£",
+      "iso_numeric_code": "292",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GTQ",
+      "name": "Guatemalan Quetzal",
+      "default_symbol": "Q",
+      "native_symbol": "Q",
+      "iso_numeric_code": "320",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GBP",
+      "name": "British Pound",
+      "default_symbol": "£",
+      "native_symbol": "£",
+      "iso_numeric_code": "826",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GNF",
+      "name": "Guinean Franc",
+      "default_symbol": "FG",
+      "native_symbol": "FG",
+      "iso_numeric_code": "324",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "GYD",
+      "name": "Guyanaese Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "328",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "HTG",
+      "name": "Haitian Gourde",
+      "default_symbol": "HTG",
+      "native_symbol": "HTG",
+      "iso_numeric_code": "332",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "HNL",
+      "name": "Honduran Lempira",
+      "default_symbol": "L",
+      "native_symbol": "L",
+      "iso_numeric_code": "340",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "HKD",
+      "name": "Hong Kong Dollar",
+      "default_symbol": "HK$",
+      "native_symbol": "HK$",
+      "iso_numeric_code": "344",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "HUF",
+      "name": "Hungarian Forint",
+      "default_symbol": "Ft",
+      "native_symbol": "Ft",
+      "iso_numeric_code": "348",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ISK",
+      "name": "Icelandic Króna",
+      "default_symbol": "kr",
+      "native_symbol": "kr",
+      "iso_numeric_code": "352",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "IDR",
+      "name": "Indonesian Rupiah",
+      "default_symbol": "Rp",
+      "native_symbol": "Rp",
+      "iso_numeric_code": "360",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "IRR",
+      "name": "Iranian Rial",
+      "default_symbol": "IRR",
+      "native_symbol": "IRR",
+      "iso_numeric_code": "364",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "IQD",
+      "name": "Iraqi Dinar",
+      "default_symbol": "IQD",
+      "native_symbol": "IQD",
+      "iso_numeric_code": "368",
+      "minor_units": 3,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ILS",
+      "name": "Israeli New Shekel",
+      "default_symbol": "₪",
+      "native_symbol": "₪",
+      "iso_numeric_code": "376",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "JMD",
+      "name": "Jamaican Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "388",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "JPY",
+      "name": "Japanese Yen",
+      "default_symbol": "¥",
+      "native_symbol": "¥",
+      "iso_numeric_code": "392",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "JOD",
+      "name": "Jordanian Dinar",
+      "default_symbol": "JOD",
+      "native_symbol": "JOD",
+      "iso_numeric_code": "400",
+      "minor_units": 3,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KZT",
+      "name": "Kazakhstani Tenge",
+      "default_symbol": "₸",
+      "native_symbol": "₸",
+      "iso_numeric_code": "398",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KES",
+      "name": "Kenyan Shilling",
+      "default_symbol": "KES",
+      "native_symbol": "KES",
+      "iso_numeric_code": "404",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KPW",
+      "name": "North Korean Won",
+      "default_symbol": "₩",
+      "native_symbol": "₩",
+      "iso_numeric_code": "408",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KRW",
+      "name": "South Korean Won",
+      "default_symbol": "₩",
+      "native_symbol": "₩",
+      "iso_numeric_code": "410",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KWD",
+      "name": "Kuwaiti Dinar",
+      "default_symbol": "KWD",
+      "native_symbol": "KWD",
+      "iso_numeric_code": "414",
+      "minor_units": 3,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "KGS",
+      "name": "Kyrgystani Som",
+      "default_symbol": "⃀",
+      "native_symbol": "⃀",
+      "iso_numeric_code": "417",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "LAK",
+      "name": "Laotian Kip",
+      "default_symbol": "₭",
+      "native_symbol": "₭",
+      "iso_numeric_code": "418",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "LBP",
+      "name": "Lebanese Pound",
+      "default_symbol": "L£",
+      "native_symbol": "L£",
+      "iso_numeric_code": "422",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "LSL",
+      "name": "Lesotho Loti",
+      "default_symbol": "LSL",
+      "native_symbol": "LSL",
+      "iso_numeric_code": "426",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ZAR",
+      "name": "South African Rand",
+      "default_symbol": "R",
+      "native_symbol": "R",
+      "iso_numeric_code": "710",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "LRD",
+      "name": "Liberian Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "430",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "LYD",
+      "name": "Libyan Dinar",
+      "default_symbol": "LYD",
+      "native_symbol": "LYD",
+      "iso_numeric_code": "434",
+      "minor_units": 3,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CHF",
+      "name": "Swiss Franc",
+      "default_symbol": "CHF",
+      "native_symbol": "CHF",
+      "iso_numeric_code": "756",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MOP",
+      "name": "Macanese Pataca",
+      "default_symbol": "MOP",
+      "native_symbol": "MOP",
+      "iso_numeric_code": "446",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MKD",
+      "name": "Macedonian Denar",
+      "default_symbol": "MKD",
+      "native_symbol": "MKD",
+      "iso_numeric_code": "807",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MGA",
+      "name": "Malagasy Ariary",
+      "default_symbol": "Ar",
+      "native_symbol": "Ar",
+      "iso_numeric_code": "969",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MWK",
+      "name": "Malawian Kwacha",
+      "default_symbol": "MWK",
+      "native_symbol": "MWK",
+      "iso_numeric_code": "454",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MYR",
+      "name": "Malaysian Ringgit",
+      "default_symbol": "RM",
+      "native_symbol": "RM",
+      "iso_numeric_code": "458",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MVR",
+      "name": "Maldivian Rufiyaa",
+      "default_symbol": "MVR",
+      "native_symbol": "MVR",
+      "iso_numeric_code": "462",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MRU",
+      "name": "Mauritanian Ouguiya",
+      "default_symbol": "MRU",
+      "native_symbol": "MRU",
+      "iso_numeric_code": "929",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MUR",
+      "name": "Mauritian Rupee",
+      "default_symbol": "Rs",
+      "native_symbol": "Rs",
+      "iso_numeric_code": "480",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MXN",
+      "name": "Mexican Peso",
+      "default_symbol": "MX$",
+      "native_symbol": "MX$",
+      "iso_numeric_code": "484",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MXV",
+      "name": "Mexican Investment Unit",
+      "default_symbol": "MXV",
+      "native_symbol": "MXV",
+      "iso_numeric_code": "979",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MDL",
+      "name": "Moldovan Leu",
+      "default_symbol": "MDL",
+      "native_symbol": "MDL",
+      "iso_numeric_code": "498",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MNT",
+      "name": "Mongolian Tugrik",
+      "default_symbol": "₮",
+      "native_symbol": "₮",
+      "iso_numeric_code": "496",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MAD",
+      "name": "Moroccan Dirham",
+      "default_symbol": "MAD",
+      "native_symbol": "MAD",
+      "iso_numeric_code": "504",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MZN",
+      "name": "Mozambican Metical",
+      "default_symbol": "MZN",
+      "native_symbol": "MZN",
+      "iso_numeric_code": "943",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "MMK",
+      "name": "Myanmar Kyat",
+      "default_symbol": "K",
+      "native_symbol": "K",
+      "iso_numeric_code": "104",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "NAD",
+      "name": "Namibian Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "516",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "NPR",
+      "name": "Nepalese Rupee",
+      "default_symbol": "Rs",
+      "native_symbol": "Rs",
+      "iso_numeric_code": "524",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "NIO",
+      "name": "Nicaraguan Córdoba",
+      "default_symbol": "C$",
+      "native_symbol": "C$",
+      "iso_numeric_code": "558",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "NGN",
+      "name": "Nigerian Naira",
+      "default_symbol": "₦",
+      "native_symbol": "₦",
+      "iso_numeric_code": "566",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "OMR",
+      "name": "Omani Rial",
+      "default_symbol": "OMR",
+      "native_symbol": "OMR",
+      "iso_numeric_code": "512",
+      "minor_units": 3,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "PKR",
+      "name": "Pakistani Rupee",
+      "default_symbol": "Rs",
+      "native_symbol": "Rs",
+      "iso_numeric_code": "586",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "PAB",
+      "name": "Panamanian Balboa",
+      "default_symbol": "PAB",
+      "native_symbol": "PAB",
+      "iso_numeric_code": "590",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "PGK",
+      "name": "Papua New Guinean Kina",
+      "default_symbol": "PGK",
+      "native_symbol": "PGK",
+      "iso_numeric_code": "598",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "PYG",
+      "name": "Paraguayan Guarani",
+      "default_symbol": "₲",
+      "native_symbol": "₲",
+      "iso_numeric_code": "600",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "PEN",
+      "name": "Peruvian Sol",
+      "default_symbol": "PEN",
+      "native_symbol": "PEN",
+      "iso_numeric_code": "604",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "PHP",
+      "name": "Philippine Peso",
+      "default_symbol": "₱",
+      "native_symbol": "₱",
+      "iso_numeric_code": "608",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "PLN",
+      "name": "Polish Zloty",
+      "default_symbol": "zł",
+      "native_symbol": "zł",
+      "iso_numeric_code": "985",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "QAR",
+      "name": "Qatari Riyal",
+      "default_symbol": "QAR",
+      "native_symbol": "QAR",
+      "iso_numeric_code": "634",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "RON",
+      "name": "Romanian Leu",
+      "default_symbol": "lei",
+      "native_symbol": "lei",
+      "iso_numeric_code": "946",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "RUB",
+      "name": "Russian Ruble",
+      "default_symbol": "₽",
+      "native_symbol": "₽",
+      "iso_numeric_code": "643",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "RWF",
+      "name": "Rwandan Franc",
+      "default_symbol": "RF",
+      "native_symbol": "RF",
+      "iso_numeric_code": "646",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SHP",
+      "name": "St. Helena Pound",
+      "default_symbol": "£",
+      "native_symbol": "£",
+      "iso_numeric_code": "654",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "WST",
+      "name": "Samoan Tala",
+      "default_symbol": "WST",
+      "native_symbol": "WST",
+      "iso_numeric_code": "882",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "STN",
+      "name": "São Tomé & Príncipe Dobra",
+      "default_symbol": "Db",
+      "native_symbol": "Db",
+      "iso_numeric_code": "930",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SAR",
+      "name": "Saudi Riyal",
+      "default_symbol": "SAR",
+      "native_symbol": "SAR",
+      "iso_numeric_code": "682",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "RSD",
+      "name": "Serbian Dinar",
+      "default_symbol": "RSD",
+      "native_symbol": "RSD",
+      "iso_numeric_code": "941",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SCR",
+      "name": "Seychellois Rupee",
+      "default_symbol": "SCR",
+      "native_symbol": "SCR",
+      "iso_numeric_code": "690",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SLE",
+      "name": "Sierra Leonean Leone",
+      "default_symbol": "SLE",
+      "native_symbol": "SLE",
+      "iso_numeric_code": "925",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SGD",
+      "name": "Singapore Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "702",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SBD",
+      "name": "Solomon Islands Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "090",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SOS",
+      "name": "Somali Shilling",
+      "default_symbol": "SOS",
+      "native_symbol": "SOS",
+      "iso_numeric_code": "706",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SSP",
+      "name": "South Sudanese Pound",
+      "default_symbol": "£",
+      "native_symbol": "£",
+      "iso_numeric_code": "728",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "LKR",
+      "name": "Sri Lankan Rupee",
+      "default_symbol": "Rs",
+      "native_symbol": "Rs",
+      "iso_numeric_code": "144",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SDG",
+      "name": "Sudanese Pound",
+      "default_symbol": "SDG",
+      "native_symbol": "SDG",
+      "iso_numeric_code": "938",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SRD",
+      "name": "Surinamese Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "968",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SEK",
+      "name": "Swedish Krona",
+      "default_symbol": "kr",
+      "native_symbol": "kr",
+      "iso_numeric_code": "752",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CHE",
+      "name": "WIR Euro",
+      "default_symbol": "CHE",
+      "native_symbol": "CHE",
+      "iso_numeric_code": "947",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "CHW",
+      "name": "WIR Franc",
+      "default_symbol": "CHW",
+      "native_symbol": "CHW",
+      "iso_numeric_code": "948",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "SYP",
+      "name": "Syrian Pound",
+      "default_symbol": "£",
+      "native_symbol": "£",
+      "iso_numeric_code": "760",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TWD",
+      "name": "New Taiwan Dollar",
+      "default_symbol": "NT$",
+      "native_symbol": "NT$",
+      "iso_numeric_code": "901",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TJS",
+      "name": "Tajikistani Somoni",
+      "default_symbol": "TJS",
+      "native_symbol": "TJS",
+      "iso_numeric_code": "972",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TZS",
+      "name": "Tanzanian Shilling",
+      "default_symbol": "TZS",
+      "native_symbol": "TZS",
+      "iso_numeric_code": "834",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "THB",
+      "name": "Thai Baht",
+      "default_symbol": "฿",
+      "native_symbol": "฿",
+      "iso_numeric_code": "764",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TOP",
+      "name": "Tongan Paʻanga",
+      "default_symbol": "T$",
+      "native_symbol": "T$",
+      "iso_numeric_code": "776",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TTD",
+      "name": "Trinidad & Tobago Dollar",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "780",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TND",
+      "name": "Tunisian Dinar",
+      "default_symbol": "TND",
+      "native_symbol": "TND",
+      "iso_numeric_code": "788",
+      "minor_units": 3,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TRY",
+      "name": "Turkish Lira",
+      "default_symbol": "₺",
+      "native_symbol": "₺",
+      "iso_numeric_code": "949",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "TMT",
+      "name": "Turkmenistani Manat",
+      "default_symbol": "TMT",
+      "native_symbol": "TMT",
+      "iso_numeric_code": "934",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "UGX",
+      "name": "Ugandan Shilling",
+      "default_symbol": "UGX",
+      "native_symbol": "UGX",
+      "iso_numeric_code": "800",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "UAH",
+      "name": "Ukrainian Hryvnia",
+      "default_symbol": "₴",
+      "native_symbol": "₴",
+      "iso_numeric_code": "980",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "AED",
+      "name": "United Arab Emirates Dirham",
+      "default_symbol": "AED",
+      "native_symbol": "AED",
+      "iso_numeric_code": "784",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "USN",
+      "name": "US Dollar (Next day)",
+      "default_symbol": "USN",
+      "native_symbol": "USN",
+      "iso_numeric_code": "997",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "UYU",
+      "name": "Uruguayan Peso",
+      "default_symbol": "$",
+      "native_symbol": "$",
+      "iso_numeric_code": "858",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "UYI",
+      "name": "Uruguayan Peso (Indexed Units)",
+      "default_symbol": "UYI",
+      "native_symbol": "UYI",
+      "iso_numeric_code": "940",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "UYW",
+      "name": "Uruguayan Nominal Wage Index Unit",
+      "default_symbol": "UYW",
+      "native_symbol": "UYW",
+      "iso_numeric_code": "927",
+      "minor_units": 4,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "UZS",
+      "name": "Uzbekistani Som",
+      "default_symbol": "UZS",
+      "native_symbol": "UZS",
+      "iso_numeric_code": "860",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "VUV",
+      "name": "Vanuatu Vatu",
+      "default_symbol": "VUV",
+      "native_symbol": "VUV",
+      "iso_numeric_code": "548",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "VES",
+      "name": "Venezuelan Bolívar",
+      "default_symbol": "VES",
+      "native_symbol": "VES",
+      "iso_numeric_code": "928",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "VED",
+      "name": "Bolívar Soberano",
+      "default_symbol": "VED",
+      "native_symbol": "VED",
+      "iso_numeric_code": "926",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "VND",
+      "name": "Vietnamese Dong",
+      "default_symbol": "₫",
+      "native_symbol": "₫",
+      "iso_numeric_code": "704",
+      "minor_units": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "YER",
+      "name": "Yemeni Rial",
+      "default_symbol": "YER",
+      "native_symbol": "YER",
+      "iso_numeric_code": "886",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ZMW",
+      "name": "Zambian Kwacha",
+      "default_symbol": "ZK",
+      "native_symbol": "ZK",
+      "iso_numeric_code": "967",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "iso_alpha_code": "ZWG",
+      "name": "Zimbabwe Gold",
+      "default_symbol": "ZWG",
+      "native_symbol": "ZWG",
+      "iso_numeric_code": "924",
+      "minor_units": 2,
+      "status": "ACTIVE"
+    }
+  ],
+  "mappings": [
+    {
+      "iso2": "IN",
+      "iso3": "IND",
+      "iso_alpha_code": "INR"
+    }
+  ]
+}

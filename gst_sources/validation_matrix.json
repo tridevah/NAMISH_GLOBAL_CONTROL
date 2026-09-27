@@ -1,0 +1,166 @@
+{
+  "fileRecords": [
+    {
+      "originalRawUrl": "https://cbic-gst.gov.in/gst-acts.html",
+      "finalRedirectedUrl": "https://cbic-gst.gov.in/gst-acts.html",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "byteSize": 55262,
+      "exactLocalFilename": "cbic_gst_acts_index.html",
+      "sha256": "d3857923552d4f19b16be890330a74e3dfadbee591a31cafab80cdae6738f660",
+      "documentTitle": "CBIC_GST_Acts_Index",
+      "actNotificationNumber": "Base Index",
+      "publicationDate": "2017-07-01",
+      "effectiveDate": "2017-07-01",
+      "isForbiddenSubstitute": true,
+      "supportedClaims": []
+    },
+    {
+      "originalRawUrl": "https://cbic-gst.gov.in/pdf/cgst-rules-01july2017.pdf",
+      "finalRedirectedUrl": "https://cbic-gst.gov.in/pdf/cgst-rules-01july2017.pdf",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "byteSize": 2053334,
+      "exactLocalFilename": "cgst_rules_01july2017.pdf",
+      "sha256": "5516a0d93a6b767213bd4b14c297e180fde5db44a9b48db56587fe9c136a94bb",
+      "documentTitle": "CGST_Rules_2017",
+      "actNotificationNumber": "Central Tax Rules 2017",
+      "publicationDate": "2017-07-01",
+      "effectiveDate": "2017-07-01",
+      "isForbiddenSubstitute": true,
+      "supportedClaims": []
+    },
+    {
+      "originalRawUrl": "https://cbic-gst.gov.in/pdf/notfctn-3-central-tax-english.pdf",
+      "finalRedirectedUrl": "https://cbic-gst.gov.in/pdf/notfctn-3-central-tax-english.pdf",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "byteSize": 1769337,
+      "exactLocalFilename": "notfctn_3_central_tax.pdf",
+      "sha256": "907f37cdc63a574d1c97aa4c43d3dcd8f41bf120eceada953c92b0cafcbb8da2",
+      "documentTitle": "Central_Tax_Notification_3",
+      "actNotificationNumber": "No. 3/2017-Central Tax",
+      "publicationDate": "2017-06-19",
+      "effectiveDate": "2017-07-01",
+      "isForbiddenSubstitute": false,
+      "supportedClaims": []
+    },
+    {
+      "originalRawUrl": "https://cbic-gst.gov.in/pdf/valuation-gst-rules-17052017.pdf",
+      "finalRedirectedUrl": "https://cbic-gst.gov.in/pdf/valuation-gst-rules-17052017.pdf",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "byteSize": 151587,
+      "exactLocalFilename": "valuation_gst_rules.pdf",
+      "sha256": "f5d607b3e9f84cbefce269e5d696640fa99ae8d66406530132e57bc62f10ac96",
+      "documentTitle": "GST_Valuation_Rules",
+      "actNotificationNumber": "Valuation Rules",
+      "publicationDate": "2017-05-17",
+      "effectiveDate": "2017-07-01",
+      "isForbiddenSubstitute": true,
+      "supportedClaims": []
+    },
+    {
+      "originalRawUrl": "https://cbic-gst.gov.in/pdf/itc-rules-17052017.pdf",
+      "finalRedirectedUrl": "https://cbic-gst.gov.in/pdf/itc-rules-17052017.pdf",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "byteSize": 195837,
+      "exactLocalFilename": "itc_rules_exemptions.pdf",
+      "sha256": "aa043ebe31d0be9d2c65b7e0540fba16e998c192e6226bc69875e7d3b0664f16",
+      "documentTitle": "GST_ITC_Exemptions_Rules",
+      "actNotificationNumber": "ITC Rules",
+      "publicationDate": "2017-05-17",
+      "effectiveDate": "2017-07-01",
+      "isForbiddenSubstitute": true,
+      "supportedClaims": []
+    }
+  ],
+  "claimCoverageMatrix": {
+    "CGST_ACT": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED",
+      "failedSubstitutes": [
+        "cbic_gst_acts_index.html"
+      ]
+    },
+    "IGST_ACT": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED",
+      "failedSubstitutes": [
+        "cbic_gst_acts_index.html"
+      ]
+    },
+    "UTGST_ACT": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED",
+      "failedSubstitutes": [
+        "cbic_gst_acts_index.html"
+      ]
+    },
+    "CESS_ACT": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "31_SGST_5_UTGST": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "RATE_NOTIF_5_18_40": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "RATE_NOTIF_SPECIAL": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "EXEMPT_NOTIF": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "IGST_16_ZERO_RATED": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "IGST_10_13": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "IGST_14": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "RCM_NOTIF": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED"
+    },
+    "COMPOSITION_NOTIF": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED",
+      "failedSubstitutes": [
+        "cbic_gst_acts_index.html"
+      ]
+    },
+    "CESS_HSNS": {
+      "proven": false,
+      "document": null,
+      "reason": "UNRESOLVED",
+      "failedSubstitutes": [
+        "cbic_gst_acts_index.html"
+      ]
+    }
+  }
+}

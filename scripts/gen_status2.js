@@ -1,0 +1,11 @@
+const fs = require('fs');
+const cp = JSON.parse(fs.readFileSync('D:/ANTIGRAVITY_WORKSPACE/LGD_IMPORT_RUNTIME/R12/checkpoint.json', 'utf8'));
+let sql = "UPDATE data_imports.batches SET status = 'PENDING', staged_rows = 0 WHERE release_id = 'b3573f9b-1eff-47d5-8cdf-fba3eba74b19';\n";
+for (let key in cp) {
+  let parts = key.split('::');
+  let fileKey = parts[0].replace(/'/g, "''");
+  let entityType = parts[1];
+  sql += "UPDATE data_imports.batches b SET status = CASE WHEN (SELECT count(*) FROM staging.geography_imports s WHERE s.batch_id = b.id) > 0 THEN 'STAGED' ELSE 'OFFICIAL_EMPTY' END WHERE release_id = 'b3573f9b-1eff-47d5-8cdf-fba3eba74b19' AND entity_type = '" + entityType + "' AND logical_batch_key LIKE '" + fileKey + "!%';\n";
+}
+sql += "UPDATE data_imports.batches b SET staged_rows = (SELECT count(*) FROM staging.geography_imports s WHERE s.batch_id = b.id) WHERE release_id = 'b3573f9b-1eff-47d5-8cdf-fba3eba74b19';\n";
+fs.writeFileSync('D:/NAMISH_GLOBAL_CONTROL/scripts/reconstruct_status.sql', sql);
