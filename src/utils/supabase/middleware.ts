@@ -2,11 +2,15 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
 export async function updateSession(request: NextRequest) {
-  // This exact S2S POST is authenticated by its route handler.
-  if (
-    request.method === 'POST' &&
-    request.nextUrl.pathname === '/api/s2s/provision-enterprise'
-  ) {
+  // S2S routes are authenticated by their own route handlers via HMAC signatures.
+  const isS2SProvision = request.method === 'POST' && request.nextUrl.pathname === '/api/s2s/provision-enterprise';
+  const isS2SCountries = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/countries';
+  const isS2SLevels = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/geography/levels';
+  const isS2SGeoUnits = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/geography/units';
+  const isS2SUnits = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/units';
+  const isS2STaxes = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/taxes';
+  
+  if (isS2SProvision || isS2SCountries || isS2SLevels || isS2SGeoUnits || isS2SUnits || isS2STaxes) {
     return NextResponse.next()
   }
 

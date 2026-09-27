@@ -17,7 +17,8 @@ import {
   MapPin,
   Layers,
   Map,
-  Mail
+  Mail,
+  Ruler
 } from 'lucide-react'
 import { createClient } from '@/utils/supabase/client'
 import clsx from 'clsx'
@@ -129,18 +130,32 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
             Return to Global Control
           </Link>
 
-          <Link
-            href={`/data-hub${querySuffix}`}
-            className={clsx(
-              "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors mb-6",
-              pathname === '/data-hub'
-                ? "bg-teal-500/10 text-teal-400" 
-                : "text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-100"
-            )}
-          >
-            <Database className="w-5 h-5" />
-            Dashboard
-          </Link>
+          <div className="space-y-1 mb-6">
+            <Link
+              href={`/data-hub${querySuffix}`}
+              className={clsx(
+                "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                pathname === '/data-hub'
+                  ? "bg-teal-500/10 text-teal-400" 
+                  : "text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-100"
+              )}
+            >
+              <Database className="w-5 h-5" />
+              Dashboard
+            </Link>
+            <Link
+              href="/data-hub/units"
+              className={clsx(
+                "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                pathname === '/data-hub/units'
+                  ? "bg-teal-500/10 text-teal-400" 
+                  : "text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-100"
+              )}
+            >
+              <Ruler className="w-5 h-5" />
+              Unit Master
+            </Link>
+          </div>
 
           <div className="mb-6 px-2">
             <label className="block text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Selected Country</label>
@@ -244,7 +259,7 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
 
         <main className="flex-1 overflow-y-auto p-4 lg:p-8">
           <div className="max-w-7xl mx-auto">
-            {!selectedCountry && pathname !== '/data-hub' && pathname !== '/data-hub/geography/countries' ? (
+            {!selectedCountry && pathname !== '/data-hub' && pathname !== '/data-hub/geography/countries' && pathname !== '/data-hub/units' ? (
               <div className="p-12 text-center border border-dashed border-zinc-800 rounded-xl bg-zinc-900/30">
                 <Globe className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
                 <h2 className="text-lg font-medium text-white">No Country Selected</h2>
