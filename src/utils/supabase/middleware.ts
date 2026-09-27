@@ -1,5 +1,15 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
+import { createClient } from '@supabase/supabase-js'
+
+function getRoleFromPath(pathname: string): string[] | null {
+  if (pathname.startsWith('/billing')) return ['PLATFORM_SUPERADMIN', 'BILLING_MANAGER']
+  if (pathname.startsWith('/accounts')) return ['PLATFORM_SUPERADMIN', 'SUPPORT_AUDITOR']
+  if (pathname.startsWith('/tenant-registry')) return ['PLATFORM_SUPERADMIN', 'SUPPORT_AUDITOR']
+  if (pathname.startsWith('/audit')) return ['PLATFORM_SUPERADMIN', 'SUPPORT_AUDITOR']
+  if (pathname.startsWith('/data-hub') || pathname.startsWith('/api/data-hub')) return ['PLATFORM_SUPERADMIN', 'CATALOG_MANAGER', 'SUPPORT_AUDITOR']
+  return null // No specific role restriction beyond ACTIVE
+}
 
 export async function updateSession(request: NextRequest) {
   // S2S routes are authenticated by their own route handlers via HMAC signatures.
@@ -14,23 +24,17 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.next()
   }
 
-  let supabaseResponse = NextResponse.next({
-    request,
-  })
+  let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
-        getAll() {
-          return request.cookies.getAll()
-        },
+        getAll() { return request.cookies.getAll() },
         setAll(cookiesToSet) {
           cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value))
-          supabaseResponse = NextResponse.next({
-            request,
-          })
+          supabaseResponse = NextResponse.next({ request })
           cookiesToSet.forEach(({ name, value, options }) =>
             supabaseResponse.cookies.set(name, value, options)
           )
@@ -39,15 +43,14 @@ export async function updateSession(request: NextRequest) {
     }
   )
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+  const { data: { user } } = await supabase.auth.getUser()
 
-  // Public routes: login page, all /api/auth/* endpoints, health check.
   const isPublicRoute =
     request.nextUrl.pathname === '/login' ||
     request.nextUrl.pathname.startsWith('/api/auth/') ||
-    request.nextUrl.pathname.startsWith('/api/health')
+    request.nextUrl.pathname.startsWith('/api/health') ||
+    request.nextUrl.pathname.startsWith('/_next') ||
+    request.nextUrl.pathname === '/favicon.ico'
 
   if (!user && !isPublicRoute) {
     if (request.nextUrl.pathname.startsWith('/api/')) {
@@ -56,6 +59,33 @@ export async function updateSession(request: NextRequest) {
     const url = request.nextUrl.clone()
     url.pathname = '/login'
     return NextResponse.redirect(url)
+  }
+
+  if (user && !isPublicRoute) {
+    // Fetch staff authority for role-based access control
+    const adminSupabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY!,
+      { auth: { autoRefreshToken: false, persistSession: false } }
+    )
+    const { data: staff, error: rpcError } = await adminSupabase.rpc('resolve_platform_staff_authority', {
+      p_auth_user_id: user.id
+    })
+
+    if (rpcError || !staff || staff.status !== 'ACTIVE') {
+      if (request.nextUrl.pathname.startsWith('/api/')) {
+        return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+      }
+      return NextResponse.redirect(new URL('/login?error=Unauthorized', request.url))
+    }
+
+    const allowedRoles = getRoleFromPath(request.nextUrl.pathname)
+    if (allowedRoles && !allowedRoles.includes(staff.role)) {
+      if (request.nextUrl.pathname.startsWith('/api/')) {
+        return NextResponse.json({ error: 'Forbidden: Insufficient Role' }, { status: 403 })
+      }
+      return NextResponse.redirect(new URL('/?error=Unauthorized_Role', request.url))
+    }
   }
 
   if (user && request.nextUrl.pathname === '/login') {
