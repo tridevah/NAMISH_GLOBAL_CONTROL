@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getAuthContext } from '@/utils/auth'
 import DataHubShell from '@/components/layout/DataHubShell'
 import { redirect } from 'next/navigation'
@@ -19,8 +20,10 @@ export default async function DataHubLayout({
   }
 
   return (
-    <DataHubShell email={user.email!} role={staff.role}>
+    <Suspense fallback={<div>Loading...</div>}>
+      <DataHubShell email={user.email!} role={staff.role}>
       {children}
     </DataHubShell>
+    </Suspense>
   )
 }
