@@ -1,33 +1,11 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Percent, AlertCircle, ExternalLink, Search, Info } from 'lucide-react'
-
-const CATEGORY_BADGE: Record<string, string> = {
-    STANDARD:    'bg-teal-500/10 text-teal-400',
-    NIL:         'bg-zinc-700 text-zinc-300',
-    SPECIAL:     'bg-yellow-500/10 text-yellow-400',
-    COMPOSITION: 'bg-blue-500/10 text-blue-400',
-    HISTORICAL:  'bg-red-500/10 text-red-400',
-    EXEMPT:      'bg-purple-500/10 text-purple-400',
-}
-
-const ERP_VIS_BADGE: Record<string, string> = {
-    GENERAL:         'bg-green-500/10 text-green-400',
-    CONTEXT_ONLY:    'bg-amber-500/10 text-amber-400',
-    NEVER_LINE_ITEM: 'bg-blue-500/10 text-blue-400',
-    HIDDEN:          'bg-zinc-700 text-zinc-500',
-}
-
-const SCOPE_LABELS: Record<string, string> = {
-    TRANSACTION_RATE: 'Transaction',
-    TAXPAYER_SCHEME:  'Composition Scheme',
-    HISTORICAL:       'Historical',
-}
+import { AlertCircle, ExternalLink, Search, Info, X } from 'lucide-react'
 
 type GstRate = {
     id: string
-    rate_percent: string
+    rate_percent: number
     rate_name: string
     category: string
     is_current: boolean
@@ -41,8 +19,8 @@ type GstRate = {
     rate_code: string
     usage_scope: string
     erp_visibility: string
-    statutory_rate_percent: string
-    effective_display_percent: string
+    statutory_rate_percent?: number
+    effective_display_percent?: number
     valuation_basis?: string
     itc_policy?: string
     conditions?: Record<string, unknown>
@@ -50,38 +28,102 @@ type GstRate = {
 
 export default function GstRatesClient({ rates, dbError }: { rates: GstRate[], dbError?: string }) {
     const [search, setSearch] = useState('')
-    const [scopeFilter, setScopeFilter] = useState<'ALL' | 'TRANSACTION_RATE' | 'TAXPAYER_SCHEME' | 'HISTORICAL'>('TRANSACTION_RATE')
+    const [statusFilter, setStatusFilter] = useState<'ALL' | 'ACTIVE' | 'INACTIVE'>('ACTIVE')
+    const [view, setView] = useState<'TRANSACTION' | 'REFERENCE'>('TRANSACTION')
+    const [selectedRecord, setSelectedRecord] = useState<GstRate | null>(null)
 
-    const filtered = useMemo(() => {
-        return rates.filter(r => {
-            if (scopeFilter !== 'ALL' && r.usage_scope !== scopeFilter) return false
-            if (search) {
-                const q = search.toLowerCase()
-                return r.rate_name.toLowerCase().includes(q)
-                    || String(r.rate_percent).includes(q)
-                    || (r.notification_number || '').toLowerCase().includes(q)
-                    || (r.notes || '').toLowerCase().includes(q)
-                    || (r.rate_code || '').toLowerCase().includes(q)
+    const displayRecords = useMemo(() => {
+        // First filter by view type
+        const viewRates = rates.filter(r => {
+            const isEligibleTx = r.usage_scope === 'TRANSACTION_RATE' && r.is_current === true && (r.erp_visibility === 'GENERAL' || r.erp_visibility === 'CONTEXT_ONLY');
+            if (view === 'TRANSACTION') {
+                return isEligibleTx;
+            } else {
+                return !isEligibleTx;
             }
-            return true
         })
-    }, [rates, search, scopeFilter])
 
-    const transactionRates = filtered.filter(r => r.usage_scope === 'TRANSACTION_RATE')
-    const compositionRates = filtered.filter(r => r.usage_scope === 'TAXPAYER_SCHEME')
-    const historicalRates  = filtered.filter(r => r.usage_scope === 'HISTORICAL')
+        // Expand into GST/IGST/Exempt
+        let expanded: Array<{
+            uiKey: string,
+            displayName: string,
+            displayRate: string,
+            record: GstRate,
+            isConditional: boolean,
+            isEffective: boolean
+        }> = []
+
+        for (const r of viewRates) {
+            const statRate = r.statutory_rate_percent ?? r.rate_percent;
+            const effRate = r.effective_display_percent ?? r.rate_percent;
+            const differ = statRate !== effRate;
+            
+            const isConditional = r.erp_visibility === 'CONTEXT_ONLY';
+            const isEffective = differ;
+            
+            const suffix = r.conditions?.real_estate_other ? ' — Real Estate' : '';
+
+            if (view === 'TRANSACTION') {
+                if (r.category === 'EXEMPT') {
+                    expanded.push({
+                        uiKey: `${r.id}-exempt`,
+                        displayName: 'Exempt',
+                        displayRate: '—',
+                        record: r,
+                        isConditional,
+                        isEffective
+                    });
+                } else {
+                    expanded.push({
+                        uiKey: `${r.id}-igst`,
+                        displayName: `IGST@${effRate}%${suffix}`,
+                        displayRate: String(effRate),
+                        record: r,
+                        isConditional,
+                        isEffective
+                    });
+                    expanded.push({
+                        uiKey: `${r.id}-gst`,
+                        displayName: `GST@${effRate}%${suffix}`,
+                        displayRate: String(effRate),
+                        record: r,
+                        isConditional,
+                        isEffective
+                    });
+                }
+            } else {
+                expanded.push({
+                    uiKey: r.id,
+                    displayName: r.rate_name,
+                    displayRate: String(r.rate_percent),
+                    record: r,
+                    isConditional: false,
+                    isEffective: false
+                });
+            }
+        }
+
+        // Apply Search and Status Filter
+        return expanded.filter(item => {
+            if (statusFilter !== 'ALL' && item.record.status !== statusFilter) return false;
+            
+            if (search) {
+                const q = search.toLowerCase();
+                const rateNameMatches = item.record.rate_name.toLowerCase().includes(q);
+                const displayNameMatches = item.displayName.toLowerCase().includes(q);
+                return displayNameMatches || rateNameMatches;
+            }
+            return true;
+        })
+    }, [rates, view, search, statusFilter])
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 relative">
             {/* Header */}
             <div>
-                <h1 className="text-2xl font-bold text-white flex items-center gap-2 mb-1">
-                    <Percent className="w-6 h-6 text-teal-400" />
-                    GST Rate Master
-                </h1>
+                <h1 className="text-2xl font-bold text-white mb-1">GST Master</h1>
                 <p className="text-zinc-400 text-sm">
-                    Official GST rate schedules as notified under CGST Act 2017 and amendments.
-                    This is a standalone master list — no product or HSN/SAC assignment is made here.
+                    Manage business GST, IGST and Exempt options.
                 </p>
             </div>
 
@@ -92,210 +134,225 @@ export default function GstRatesClient({ rates, dbError }: { rates: GstRate[], d
                 </div>
             )}
 
+            {/* View Tabs */}
+            <div className="flex gap-4 border-b border-zinc-800">
+                <button 
+                    onClick={() => setView('TRANSACTION')}
+                    className={`pb-2 text-sm font-medium border-b-2 transition-colors ${view === 'TRANSACTION' ? 'border-teal-500 text-teal-400' : 'border-transparent text-zinc-500 hover:text-zinc-300'}`}
+                >
+                    Transaction Rates
+                </button>
+                <button 
+                    onClick={() => setView('REFERENCE')}
+                    className={`pb-2 text-sm font-medium border-b-2 transition-colors ${view === 'REFERENCE' ? 'border-teal-500 text-teal-400' : 'border-transparent text-zinc-500 hover:text-zinc-300'}`}
+                >
+                    Reference
+                </button>
+            </div>
+
             {/* Filters */}
             <div className="flex flex-wrap gap-3 items-center">
                 <div className="relative flex-1 min-w-48">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
                     <input
                         type="text"
-                        placeholder="Search rate name, code, notification…"
+                        placeholder="Search displayed names (e.g. GST@5%)..."
                         value={search}
-                        onChange={e => setSearch(e.target.value)}
-                        className="w-full pl-9 pr-4 py-2 bg-zinc-900 border border-zinc-800 rounded-lg text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-teal-600"
+                        onChange={(e) => setSearch(e.target.value)}
+                        className="w-full bg-zinc-900 border border-zinc-800 rounded-lg pl-9 pr-4 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-zinc-700"
                     />
                 </div>
+                <select
+                    value={statusFilter}
+                    onChange={(e) => setStatusFilter(e.target.value as any)}
+                    className="bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-zinc-700 appearance-none min-w-32"
+                >
+                    <option value="ALL">All Status</option>
+                    <option value="ACTIVE">Active</option>
+                    <option value="INACTIVE">Inactive</option>
+                </select>
+                {(search || statusFilter !== 'ACTIVE') && (
+                    <button
+                        onClick={() => { setSearch(''); setStatusFilter('ACTIVE'); }}
+                        className="text-sm text-zinc-400 hover:text-white px-2 py-1"
+                    >
+                        Clear Filters
+                    </button>
+                )}
+            </div>
 
-                <div className="flex gap-1">
-                    {(['ALL', 'TRANSACTION_RATE', 'TAXPAYER_SCHEME', 'HISTORICAL'] as const).map(s => (
-                        <button
-                            key={s}
-                            onClick={() => setScopeFilter(s)}
-                            className={`px-3 py-2 rounded-lg text-xs font-medium transition-colors ${scopeFilter === s ? 'bg-teal-600 text-white' : 'bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white'}`}
-                        >
-                            {s === 'ALL' ? 'All' : SCOPE_LABELS[s]}
-                        </button>
-                    ))}
+            {/* Table */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+                <div className="overflow-x-auto">
+                    <table className="w-full text-sm text-left">
+                        <thead className="bg-zinc-800/50 text-zinc-400 text-xs uppercase tracking-wide border-b border-zinc-800">
+                            <tr>
+                                <th className="px-4 py-3">Name</th>
+                                <th className="px-4 py-3 w-32">Rate (%)</th>
+                                <th className="px-4 py-3 w-32">Status</th>
+                                <th className="px-4 py-3 w-24 text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-zinc-800">
+                            {displayRecords.map(item => (
+                                <tr key={item.uiKey} className="hover:bg-zinc-800/30">
+                                    <td className="px-4 py-3">
+                                        <div className="flex items-center gap-2">
+                                            <span className="font-mono font-bold text-white text-base">{item.displayName}</span>
+                                            {item.isConditional && (
+                                                <span className="px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 text-[10px] uppercase font-bold tracking-wider">
+                                                    Conditional
+                                                </span>
+                                            )}
+                                            {item.isEffective && (
+                                                <span className="px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-400 text-[10px] uppercase font-bold tracking-wider">
+                                                    Effective
+                                                </span>
+                                            )}
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-3 font-mono font-medium text-zinc-300">
+                                        {item.displayRate}
+                                    </td>
+                                    <td className="px-4 py-3">
+                                        <span className={`px-2 py-0.5 rounded-full text-xs ${item.record.status === 'ACTIVE' ? 'bg-green-500/10 text-green-400' : 'bg-zinc-700 text-zinc-500'}`}>
+                                            {item.record.status}
+                                        </span>
+                                    </td>
+                                    <td className="px-4 py-3 text-right">
+                                        <button 
+                                            onClick={() => setSelectedRecord(item.record)}
+                                            className="text-teal-400 hover:text-teal-300 text-xs font-medium flex items-center gap-1 justify-end w-full"
+                                        >
+                                            <Info className="w-3.5 h-3.5" />
+                                            Details
+                                        </button>
+                                    </td>
+                                </tr>
+                            ))}
+                            {displayRecords.length === 0 && (
+                                <tr>
+                                    <td colSpan={4} className="p-8 text-center text-zinc-500">
+                                        No options match the current filter.
+                                    </td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
                 </div>
-
-                <span className="text-zinc-500 text-sm ml-auto">{filtered.length} of {rates.length} rates</span>
             </div>
 
-            <div className="space-y-8">
-                {/* Transaction Rates Table */}
-                {transactionRates.length > 0 && (
-                    <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
-                        <h3 className="px-4 py-3 bg-zinc-800/80 text-white font-medium border-b border-zinc-700">
-                            Transaction Rates
-                        </h3>
-                        <div className="overflow-x-auto">
-                            <table className="w-full text-sm text-left">
-                                <thead className="bg-zinc-800/50 text-zinc-400 text-xs uppercase tracking-wide border-b border-zinc-800">
-                                    <tr>
-                                        <th className="px-4 py-3 w-20">Stat. %</th>
-                                        <th className="px-4 py-3 w-20">Eff. %</th>
-                                        <th className="px-4 py-3">Rate Name</th>
-                                        <th className="px-4 py-3 w-24">Category</th>
-                                        <th className="px-4 py-3 w-28">ERP Visibility</th>
-                                        <th className="px-4 py-3 w-20">Status</th>
-                                        <th className="px-4 py-3">Notification</th>
-                                        <th className="px-4 py-3 w-24">Eff. From</th>
-                                        <th className="px-4 py-3 w-16">Source</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-zinc-800">
-                                    {transactionRates.map(r => (
-                                        <tr key={r.id} className={`hover:bg-zinc-800/30 ${!r.is_current ? 'opacity-60' : ''}`}>
-                                            <td className="px-4 py-3 font-mono font-bold text-white text-base">{r.statutory_rate_percent ?? r.rate_percent}%</td>
-                                            <td className="px-4 py-3 font-mono text-zinc-300">{r.effective_display_percent ?? r.rate_percent}%</td>
-                                            <td className="px-4 py-3 text-zinc-200 font-medium">
-                                                {r.rate_name}
-                                                {r.erp_visibility === 'CONTEXT_ONLY' && (
-                                                    <span className="ml-2 text-xs text-amber-500/80" title={r.notes || 'Context-only rate'}>
-                                                        <Info className="inline w-3 h-3" />
-                                                    </span>
-                                                )}
-                                            </td>
-                                            <td className="px-4 py-3">
-                                                <span className={`px-2 py-0.5 rounded text-xs font-mono ${CATEGORY_BADGE[r.category] ?? 'bg-zinc-700 text-zinc-400'}`}>
-                                                    {r.category}
-                                                </span>
-                                            </td>
-                                            <td className="px-4 py-3">
-                                                <span className={`px-2 py-0.5 rounded text-xs font-mono ${ERP_VIS_BADGE[r.erp_visibility] ?? 'bg-zinc-700 text-zinc-400'}`}>
-                                                    {r.erp_visibility}
-                                                </span>
-                                            </td>
-                                            <td className="px-4 py-3">
-                                                <span className={`px-2 py-0.5 rounded-full text-xs ${r.status === 'ACTIVE' ? 'bg-green-500/10 text-green-400' : 'bg-zinc-700 text-zinc-500'}`}>
-                                                    {r.status}
-                                                </span>
-                                            </td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs font-mono">{r.notification_number || '—'}</td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs">{r.effective_from || '—'}</td>
-                                            <td className="px-4 py-3">
-                                                {r.official_source ? (
-                                                    <a href={r.official_source} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
-                                                        <ExternalLink className="w-3.5 h-3.5" />
-                                                    </a>
-                                                ) : <span className="text-zinc-700">—</span>}
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+            {/* Details Drawer */}
+            {selectedRecord && (
+                <div className="fixed inset-0 z-50 flex justify-end">
+                    <div 
+                        className="absolute inset-0 bg-black/60 backdrop-blur-sm" 
+                        onClick={() => setSelectedRecord(null)}
+                    />
+                    <div className="relative w-full max-w-md bg-zinc-900 border-l border-zinc-800 h-full overflow-y-auto flex flex-col shadow-2xl animate-in slide-in-from-right duration-200">
+                        <div className="px-6 py-5 border-b border-zinc-800 flex justify-between items-center bg-zinc-900/95 sticky top-0 z-10">
+                            <h2 className="text-lg font-bold text-white">Rate Details</h2>
+                            <button 
+                                onClick={() => setSelectedRecord(null)}
+                                className="text-zinc-400 hover:text-white p-1 rounded-md hover:bg-zinc-800"
+                            >
+                                <X className="w-5 h-5" />
+                            </button>
                         </div>
-                        {/* Context-only footnotes */}
-                        <div className="px-4 py-3 border-t border-zinc-800 space-y-1">
-                            <p className="text-zinc-500 text-xs flex items-center gap-1">
-                                <Info className="w-3 h-3 text-amber-500/70 shrink-0" />
-                                <span><strong className="text-amber-500/80">CONTEXT_ONLY</strong> rates have usage restrictions. &quot;Merchant-export procurement only&quot; applies only to supplies to merchant-exporters (0.05% CGST + 0.05% SGST/UTGST). &quot;Specified bricks/tiles only&quot; applies under Notification 14/2025-CT(R) scope. Real-estate rates use 2/3 valuation — not applicable to generic item lines.</span>
-                            </p>
-                        </div>
-                    </div>
-                )}
+                        
+                        <div className="p-6 space-y-6">
+                            <div>
+                                <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Catalog Name</label>
+                                <div className="text-white text-sm bg-zinc-800/50 p-3 rounded-lg border border-zinc-700/50">
+                                    {selectedRecord.rate_name}
+                                </div>
+                            </div>
+                            
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Category</label>
+                                    <div className="text-zinc-200 text-sm">{selectedRecord.category}</div>
+                                </div>
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">ERP Visibility</label>
+                                    <div className="text-zinc-200 text-sm">{selectedRecord.erp_visibility}</div>
+                                </div>
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Usage Scope</label>
+                                    <div className="text-zinc-200 text-sm">{selectedRecord.usage_scope}</div>
+                                </div>
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Status</label>
+                                    <div className="text-zinc-200 text-sm">{selectedRecord.status}</div>
+                                </div>
+                            </div>
 
-                {/* Composition Schemes Table */}
-                {compositionRates.length > 0 && (
-                    <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
-                        <h3 className="px-4 py-3 bg-zinc-800/80 text-white font-medium border-b border-zinc-700">
-                            Composition Schemes
-                            <span className="ml-2 text-xs text-blue-400 font-normal">Taxpayer-level scheme — never applied at invoice line level</span>
-                        </h3>
-                        <div className="overflow-x-auto">
-                            <table className="w-full text-sm text-left">
-                                <thead className="bg-zinc-800/50 text-zinc-400 text-xs uppercase tracking-wide border-b border-zinc-800">
-                                    <tr>
-                                        <th className="px-4 py-3 w-20">Rate %</th>
-                                        <th className="px-4 py-3">Scheme Name</th>
-                                        <th className="px-4 py-3 w-28">Valuation</th>
-                                        <th className="px-4 py-3 w-20">ITC</th>
-                                        <th className="px-4 py-3 w-20">Status</th>
-                                        <th className="px-4 py-3">Notification</th>
-                                        <th className="px-4 py-3 w-24">Eff. From</th>
-                                        <th className="px-4 py-3 w-16">Source</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-zinc-800">
-                                    {compositionRates.map(r => (
-                                        <tr key={r.id} className="hover:bg-zinc-800/30">
-                                            <td className="px-4 py-3 font-mono font-bold text-white text-base">{r.rate_percent}%</td>
-                                            <td className="px-4 py-3 text-zinc-200 font-medium">{r.rate_name}</td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs font-mono">{r.valuation_basis || 'TURNOVER'}</td>
-                                            <td className="px-4 py-3">
-                                                <span className={`px-2 py-0.5 rounded text-xs ${r.itc_policy === 'NO_ITC' ? 'bg-red-500/10 text-red-400' : 'bg-green-500/10 text-green-400'}`}>
-                                                    {r.itc_policy || 'NO_ITC'}
-                                                </span>
-                                            </td>
-                                            <td className="px-4 py-3">
-                                                <span className={`px-2 py-0.5 rounded-full text-xs ${r.status === 'ACTIVE' ? 'bg-green-500/10 text-green-400' : 'bg-zinc-700 text-zinc-500'}`}>
-                                                    {r.status}
-                                                </span>
-                                            </td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs font-mono">{r.notification_number || '—'}</td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs">{r.effective_from || '—'}</td>
-                                            <td className="px-4 py-3">
-                                                {r.official_source ? (
-                                                    <a href={r.official_source} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
-                                                        <ExternalLink className="w-3.5 h-3.5" />
-                                                    </a>
-                                                ) : <span className="text-zinc-700">—</span>}
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                            <div className="border-t border-zinc-800 pt-6 grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Effective Rate</label>
+                                    <div className="text-white text-sm font-mono font-medium">
+                                        {selectedRecord.effective_display_percent ?? selectedRecord.rate_percent}%
+                                    </div>
+                                </div>
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Statutory Rate</label>
+                                    <div className="text-zinc-400 text-sm font-mono">
+                                        {selectedRecord.statutory_rate_percent ?? selectedRecord.rate_percent}%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="border-t border-zinc-800 pt-6 space-y-4">
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Valuation Basis</label>
+                                    <div className="text-zinc-200 text-sm font-mono">{selectedRecord.valuation_basis || 'TRANSACTION_VALUE'}</div>
+                                </div>
+                                <div>
+                                    <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">ITC Policy</label>
+                                    <div className="text-zinc-200 text-sm font-mono">{selectedRecord.itc_policy || 'DEFAULT'}</div>
+                                </div>
+                                {selectedRecord.conditions && (
+                                    <div>
+                                        <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Conditions</label>
+                                        <pre className="text-zinc-300 text-xs font-mono bg-zinc-800 p-3 rounded-lg overflow-x-auto border border-zinc-700/50">
+                                            {JSON.stringify(selectedRecord.conditions, null, 2)}
+                                        </pre>
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="border-t border-zinc-800 pt-6 space-y-4">
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Effective From</label>
+                                        <div className="text-zinc-200 text-sm">{selectedRecord.effective_from || '?"'}</div>
+                                    </div>
+                                    <div>
+                                        <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Effective To</label>
+                                        <div className="text-zinc-200 text-sm">{selectedRecord.effective_to || '?"'}</div>
+                                    </div>
+                                    <div>
+                                        <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Notification</label>
+                                        <div className="text-zinc-200 text-sm font-mono">{selectedRecord.notification_number || '?"'}</div>
+                                    </div>
+                                    {selectedRecord.official_source && (
+                                        <div>
+                                            <label className="text-xs text-zinc-500 uppercase font-bold tracking-wider mb-1 block">Source</label>
+                                            <a href={selectedRecord.official_source} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
+                                                View Document <ExternalLink className="w-3.5 h-3.5" />
+                                            </a>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                            
+                            <div className="text-xs text-zinc-600 font-mono mt-8 border-t border-zinc-800/50 pt-4">
+                                ID: {selectedRecord.id}
+                            </div>
                         </div>
                     </div>
-                )}
-
-                {/* Historical Rates Table */}
-                {historicalRates.length > 0 && (
-                    <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
-                        <h3 className="px-4 py-3 bg-zinc-800/80 text-white font-medium border-b border-zinc-700">
-                            Historical Rates
-                            <span className="ml-2 text-xs text-red-400 font-normal">No longer current — retained for reference only</span>
-                        </h3>
-                        <div className="overflow-x-auto">
-                            <table className="w-full text-sm text-left">
-                                <thead className="bg-zinc-800/50 text-zinc-400 text-xs uppercase tracking-wide border-b border-zinc-800">
-                                    <tr>
-                                        <th className="px-4 py-3 w-20">Rate %</th>
-                                        <th className="px-4 py-3">Rate Name</th>
-                                        <th className="px-4 py-3 w-24">Eff. From</th>
-                                        <th className="px-4 py-3 w-24">Eff. To</th>
-                                        <th className="px-4 py-3">Notification</th>
-                                        <th className="px-4 py-3 w-16">Source</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-zinc-800">
-                                    {historicalRates.map(r => (
-                                        <tr key={r.id} className="opacity-60 hover:opacity-80">
-                                            <td className="px-4 py-3 font-mono font-bold text-white text-base">{r.rate_percent}%</td>
-                                            <td className="px-4 py-3 text-zinc-400">{r.rate_name}</td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs">{r.effective_from || '—'}</td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs">{r.effective_to || '—'}</td>
-                                            <td className="px-4 py-3 text-zinc-400 text-xs font-mono">{r.notification_number || '—'}</td>
-                                            <td className="px-4 py-3">
-                                                {r.official_source ? (
-                                                    <a href={r.official_source} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
-                                                        <ExternalLink className="w-3.5 h-3.5" />
-                                                    </a>
-                                                ) : <span className="text-zinc-700">—</span>}
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                )}
-
-                {filtered.length === 0 && (
-                    <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-10 text-center text-zinc-500">
-                        No rates match the current filter.
-                    </div>
-                )}
-            </div>
+                </div>
+            )}
         </div>
     )
 }

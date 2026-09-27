@@ -9,7 +9,7 @@ if [[ "$LOCAL_HEAD" != "$ORIGIN_HEAD" ]]; then
   exit 1
 fi
 
-if [[ -n "$(git status --porcelain)" ]]; then
+if [[ -n "$(git status -uno --porcelain)" ]]; then
   echo "ERROR: Tracked working tree must be clean"
   exit 1
 fi
