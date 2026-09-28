@@ -20,13 +20,7 @@ export async function POST(req: NextRequest) {
 
         const admin = createAdminClient()
         
-        // Idempotency / Safe retry check
-        const { data: existing } = await admin.from('catalog_releases').select('id').eq('version', version).single()
-        if (existing) {
-            return NextResponse.json({ error: `Release version ${version} already exists. Please choose a different version.` }, { status: 409 })
-        }
-
-        const { data: releaseId, error } = await admin.rpc('create_business_release_wrapper', {
+        const { data, error } = await admin.rpc('create_business_release_wrapper', {
             p_version: version,
             p_include_cleanup: false
         })
@@ -36,7 +30,11 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: error.message }, { status: 500 })
         }
 
-        return NextResponse.json({ releaseId })
+        return NextResponse.json({
+            releaseId: data.release_id,
+            created: data.created,
+            status: data.status
+        })
     } catch (err: any) {
         return NextResponse.json({ error: err.message }, { status: 500 })
     }
