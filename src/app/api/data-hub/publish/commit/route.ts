@@ -14,12 +14,13 @@ export async function POST(req: NextRequest) {
         }
 
         const body = await req.json()
-        const { releaseId } = body
+        const { releaseId, baselineReleaseId } = body
         if (!releaseId) return NextResponse.json({ error: 'releaseId required' }, { status: 400 })
 
         const admin = createAdminClient()
         const { data, error } = await admin.rpc('publish_draft_release_wrapper', {
-            p_release_id: releaseId
+            p_release_id: releaseId,
+            p_expected_baseline: baselineReleaseId || null
         })
 
         if (error) return NextResponse.json({ error: error.message }, { status: 500 })

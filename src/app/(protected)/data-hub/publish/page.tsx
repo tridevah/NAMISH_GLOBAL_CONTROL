@@ -64,7 +64,10 @@ export default function PublishPage() {
       const res = await fetch('/api/data-hub/publish/commit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ releaseId: draftId })
+        body: JSON.stringify({ 
+          releaseId: draftId,
+          baselineReleaseId: reviewData?.baseline_release_id || null
+        })
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error)
