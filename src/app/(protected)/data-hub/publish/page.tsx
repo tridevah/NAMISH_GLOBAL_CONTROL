@@ -23,12 +23,16 @@ export default function PublishPage() {
       setCounts(data.counts)
       setDiffs(data.diffs)
       const getErpDeliveryStatus = (delivery: any, draft_status: string) => {
-        if (!delivery || draft_status === 'DRAFT') return 'DRAFT'
+        if (draft_status === 'DRAFT') return 'DRAFT'
+        if (!delivery) return 'UNKNOWN'
         if (delivery.lookup_status === 'EVENT_NOT_FOUND') return 'EVENT_NOT_FOUND'
-        if (!delivery.deliveries || delivery.deliveries.length === 0) {
-          return delivery.event_status === 'NOT_YET_PUBLISHED' ? 'DRAFT' : 'PENDING'
-        }
-        const erp = delivery.deliveries[0]
+        if (delivery.event_status === 'NOT_YET_PUBLISHED') return 'DRAFT'
+
+        const erpEndpointId = '4eb4da3b-c802-4d44-98b4-9859528e6beb'
+        const erp = delivery.deliveries?.find((d: any) => d.endpoint_id === erpEndpointId)
+        
+        if (!erp) return 'ERP_DELIVERY_NOT_FOUND'
+
         if (erp.delivery_status === 'SUCCESS') return 'Delivered'
         if (erp.delivery_status === 'DEAD') return 'Failed'
         if (erp.delivery_status === 'PENDING' || erp.delivery_status === 'CLAIMED') return 'Pending'
@@ -164,6 +168,8 @@ export default function PublishPage() {
                   deliveryStatus === 'Delivered' ? 'bg-green-100 text-green-800' :
                   deliveryStatus === 'Failed' ? 'bg-red-100 text-red-800' :
                   deliveryStatus === 'Pending' ? 'bg-blue-100 text-blue-800' :
+                  deliveryStatus === 'ERP_DELIVERY_NOT_FOUND' ? 'bg-gray-200 text-gray-800' :
+                  deliveryStatus === 'EVENT_NOT_FOUND' ? 'bg-red-100 text-red-800' :
                   'bg-gray-100 text-gray-800'
               }`}>
                 Status: {deliveryStatus}
