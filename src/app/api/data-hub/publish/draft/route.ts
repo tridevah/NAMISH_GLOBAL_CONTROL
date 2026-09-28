@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
         }
 
         const body = await req.json()
-        const { version, include_cleanup } = body
+        const { version } = body
 
         if (!version) return NextResponse.json({ error: 'version required' }, { status: 400 })
 
@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
 
         const { data: releaseId, error } = await admin.rpc('create_business_release_wrapper', {
             p_version: version,
-            p_include_cleanup: !!include_cleanup
+            p_include_cleanup: false
         })
 
         if (error) {

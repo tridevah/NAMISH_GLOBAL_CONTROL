@@ -50,7 +50,7 @@ export default function PublishPage() {
     }
   }
 
-  const handleCreateDraft = async (cleanup: boolean) => {
+  const handleCreateDraft = async () => {
     if (!version.trim()) {
       setMessage('Error: Version is required.')
       return
@@ -61,7 +61,7 @@ export default function PublishPage() {
       const res = await fetch('/api/data-hub/publish/draft', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ version: version.trim(), include_cleanup: cleanup })
+        body: JSON.stringify({ version: version.trim() })
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error)
@@ -116,25 +116,11 @@ export default function PublishPage() {
         {!draftId && (
           <div className="flex gap-4">
             <button 
-              onClick={() => handleCreateDraft(false)}
+              onClick={() => handleCreateDraft()}
               disabled={loading || !version}
               className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
             >
               Generate Business Snapshot
-            </button>
-            <button 
-              onClick={() => handleCreateDraft(true)}
-              disabled={loading || !version}
-              className="bg-purple-600 text-white px-4 py-2 rounded disabled:opacity-50"
-            >
-              Generate Cleanup Snapshot (Includes Inactive)
-            </button>
-            <button
-              onClick={() => fetchDraft('ca7c5ea6-2f52-44de-bd42-f46b253a4d63')}
-              disabled={loading}
-              className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
-            >
-              Open Cleanup Draft (ca7c5ea6)
             </button>
           </div>
         )}
