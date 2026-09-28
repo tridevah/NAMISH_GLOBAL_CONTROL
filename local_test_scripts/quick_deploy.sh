@@ -18,7 +18,12 @@ export NVM_DIR="\$HOME/.nvm"
 npm ci
 npm run build
 
-ln -sfn /srv/namish-global-control/releases/$SHA /srv/namish-global-control/app
+# Prepare standalone directory
+cp -r public .next/standalone/public
+cp -r .next/static .next/standalone/.next/static
+
+# Point the symlink to the standalone build directory
+ln -sfn /srv/namish-global-control/releases/$SHA/.next/standalone /srv/namish-global-control/app
 sudo systemctl restart namish-global-control.service
 echo "Deployment successful: $SHA"
 EOF
