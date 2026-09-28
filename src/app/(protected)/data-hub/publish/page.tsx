@@ -22,7 +22,20 @@ export default function PublishPage() {
       setDraftId(id)
       setCounts(data.counts)
       setDiffs(data.diffs)
-      setDeliveryStatus(data.delivery?.event_status || data.draft_status)
+      const getErpDeliveryStatus = (delivery: any, draft_status: string) => {
+        if (!delivery || draft_status === 'DRAFT') return 'DRAFT'
+        if (delivery.lookup_status === 'EVENT_NOT_FOUND') return 'EVENT_NOT_FOUND'
+        if (!delivery.deliveries || delivery.deliveries.length === 0) {
+          return delivery.event_status === 'NOT_YET_PUBLISHED' ? 'DRAFT' : 'PENDING'
+        }
+        const erp = delivery.deliveries[0]
+        if (erp.delivery_status === 'SUCCESS') return 'Delivered'
+        if (erp.delivery_status === 'DEAD') return 'Failed'
+        if (erp.delivery_status === 'PENDING' || erp.delivery_status === 'CLAIMED') return 'Pending'
+        return erp.delivery_status
+      }
+      
+      setDeliveryStatus(getErpDeliveryStatus(data.delivery, data.draft_status))
       setReviewData(data)
       setVersion(data.draft_version)
       setMessage('Draft loaded successfully.')
@@ -148,9 +161,10 @@ export default function PublishPage() {
             <div className="flex items-center gap-3">
               <div className={`px-3 py-1 rounded text-sm font-bold ${
                   deliveryStatus === 'DRAFT' ? 'bg-yellow-100 text-yellow-800' :
-                  deliveryStatus === 'DELIVERED' ? 'bg-green-100 text-green-800' :
-                  deliveryStatus === 'FAILED' ? 'bg-red-100 text-red-800' :
-                  'bg-blue-100 text-blue-800'
+                  deliveryStatus === 'Delivered' ? 'bg-green-100 text-green-800' :
+                  deliveryStatus === 'Failed' ? 'bg-red-100 text-red-800' :
+                  deliveryStatus === 'Pending' ? 'bg-blue-100 text-blue-800' :
+                  'bg-gray-100 text-gray-800'
               }`}>
                 Status: {deliveryStatus}
               </div>
@@ -181,7 +195,7 @@ export default function PublishPage() {
             ))}
           </div>
 
-          {deliveryStatus === 'DRAFT' && (
+          {reviewData?.draft_status === 'DRAFT' && (
             <button 
               onClick={handlePublish}
               disabled={loading}
