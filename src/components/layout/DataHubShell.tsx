@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import { 
+import { Users, 
   Database,
   ArrowLeft,
   Percent,
@@ -18,7 +18,9 @@ import {
   Layers,
   Map,
   Mail,
-  Ruler
+  Ruler,
+  Building,
+  Briefcase
 } from 'lucide-react'
 import { createClient } from '@/utils/supabase/client'
 import clsx from 'clsx'
@@ -86,6 +88,12 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
     { name: 'Geography Levels', href: '/data-hub/geography/levels', icon: Layers },
     { name: 'Geography Units', href: '/data-hub/geography/units', icon: Map },
     { name: 'Postal Codes', href: '/data-hub/geography/postal-codes', icon: Mail },
+  ]
+
+  const orgNavItems = [
+    { name: 'Departments', href: '/data-hub/organization/departments', icon: Building },
+    { name: 'Sub-departments', href: '/data-hub/organization/sub-departments', icon: Users },
+      { name: 'Designations', href: '/data-hub/organization/designations', icon: Briefcase },
   ]
 
   const taxNavItems = [
@@ -157,7 +165,29 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
             </Link>
           </div>
 
-          <div className="mb-6 px-2">
+          <div className="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2 px-2 mt-6">Organization</div>
+            <nav className="space-y-1 mb-6">
+              {orgNavItems.map((item) => {
+                const isActive = pathname === item.href
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={clsx(
+                      "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                      isActive 
+                        ? "bg-teal-500/10 text-teal-400" 
+                        : "text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-100"
+                    )}
+                  >
+                    <item.icon className="w-5 h-5" />
+                    {item.name}
+                  </Link>
+                )
+              })}
+            </nav>
+            
+            <div className="mb-6 px-2">
             <label className="block text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">Selected Country</label>
             <select 
               value={selectedCountry} 
@@ -192,6 +222,8 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
                 )
               })}
             </nav>
+
+            
             
             {showTax && (
               <>
@@ -259,7 +291,7 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
 
         <main className="flex-1 overflow-y-auto p-4 lg:p-8">
           <div className="max-w-7xl mx-auto">
-            {!selectedCountry && pathname !== '/data-hub' && pathname !== '/data-hub/geography/countries' && pathname !== '/data-hub/units' ? (
+            {!selectedCountry && pathname !== '/data-hub' && pathname !== '/data-hub/geography/countries' && pathname !== '/data-hub/units' && !pathname.startsWith('/data-hub/organization') ? (
               <div className="p-12 text-center border border-dashed border-zinc-800 rounded-xl bg-zinc-900/30">
                 <Globe className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
                 <h2 className="text-lg font-medium text-white">No Country Selected</h2>
@@ -274,4 +306,8 @@ export default function DataHubShell({ children, email, role }: DataHubShellProp
     </div>
   )
 }
+
+
+
+
 

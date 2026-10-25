@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
         }
 
         const token = authHeader.substring(7);
-        const secretStr = process.env.GLOBAL_CONTROL_HMAC_SECRET;
+        const secretStr = process.env.GLOBAL_CONTROL_HMAC_SECRET || process.env.HMAC_SECRET;
         if (!secretStr) {
             console.error("[S2S] GLOBAL_CONTROL_HMAC_SECRET not configured");
             return NextResponse.json({ error: "Service Unavailable" }, { status: 503 });

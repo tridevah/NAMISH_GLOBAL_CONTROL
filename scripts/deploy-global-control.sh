@@ -45,6 +45,7 @@ echo "Building standalone artifact..."
 npm run build
 
 RELEASE_DIR=".next/standalone"
+echo "$LOCAL_HEAD" > "$RELEASE_DIR/.release-sha"
 cp -r public "$RELEASE_DIR/"
 cp -r .next/static "$RELEASE_DIR/.next/"
 

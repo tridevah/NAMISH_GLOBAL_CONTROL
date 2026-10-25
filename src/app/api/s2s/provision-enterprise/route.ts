@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     }
 
     const token = authHeader.substring(7);
-    const secretStr = process.env.GLOBAL_CONTROL_HMAC_SECRET;
+    const secretStr = process.env.GLOBAL_CONTROL_HMAC_SECRET || process.env.HMAC_SECRET;
     if (!secretStr) {
       return NextResponse.json({ error: "S2S Configuration Missing" }, { status: 503 });
     }

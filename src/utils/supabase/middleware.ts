@@ -19,8 +19,10 @@ export async function updateSession(request: NextRequest) {
   const isS2SGeoUnits = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/geography/units';
   const isS2SUnits = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/units';
   const isS2STaxes = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/taxes';
+  const isS2STaxRegimes = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/taxes/regimes';
+  const isS2SHrCatalog = request.method === 'GET' && request.nextUrl.pathname === '/api/s2s/master-data/hr/catalog';
   
-  if (isS2SProvision || isS2SCountries || isS2SLevels || isS2SGeoUnits || isS2SUnits || isS2STaxes) {
+  if (isS2SProvision || isS2SCountries || isS2SLevels || isS2SGeoUnits || isS2SUnits || isS2STaxes || isS2STaxRegimes || isS2SHrCatalog) {
     return NextResponse.next()
   }
 

@@ -9,7 +9,7 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
     const token = authHeader.substring(7);
-    const secretStr = process.env.GLOBAL_CONTROL_HMAC_SECRET;
+    const secretStr = process.env.GLOBAL_CONTROL_HMAC_SECRET || process.env.HMAC_SECRET;
     if (!secretStr) return NextResponse.json({ error: "Service Unavailable" }, { status: 503 });
 
     let verifiedPayload: Record<string, unknown>;
